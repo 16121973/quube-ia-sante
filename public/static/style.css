@@ -1,13 +1,24 @@
-/* QUUBE IA Santé - Styles personnalisés */
+/* QUUBE IA Santé - Charte Graphique QUUBE */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --primary: #2563eb;
-  --secondary: #7c3aed;
-  --accent: #06b6d4;
-  --dark: #1e293b;
-  --light: #f8fafc;
+  /* Palette QUUBE - Noir & Blanc */
+  --primary: #000000;
+  --secondary: #333333;
+  --accent: #666666;
+  --dark: #000000;
+  --light: #ffffff;
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+  --gray-900: #171717;
 }
 
 * {
@@ -23,13 +34,15 @@ html {
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
+  color: var(--dark);
+  background-color: var(--light);
 }
 
-/* Animations */
+/* Animations minimalistes QUUBE */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -37,33 +50,14 @@ body {
   }
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
   }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
+  to {
     opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+    transform: translateX(0);
   }
 }
 
@@ -72,62 +66,37 @@ body {
   animation: fadeInUp 0.6s ease-out;
 }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradient 3s ease infinite;
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out;
 }
 
 /* Smooth transitions */
 a, button {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar QUUBE */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--gray-100);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--primary);
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary);
 }
 
-/* Focus styles for accessibility */
+/* Focus styles */
 *:focus {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
-}
-
-/* Responsive utilities */
-@media (max-width: 768px) {
-  .hide-mobile {
-    display: none !important;
-  }
-}
-
-/* Print styles */
-@media print {
-  nav, footer, #contact {
-    display: none;
-  }
-}
-
-/* Loading state */
-.loading {
-  opacity: 0.6;
-  pointer-events: none;
 }
 
 /* Form improvements */
@@ -136,19 +105,18 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #9ca3af;
+  color: var(--gray-400);
 }
 
-/* Button hover effects */
+/* Button hover effects - style QUUBE */
 button:hover,
 a.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
 }
 
 button:active,
@@ -156,29 +124,14 @@ a.button:active {
   transform: translateY(0);
 }
 
-/* Card hover effects */
+/* Card hover - minimaliste */
 .card-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
 }
 
 .card-hover:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-/* Gradient text */
-.gradient-text {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Glass morphism effect */
-.glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* Section spacing */
@@ -186,24 +139,51 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* Mobile menu */
-@media (max-width: 768px) {
-  nav .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    gap: 1rem;
-  }
-  
-  nav .mobile-menu.hidden {
-    display: none;
-  }
+/* Underline effect QUUBE */
+.underline-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-effect::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.underline-effect:hover::after {
+  width: 100%;
+}
+
+/* Minimal gradient for accents */
+.minimal-gradient {
+  background: linear-gradient(135deg, var(--gray-50) 0%, var(--light) 100%);
+}
+
+/* Box minimal QUUBE */
+.quube-box {
+  border: 1px solid var(--gray-200);
+  transition: border-color 0.3s ease;
+}
+
+.quube-box:hover {
+  border-color: var(--primary);
+}
+
+/* Typography QUUBE - geometric, clean */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.7;
 }
 
 /* Accessibility improvements */
@@ -219,15 +199,15 @@ section {
   border-width: 0;
 }
 
-/* High contrast mode support */
+/* High contrast mode */
 @media (prefers-contrast: high) {
   :root {
-    --primary: #0046d5;
-    --secondary: #6b21a8;
+    --primary: #000000;
+    --gray-300: #999999;
   }
 }
 
-/* Reduced motion support */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -236,7 +216,45 @@ section {
   }
 }
 
-/* Dark mode support (optionnel) */
-@media (prefers-color-scheme: dark) {
-  /* Peut être activé plus tard si nécessaire */
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Accent line QUUBE style */
+.accent-line {
+  position: relative;
+  padding-left: 24px;
+}
+
+.accent-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--primary);
+}
+
+/* Minimal badge */
+.quube-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: var(--gray-100);
+  color: var(--dark);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--gray-200);
+}
+
+/* Grid lines subtle */
+.grid-lines {
+  background-image: 
+    linear-gradient(var(--gray-100) 1px, transparent 1px),
+    linear-gradient(90deg, var(--gray-100) 1px, transparent 1px);
+  background-size: 40px 40px;
 }

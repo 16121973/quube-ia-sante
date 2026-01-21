@@ -16,14 +16,14 @@ app.get('/', (c) => {
             <div class="flex items-center">
               <a href="/" class="text-3xl font-bold">
                 <span class="text-primary">QUUBE</span>
-                <span class="text-secondary ml-2">IA Santé</span>
+                <span class="text-gray-800 ml-2">IA Santé</span>
               </a>
             </div>
             <div class="hidden md:flex space-x-8">
               <a href="#offre" class="text-gray-700 hover:text-primary transition-colors font-medium">Notre Offre</a>
               <a href="#cas-usage" class="text-gray-700 hover:text-primary transition-colors font-medium">Cas d'Usage</a>
               <a href="#approche" class="text-gray-700 hover:text-primary transition-colors font-medium">Notre Approche</a>
-              <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all shadow-md hover:shadow-lg">Contact</a>
+              <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-gray-900 transition-all shadow-md hover:shadow-lg">Contact</a>
             </div>
             <button class="md:hidden text-gray-700">
               <i class="fas fa-bars text-2xl"></i>
@@ -33,7 +33,7 @@ app.get('/', (c) => {
       </nav>
 
       {/* Hero Section */}
-      <section class="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-purple-50 to-cyan-50">
+      <section class="pt-32 pb-20 bg-gradient-to-br from-gray-50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-8">
@@ -43,13 +43,13 @@ app.get('/', (c) => {
                 </span>
               </div>
               <h1 class="text-5xl md:text-6xl font-bold leading-tight">
-                Transformez votre organisation avec l'<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">IA Générative</span>
+                Transformez votre organisation avec l'<span class="text-transparent bg-clip-text bg-gray-900">IA Générative</span>
               </h1>
               <p class="text-xl text-gray-600 leading-relaxed">
                 QUUBE accompagne les professionnels de santé et du médico-social dans leur montée en compétences IA : formations, coaching, conseil stratégique et audits personnalisés pour optimiser vos services et satisfaire vos usagers.
               </p>
               <div class="flex flex-wrap gap-4">
-                <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl font-semibold inline-flex items-center">
+                <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-full hover:bg-gray-900 transition-all shadow-lg hover:shadow-xl font-semibold inline-flex items-center">
                   Démarrer votre transformation
                   <i class="fas fa-arrow-right ml-2"></i>
                 </a>
@@ -63,11 +63,11 @@ app.get('/', (c) => {
                   <div class="text-sm text-gray-600">Entreprises HealthTech</div>
                 </div>
                 <div class="text-center">
-                  <div class="text-3xl font-bold text-secondary">76%</div>
+                  <div class="text-3xl font-bold text-gray-800">76%</div>
                   <div class="text-sm text-gray-600">En phase de croissance</div>
                 </div>
                 <div class="text-center">
-                  <div class="text-3xl font-bold text-accent">2024</div>
+                  <div class="text-3xl font-bold text-gray-700">2024</div>
                   <div class="text-sm text-gray-600">Priorité stratégique</div>
                 </div>
               </div>
@@ -75,7 +75,7 @@ app.get('/', (c) => {
             <div class="relative">
               <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl"></div>
               <div class="relative bg-white rounded-3xl shadow-2xl p-8 space-y-6">
-                <div class="flex items-center space-x-4 p-4 bg-blue-50 rounded-xl">
+                <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-xl">
                   <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
                     <i class="fas fa-robot text-xl"></i>
                   </div>
@@ -84,8 +84,8 @@ app.get('/', (c) => {
                     <div class="text-sm text-gray-600">ChatGPT, Gemini, Claude</div>
                   </div>
                 </div>
-                <div class="flex items-center space-x-4 p-4 bg-purple-50 rounded-xl">
-                  <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center text-white">
+                <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-xl">
+                  <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-white">
                     <i class="fas fa-hospital text-xl"></i>
                   </div>
                   <div>
@@ -93,8 +93,8 @@ app.get('/', (c) => {
                     <div class="text-sm text-gray-600">Hôpitaux, EHPAD, Médico-social</div>
                   </div>
                 </div>
-                <div class="flex items-center space-x-4 p-4 bg-cyan-50 rounded-xl">
-                  <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white">
+                <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-xl">
+                  <div class="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center text-white">
                     <i class="fas fa-chart-line text-xl"></i>
                   </div>
                   <div>
@@ -113,7 +113,7 @@ app.get('/', (c) => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
-              Notre <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Offre Complète</span>
+              Notre <span class="text-transparent bg-clip-text bg-gray-900">Offre Complète</span>
             </h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
               Une approche modulaire et personnalisable pour accompagner chaque acteur de votre organisation dans sa transformation IA
@@ -156,7 +156,7 @@ app.get('/', (c) => {
 
             {/* Coaching */}
             <div class="group bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-secondary rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gray-800 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-users text-2xl"></i>
               </div>
               <h3 class="text-2xl font-bold mb-4 text-gray-800">Coaching</h3>
@@ -165,23 +165,23 @@ app.get('/', (c) => {
               </p>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-800 mr-3 mt-1"></i>
                   <span class="text-gray-700">Coaching dirigeants</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-800 mr-3 mt-1"></i>
                   <span class="text-gray-700">Accompagnement CODIR</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-800 mr-3 mt-1"></i>
                   <span class="text-gray-700">Sessions d'équipe</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-800 mr-3 mt-1"></i>
                   <span class="text-gray-700">Suivi continu</span>
                 </li>
               </ul>
-              <a href="#contact" class="text-secondary font-semibold inline-flex items-center group-hover:gap-3 transition-all">
+              <a href="#contact" class="text-gray-800 font-semibold inline-flex items-center group-hover:gap-3 transition-all">
                 En savoir plus
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
@@ -189,7 +189,7 @@ app.get('/', (c) => {
 
             {/* Conseil Stratégique */}
             <div class="group bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-accent rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gray-700 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-lightbulb text-2xl"></i>
               </div>
               <h3 class="text-2xl font-bold mb-4 text-gray-800">Conseil Stratégique</h3>
@@ -198,23 +198,23 @@ app.get('/', (c) => {
               </p>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-700 mr-3 mt-1"></i>
                   <span class="text-gray-700">Transformation digitale</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-700 mr-3 mt-1"></i>
                   <span class="text-gray-700">Design de services innovants</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-700 mr-3 mt-1"></i>
                   <span class="text-gray-700">Réorganisation métier</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-700 mr-3 mt-1"></i>
                   <span class="text-gray-700">Gestion de projets IA</span>
                 </li>
               </ul>
-              <a href="#contact" class="text-accent font-semibold inline-flex items-center group-hover:gap-3 transition-all">
+              <a href="#contact" class="text-gray-700 font-semibold inline-flex items-center group-hover:gap-3 transition-all">
                 En savoir plus
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
@@ -231,23 +231,23 @@ app.get('/', (c) => {
               </p>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">Audit de maturité IA</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">Analyse des processus</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">Identification opportunités</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">Roadmap stratégique</span>
                 </li>
               </ul>
-              <a href="#contact" class="text-green-600 font-semibold inline-flex items-center group-hover:gap-3 transition-all">
+              <a href="#contact" class="text-gray-900 font-semibold inline-flex items-center group-hover:gap-3 transition-all">
                 En savoir plus
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
@@ -264,23 +264,23 @@ app.get('/', (c) => {
               </p>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-orange-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">Webinaires découverte</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-orange-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">Sensibilisation CODIR/CA</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-orange-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">Ateliers interactifs</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-orange-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">Prévention décrochage</span>
                 </li>
               </ul>
-              <a href="#contact" class="text-orange-600 font-semibold inline-flex items-center group-hover:gap-3 transition-all">
+              <a href="#contact" class="text-gray-900 font-semibold inline-flex items-center group-hover:gap-3 transition-all">
                 En savoir plus
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
@@ -297,23 +297,23 @@ app.get('/', (c) => {
               </p>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-pink-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">DRH - Recrutement & RH</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-pink-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">DAF - Finance & Gestion</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-pink-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">DG - Vision stratégique</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-pink-600 mr-3 mt-1"></i>
+                  <i class="fas fa-check-circle text-gray-900 mr-3 mt-1"></i>
                   <span class="text-gray-700">Équipes soins/éducatives</span>
                 </li>
               </ul>
-              <a href="#cas-usage" class="text-pink-600 font-semibold inline-flex items-center group-hover:gap-3 transition-all">
+              <a href="#cas-usage" class="text-gray-900 font-semibold inline-flex items-center group-hover:gap-3 transition-all">
                 Voir les cas d'usage
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
@@ -323,11 +323,11 @@ app.get('/', (c) => {
       </section>
 
       {/* Section Cas d'Usage Métiers */}
-      <section id="cas-usage" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section id="cas-usage" class="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
-              Cas d'Usage <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">par Métier</span>
+              Cas d'Usage <span class="text-transparent bg-clip-text bg-gray-900">par Métier</span>
             </h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
               Des solutions IA concrètes et opérationnelles adaptées à chaque fonction de votre organisation de santé
@@ -338,7 +338,7 @@ app.get('/', (c) => {
             {/* DRH */}
             <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
               <div class="flex items-center mb-6">
-                <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                <div class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
                   <i class="fas fa-user-tie text-primary text-2xl"></i>
                 </div>
                 <div>
@@ -381,8 +381,8 @@ app.get('/', (c) => {
             {/* DAF */}
             <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
               <div class="flex items-center mb-6">
-                <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                  <i class="fas fa-chart-line text-green-600 text-2xl"></i>
+                <div class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
+                  <i class="fas fa-chart-line text-gray-900 text-2xl"></i>
                 </div>
                 <div>
                   <h3 class="text-2xl font-bold text-gray-800">Directeur Finance (DAF)</h3>
@@ -391,28 +391,28 @@ app.get('/', (c) => {
               </div>
               <ul class="space-y-4">
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-green-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Analyse budgétaire prédictive</div>
                     <div class="text-sm text-gray-600">Anticipation des écarts et optimisation</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-green-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Reporting automatisé</div>
                     <div class="text-sm text-gray-600">Tableaux de bord intelligents en temps réel</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-green-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Détection d'anomalies</div>
                     <div class="text-sm text-gray-600">Identification automatique des risques financiers</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-green-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Optimisation des coûts</div>
                     <div class="text-sm text-gray-600">Recommandations IA pour réduction des dépenses</div>
@@ -424,8 +424,8 @@ app.get('/', (c) => {
             {/* DG */}
             <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
               <div class="flex items-center mb-6">
-                <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                  <i class="fas fa-chess-king text-secondary text-2xl"></i>
+                <div class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
+                  <i class="fas fa-chess-king text-gray-800 text-2xl"></i>
                 </div>
                 <div>
                   <h3 class="text-2xl font-bold text-gray-800">Direction Générale (DG)</h3>
@@ -434,28 +434,28 @@ app.get('/', (c) => {
               </div>
               <ul class="space-y-4">
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-secondary mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-800 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Veille stratégique augmentée</div>
                     <div class="text-sm text-gray-600">Analyse des tendances santé et réglementation</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-secondary mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-800 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Aide à la décision</div>
                     <div class="text-sm text-gray-600">Simulation de scenarios et recommandations</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-secondary mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-800 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Innovation services</div>
                     <div class="text-sm text-gray-600">Design thinking assisté par IA</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-secondary mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-800 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Communication institutionnelle</div>
                     <div class="text-sm text-gray-600">Rédaction de discours et rapports stratégiques</div>
@@ -467,8 +467,8 @@ app.get('/', (c) => {
             {/* Directeurs d'Établissement */}
             <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
               <div class="flex items-center mb-6">
-                <div class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
-                  <i class="fas fa-building text-orange-600 text-2xl"></i>
+                <div class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
+                  <i class="fas fa-building text-gray-900 text-2xl"></i>
                 </div>
                 <div>
                   <h3 class="text-2xl font-bold text-gray-800">Directeurs d'Établissement</h3>
@@ -477,28 +477,28 @@ app.get('/', (c) => {
               </div>
               <ul class="space-y-4">
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-orange-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Planning & ressources</div>
                     <div class="text-sm text-gray-600">Optimisation automatique des plannings soignants</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-orange-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Gestion administrative</div>
                     <div class="text-sm text-gray-600">Automatisation des tâches répétitives</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-orange-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Satisfaction usagers</div>
                     <div class="text-sm text-gray-600">Analyse de feedback et amélioration continue</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-orange-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Conformité & qualité</div>
                     <div class="text-sm text-gray-600">Assistance certification et audits qualité</div>
@@ -510,8 +510,8 @@ app.get('/', (c) => {
             {/* Équipes de Soins */}
             <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
               <div class="flex items-center mb-6">
-                <div class="w-14 h-14 bg-cyan-100 rounded-lg flex items-center justify-center mr-4">
-                  <i class="fas fa-heartbeat text-accent text-2xl"></i>
+                <div class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
+                  <i class="fas fa-heartbeat text-gray-700 text-2xl"></i>
                 </div>
                 <div>
                   <h3 class="text-2xl font-bold text-gray-800">Équipes de Soins</h3>
@@ -520,28 +520,28 @@ app.get('/', (c) => {
               </div>
               <ul class="space-y-4">
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-accent mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-700 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Documentation médicale</div>
                     <div class="text-sm text-gray-600">Rédaction assistée de comptes-rendus</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-accent mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-700 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Protocoles de soins</div>
                     <div class="text-sm text-gray-600">Recommandations personnalisées par pathologie</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-accent mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-700 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Formation continue</div>
                     <div class="text-sm text-gray-600">Veille médicale et mises à jour protocoles</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-accent mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-700 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Communication patient</div>
                     <div class="text-sm text-gray-600">Explications adaptées au niveau de compréhension</div>
@@ -553,8 +553,8 @@ app.get('/', (c) => {
             {/* Équipes Éducatives */}
             <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
               <div class="flex items-center mb-6">
-                <div class="w-14 h-14 bg-pink-100 rounded-lg flex items-center justify-center mr-4">
-                  <i class="fas fa-hands-helping text-pink-600 text-2xl"></i>
+                <div class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
+                  <i class="fas fa-hands-helping text-gray-900 text-2xl"></i>
                 </div>
                 <div>
                   <h3 class="text-2xl font-bold text-gray-800">Équipes Éducatives</h3>
@@ -563,28 +563,28 @@ app.get('/', (c) => {
               </div>
               <ul class="space-y-4">
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-pink-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Projets personnalisés</div>
                     <div class="text-sm text-gray-600">Assistance rédaction PAP, PPS, projets individuels</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-pink-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Activités adaptées</div>
                     <div class="text-sm text-gray-600">Génération d'idées d'activités par profil</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-pink-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Documentation éducative</div>
                     <div class="text-sm text-gray-600">Synthèses, rapports et bilans automatisés</div>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-robot text-pink-600 mr-3 mt-1"></i>
+                  <i class="fas fa-robot text-gray-900 mr-3 mt-1"></i>
                   <div>
                     <div class="font-semibold text-gray-800">Communication familles</div>
                     <div class="text-sm text-gray-600">Rédaction de courriers et comptes-rendus</div>
@@ -595,7 +595,7 @@ app.get('/', (c) => {
           </div>
 
           <div class="text-center">
-            <a href="#contact" class="inline-flex items-center bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-full hover:shadow-xl transition-all font-semibold text-lg">
+            <a href="#contact" class="inline-flex items-center bg-gray-900 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all font-semibold text-lg">
               Discuter de vos besoins métiers
               <i class="fas fa-arrow-right ml-3"></i>
             </a>
@@ -608,7 +608,7 @@ app.get('/', (c) => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
-              Notre <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Approche</span>
+              Notre <span class="text-transparent bg-clip-text bg-gray-900">Approche</span>
             </h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
               Une méthodologie éprouvée qui conjugue expertise sectorielle, innovation technologique et accompagnement humain
@@ -617,7 +617,7 @@ app.get('/', (c) => {
 
           <div class="grid md:grid-cols-3 gap-8 mb-16">
             <div class="text-center p-8">
-              <div class="w-20 h-20 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center text-white mx-auto mb-6 shadow-lg">
+              <div class="w-20 h-20 bg-gray-900 rounded-full flex items-center justify-center text-white mx-auto mb-6 shadow-lg">
                 <span class="text-3xl font-bold">1</span>
               </div>
               <h3 class="text-xl font-bold mb-4 text-gray-800">Diagnostic Personnalisé</h3>
@@ -648,7 +648,7 @@ app.get('/', (c) => {
           </div>
 
           {/* Singularité QUUBE */}
-          <div class="bg-gradient-to-br from-blue-50 via-purple-50 to-cyan-50 rounded-3xl p-12">
+          <div class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-12">
             <div class="max-w-4xl mx-auto">
               <div class="text-center mb-8">
                 <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold">
@@ -673,7 +673,7 @@ app.get('/', (c) => {
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-md">
                   <div class="flex items-start">
-                    <i class="fas fa-check-circle text-secondary text-2xl mr-4 mt-1"></i>
+                    <i class="fas fa-check-circle text-gray-800 text-2xl mr-4 mt-1"></i>
                     <div>
                       <h4 class="font-bold text-gray-800 mb-2">Formation par la Pratique</h4>
                       <p class="text-gray-600 text-sm">Vos équipes apprennent l'IA en travaillant sur leurs vrais projets</p>
@@ -682,7 +682,7 @@ app.get('/', (c) => {
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-md">
                   <div class="flex items-start">
-                    <i class="fas fa-check-circle text-accent text-2xl mr-4 mt-1"></i>
+                    <i class="fas fa-check-circle text-gray-700 text-2xl mr-4 mt-1"></i>
                     <div>
                       <h4 class="font-bold text-gray-800 mb-2">Expertise Santé × IA</h4>
                       <p class="text-gray-600 text-sm">Double compétence unique en stratégie santé et technologies IA</p>
@@ -691,7 +691,7 @@ app.get('/', (c) => {
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-md">
                   <div class="flex items-start">
-                    <i class="fas fa-check-circle text-green-600 text-2xl mr-4 mt-1"></i>
+                    <i class="fas fa-check-circle text-gray-900 text-2xl mr-4 mt-1"></i>
                     <div>
                       <h4 class="font-bold text-gray-800 mb-2">Résultats Immédiats</h4>
                       <p class="text-gray-600 text-sm">Impact mesurable dès les premières semaines d'accompagnement</p>
@@ -705,11 +705,11 @@ app.get('/', (c) => {
       </section>
 
       {/* Section Pourquoi Maintenant */}
-      <section class="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <section class="py-20 bg-gradient-to-br from-black to-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
-              Pourquoi Agir <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Maintenant ?</span>
+              Pourquoi Agir <span class="text-transparent bg-clip-text bg-gray-900">Maintenant ?</span>
             </h2>
             <p class="text-xl text-gray-300 max-w-3xl mx-auto">
               L'IA en santé n'est plus une option, c'est une responsabilité d'employeur et un enjeu de non-décrochage pour vos équipes
@@ -718,22 +718,22 @@ app.get('/', (c) => {
 
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="text-center">
-              <div class="text-5xl font-bold text-blue-400 mb-4">450+</div>
+              <div class="text-5xl font-bold text-gray-900 mb-4">450+</div>
               <div class="text-lg font-semibold mb-2">Entreprises HealthTech</div>
               <div class="text-gray-400">en France en 2024</div>
             </div>
             <div class="text-center">
-              <div class="text-5xl font-bold text-purple-400 mb-4">76%</div>
+              <div class="text-5xl font-bold text-gray-900 mb-4">76%</div>
               <div class="text-lg font-semibold mb-2">En croissance active</div>
               <div class="text-gray-400">Adoption accélérée de l'IA</div>
             </div>
             <div class="text-center">
-              <div class="text-5xl font-bold text-cyan-400 mb-4">2030</div>
+              <div class="text-5xl font-bold text-gray-900 mb-4">2030</div>
               <div class="text-lg font-semibold mb-2">France 2030</div>
               <div class="text-gray-400">Investissements massifs IA Santé</div>
             </div>
             <div class="text-center">
-              <div class="text-5xl font-bold text-green-400 mb-4">100%</div>
+              <div class="text-5xl font-bold text-gray-900 mb-4">100%</div>
               <div class="text-lg font-semibold mb-2">Priorité stratégique</div>
               <div class="text-gray-400">Health Data Hub & Ségur</div>
             </div>
@@ -748,20 +748,20 @@ app.get('/', (c) => {
                 </p>
                 <ul class="space-y-3">
                   <li class="flex items-start">
-                    <i class="fas fa-exclamation-triangle text-yellow-400 mr-3 mt-1"></i>
+                    <i class="fas fa-exclamation-triangle text-gray-600 mr-3 mt-1"></i>
                     <span>Par rapport à la société et à leurs enfants</span>
                   </li>
                   <li class="flex items-start">
-                    <i class="fas fa-exclamation-triangle text-yellow-400 mr-3 mt-1"></i>
+                    <i class="fas fa-exclamation-triangle text-gray-600 mr-3 mt-1"></i>
                     <span>Par rapport aux publics qu'ils accompagnent</span>
                   </li>
                   <li class="flex items-start">
-                    <i class="fas fa-exclamation-triangle text-yellow-400 mr-3 mt-1"></i>
+                    <i class="fas fa-exclamation-triangle text-gray-600 mr-3 mt-1"></i>
                     <span>Dans leur employabilité et évolution professionnelle</span>
                   </li>
                 </ul>
               </div>
-              <div class="bg-gradient-to-br from-primary to-secondary p-8 rounded-xl">
+              <div class="bg-primary p-8 rounded-xl">
                 <h4 class="text-2xl font-bold mb-4">Responsabilité Employeur</h4>
                 <p class="mb-6">
                   Former vos équipes à l'IA, c'est assurer leur compétitivité et leur épanouissement professionnel dans un monde en transformation.
@@ -777,11 +777,11 @@ app.get('/', (c) => {
       </section>
 
       {/* Section Contact */}
-      <section id="contact" class="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-cyan-50">
+      <section id="contact" class="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-12">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
-              Démarrons Votre <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Transformation IA</span>
+              Démarrons Votre <span class="text-transparent bg-clip-text bg-gray-900">Transformation IA</span>
             </h2>
             <p class="text-xl text-gray-600">
               Échangeons sur vos besoins et construisons ensemble votre stratégie IA personnalisée
@@ -879,7 +879,7 @@ app.get('/', (c) => {
               </div>
 
               <div class="text-center">
-                <button type="submit" class="bg-gradient-to-r from-primary to-secondary text-white px-12 py-4 rounded-full hover:shadow-xl transition-all font-semibold text-lg inline-flex items-center">
+                <button type="submit" class="bg-gray-900 text-white px-12 py-4 rounded-full hover:shadow-xl transition-all font-semibold text-lg inline-flex items-center">
                   Envoyer ma demande
                   <i class="fas fa-paper-plane ml-3"></i>
                 </button>
@@ -926,8 +926,8 @@ app.get('/', (c) => {
           <div class="grid md:grid-cols-4 gap-8">
             <div>
               <div class="text-2xl font-bold mb-4">
-                <span class="text-blue-400">QUUBE</span>
-                <span class="text-purple-400 ml-2">IA Santé</span>
+                <span class="text-gray-900">QUUBE</span>
+                <span class="text-gray-900 ml-2">IA Santé</span>
               </div>
               <p class="text-gray-400 mb-4">
                 Conseil, formation et coaching en Intelligence Artificielle pour le secteur de la santé et du médico-social.
@@ -1004,7 +1004,7 @@ app.get('/', (c) => {
               });
               
               if (response.ok) {
-                messageDiv.className = 'mt-4 p-4 rounded-lg text-center bg-green-100 text-green-800';
+                messageDiv.className = 'mt-4 p-4 rounded-lg text-center bg-gray-100 text-green-800';
                 messageDiv.textContent = '✓ Merci ! Votre message a été envoyé avec succès. Nous vous contacterons rapidement.';
                 messageDiv.classList.remove('hidden');
                 e.target.reset();

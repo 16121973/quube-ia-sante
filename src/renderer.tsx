@@ -17,11 +17,23 @@ export const renderer = jsxRenderer(({ children, title }) => {
               theme: {
                 extend: {
                   colors: {
-                    primary: '#2563eb',
-                    secondary: '#7c3aed',
-                    accent: '#06b6d4',
-                    dark: '#1e293b',
-                    light: '#f8fafc'
+                    primary: '#000000',
+                    secondary: '#333333',
+                    accent: '#666666',
+                    dark: '#000000',
+                    light: '#ffffff',
+                    gray: {
+                      50: '#fafafa',
+                      100: '#f5f5f5',
+                      200: '#e5e5e5',
+                      300: '#d4d4d4',
+                      400: '#a3a3a3',
+                      500: '#737373',
+                      600: '#525252',
+                      700: '#404040',
+                      800: '#262626',
+                      900: '#171717'
+                    }
                   },
                   fontFamily: {
                     sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
