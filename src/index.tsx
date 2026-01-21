@@ -122,7 +122,7 @@ app.get('/', (c) => {
 
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Formations */}
-            <div class="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-graduation-cap text-2xl"></i>
               </div>
@@ -155,7 +155,7 @@ app.get('/', (c) => {
             </div>
 
             {/* Coaching */}
-            <div class="group bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-16 h-16 bg-gray-800 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-users text-2xl"></i>
               </div>
@@ -188,7 +188,7 @@ app.get('/', (c) => {
             </div>
 
             {/* Conseil Stratégique */}
-            <div class="group bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-16 h-16 bg-gray-700 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-lightbulb text-2xl"></i>
               </div>
@@ -221,8 +221,8 @@ app.get('/', (c) => {
             </div>
 
             {/* Audits */}
-            <div class="group bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+            <div class="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div class="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-clipboard-check text-2xl"></i>
               </div>
               <h3 class="text-2xl font-bold mb-4 text-gray-800">Audits IA</h3>
@@ -254,8 +254,8 @@ app.get('/', (c) => {
             </div>
 
             {/* Séminaires */}
-            <div class="group bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+            <div class="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div class="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-chalkboard-teacher text-2xl"></i>
               </div>
               <h3 class="text-2xl font-bold mb-4 text-gray-800">Séminaires & Sensibilisation</h3>
@@ -287,8 +287,8 @@ app.get('/', (c) => {
             </div>
 
             {/* Cas d'Usage Métiers */}
-            <div class="group bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-pink-600 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+            <div class="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div class="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-briefcase text-2xl"></i>
               </div>
               <h3 class="text-2xl font-bold mb-4 text-gray-800">Cas d'Usage Métiers</h3>
@@ -627,7 +627,7 @@ app.get('/', (c) => {
             </div>
 
             <div class="text-center p-8">
-              <div class="w-20 h-20 bg-gradient-to-br from-secondary to-purple-600 rounded-full flex items-center justify-center text-white mx-auto mb-6 shadow-lg">
+              <div class="w-20 h-20 bg-gray-900 rounded-full flex items-center justify-center text-white mx-auto mb-6 shadow-lg">
                 <span class="text-3xl font-bold">2</span>
               </div>
               <h3 class="text-xl font-bold mb-4 text-gray-800">Accompagnement Sur Mesure</h3>
