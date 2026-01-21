@@ -17,22 +17,42 @@ export const renderer = jsxRenderer(({ children, title }) => {
               theme: {
                 extend: {
                   colors: {
-                    primary: '#000000',
-                    secondary: '#333333',
-                    accent: '#666666',
+                    // Couleurs principales QUUBE
+                    'quube-black': '#000000',
+                    'quube-yellow': '#fcf474',
+                    'quube-yellow-neon': '#dbff9b',
+                    
+                    // Couleurs d'accent QUUBE
+                    'quube-blue': '#0082f3',
+                    'quube-blue-dark': '#1e51f7',
+                    'quube-blue-light': '#2895f7',
+                    'quube-pink': '#bb4198',
+                    'quube-red': '#ea384c',
+                    'quube-green': '#027a48',
+                    
+                    // Gris QUUBE
+                    'quube-gray-dark': '#5d6c7b',
+                    'quube-gray': '#758696',
+                    'quube-gray-light': '#aaadb0',
+                    
+                    // Alias pour utilisation simplifiée
+                    primary: '#fcf474',      // Jaune signature
+                    secondary: '#0082f3',    // Bleu
+                    accent: '#000000',       // Noir
                     dark: '#000000',
                     light: '#ffffff',
+                    
                     gray: {
                       50: '#fafafa',
-                      100: '#f5f5f5',
-                      200: '#e5e5e5',
-                      300: '#d4d4d4',
-                      400: '#a3a3a3',
-                      500: '#737373',
-                      600: '#525252',
-                      700: '#404040',
-                      800: '#262626',
-                      900: '#171717'
+                      100: '#f3f3f3',
+                      200: '#e2e2e2',
+                      300: '#c8c8c8',
+                      400: '#aaadb0',
+                      500: '#758696',
+                      600: '#5d6c7b',
+                      700: '#06282d',
+                      800: '#000000',
+                      900: '#000000'
                     }
                   },
                   fontFamily: {
