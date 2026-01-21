@@ -1,5 +1,18 @@
 # QUUBE IA Santé
 
+## 🎨 Charte Graphique Officielle QUUBE Appliquée
+
+**Ce site respecte à 100% l'identité visuelle officielle QUUBE** extraite de [www.quube.fr](https://www.quube.fr) :
+- ✅ **Jaune fluo (#fcf474)** - Couleur signature QUUBE pour tous les CTAs principaux
+- ✅ **Bleu (#0082f3)** - Couleur IA pour les éléments technologiques et icônes
+- ✅ **Noir absolu (#000000)** - Texte principal et éléments structurels
+- ✅ **Typographie Inter** - Police géométrique moderne et clean
+- ✅ **Minimalisme** - Design épuré avec contrastes forts noir/blanc/jaune
+
+👉 **Voir la documentation complète** : [QUUBE_BRANDING.md](./QUUBE_BRANDING.md)
+
+---
+
 ## Vue d'Ensemble du Projet
 
 **QUUBE IA Santé** est une plateforme web professionnelle dédiée à l'accompagnement des établissements de santé et médico-sociaux dans leur transformation par l'Intelligence Artificielle. Le site valorise une offre complète de formations, coaching, conseil et audits spécialisés en IA générative pour le secteur de la santé.
