@@ -23,7 +23,7 @@ app.get('/', (c) => {
             <div class="hidden md:flex space-x-8">
               <a href="#offre" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Notre Offre</a>
               <a href="#cas-usage" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Cas d'Usage</a>
-              <a href="#approche" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Notre Approche</a>
+              <a href="#blog" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Blog</a>
               <a href="#contact" class="bg-quube-yellow text-quube-black px-6 py-2 rounded-full hover:bg-quube-yellow-neon transition-all shadow-md hover:shadow-lg font-bold">Contact</a>
             </div>
             <button class="md:hidden text-quube-gray-dark">
@@ -777,6 +777,201 @@ app.get('/', (c) => {
         </div>
       </section>
 
+      {/* Section Blog IA Santé */}
+      <section id="blog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+              Blog <span class="text-quube-yellow">IA Santé</span>
+            </h2>
+            <p class="text-xl text-quube-gray-dark max-w-3xl mx-auto">
+              Actualités, tendances et expertises sur l'Intelligence Artificielle dans le secteur santé et médico-social
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Article 1 - IA Révolution */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue">Transformation Digitale</span>
+                <span class="text-sm text-quube-gray">5 min</span>
+              </div>
+              <div class="text-5xl mb-4">🌐</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                L'IA générative dans le médico-social : une révolution comparable à Internet
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Comme Internet dans les années 2000, l'IA générative s'impose dans tous les secteurs. Découvrez pourquoi le médico-social ne peut plus ignorer cette vague.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">21 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 2 - Productivité */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue">ROI & Performance</span>
+                <span class="text-sm text-quube-gray">4 min</span>
+              </div>
+              <div class="text-5xl mb-4">⚡</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                40-60 minutes économisées par jour : l'impact réel de l'IA sur la productivité
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Selon OpenAI (2025), les utilisateurs réguliers de ChatGPT économisent en moyenne 40 à 60 minutes par jour. Qu'est-ce que cela signifie pour votre établissement ?
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">20 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 3 - Sécurité */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue">Sécurité & Conformité</span>
+                <span class="text-sm text-quube-gray">6 min</span>
+              </div>
+              <div class="text-5xl mb-4">🔒</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Sécurité et confidentialité : les bonnes pratiques IA en établissement de santé
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Utiliser l'IA en respectant le RGPD et la sécurité des données patients : un enjeu majeur pour le secteur santé. Les 5 règles d'or à appliquer immédiatement.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">19 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 4 - Communication */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue">Innovation Sociale</span>
+                <span class="text-sm text-quube-gray">5 min</span>
+              </div>
+              <div class="text-5xl mb-4">💬</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Communication augmentée : l'IA au service des personnes non communicantes
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Des applications mobiles aux dispositifs à commande oculaire : comment l'IA redonne une voix aux personnes polyhandicapées et autistes non verbales.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">18 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 5 - Histoire */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue">Perspective Historique</span>
+                <span class="text-sm text-quube-gray">7 min</span>
+              </div>
+              <div class="text-5xl mb-4">📚</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                De l'écriture à ChatGPT : pourquoi nous avons toujours eu peur des révolutions technologiques
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                « L'écriture rend les âmes oublieuses », s'inquiétait Platon il y a 25 siècles. Aujourd'hui, les mêmes craintes ressurgissent face à l'IA.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">17 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 6 - CODIR */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue">Management & Stratégie</span>
+                <span class="text-sm text-quube-gray">5 min</span>
+              </div>
+              <div class="text-5xl mb-4">👔</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                IA et CODIR : comment sensibiliser efficacement votre comité de direction
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Votre CODIR est-il prêt pour l'IA ? Les clés d'une sensibilisation réussie pour embarquer dirigeants et managers dans la transformation.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">16 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 7 - Adoption */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue">Tendances 2025</span>
+                <span class="text-sm text-quube-gray">4 min</span>
+              </div>
+              <div class="text-5xl mb-4">📈</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                75% d'adoption : l'IA n'est plus une option mais une nécessité stratégique
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Avec 75% d'adoption organisationnelle en 2025, l'IA devient un impératif stratégique. Les retardataires risquent le décrochage compétitif.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">15 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 8 - Cas d'usage */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue">Cas d'Usage Métiers</span>
+                <span class="text-sm text-quube-gray">6 min</span>
+              </div>
+              <div class="text-5xl mb-4">💼</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Cas d'usage concrets : comment l'IA transforme le quotidien des DRH et DAF
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Rédaction d'offres d'emploi, analyse de CV, reporting financier automatisé : découvrez comment l'IA révolutionne les fonctions support.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">14 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 9 - Guide */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue">Guide Complet</span>
+                <span class="text-sm text-quube-gray">10 min</span>
+              </div>
+              <div class="text-5xl mb-4">📊</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Bénéfices, risques et perspectives : le guide complet de l'IA en médico-social
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Bénéfices concrets, risques à anticiper, perspectives stratégiques : le guide de référence pour réussir votre transformation IA.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">13 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+          </div>
+
+          {/* CTA Blog */}
+          <div class="text-center mt-12">
+            <a href="#contact" class="inline-flex items-center bg-quube-yellow text-quube-black px-8 py-4 rounded-full hover:bg-quube-yellow-neon transition-all shadow-lg hover:shadow-xl font-bold">
+              Abonnez-vous à notre newsletter IA Santé
+              <i class="fas fa-envelope ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Section Contact */}
       <section id="contact" class="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -945,12 +1140,12 @@ app.get('/', (c) => {
               </ul>
             </div>
             <div>
-              <h4 class="font-bold mb-4">Cas d'Usage</h4>
+              <h4 class="font-bold mb-4">Ressources</h4>
               <ul class="space-y-2 text-gray-400">
-                <li><a href="#cas-usage" class="hover:text-white transition-colors">DRH</a></li>
-                <li><a href="#cas-usage" class="hover:text-white transition-colors">DAF</a></li>
-                <li><a href="#cas-usage" class="hover:text-white transition-colors">Direction Générale</a></li>
-                <li><a href="#cas-usage" class="hover:text-white transition-colors">Équipes de Soins</a></li>
+                <li><a href="#blog" class="hover:text-white transition-colors">Blog IA Santé</a></li>
+                <li><a href="#cas-usage" class="hover:text-white transition-colors">Cas d'Usage</a></li>
+                <li><a href="#approche" class="hover:text-white transition-colors">Notre Approche</a></li>
+                <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>

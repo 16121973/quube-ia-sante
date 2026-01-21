@@ -1,0 +1,166 @@
+{
+  "articles": [
+    {
+      "id": "01",
+      "title": "L'IA générative dans le médico-social : une révolution comparable à Internet",
+      "category": "Transformation Digitale",
+      "date": "2025-01-21",
+      "readTime": "5 min",
+      "excerpt": "Comme Internet dans les années 2000, l'IA générative s'impose dans tous les secteurs. Découvrez pourquoi le médico-social ne peut plus ignorer cette vague de transformation.",
+      "image": "🌐",
+      "tags": ["IA Générative", "Stratégie", "Médico-social"],
+      "content": "L'intelligence artificielle générative (chatbots de type ChatGPT, outils de création d'images) connaît une révolution fulgurante. Le secteur médico-social peut renforcer la qualité des services tout en optimisant les ressources. Enjeux clés : amélioration des prises en charge, automatisation administrative, et formation des équipes.",
+      "cta": "Découvrir notre offre formations IA",
+      "stats": {
+        "impact": "88% des organisations adoptent l'IA",
+        "gain": "40-60 min économisées par jour",
+        "roi": "+1.8% de productivité annuelle"
+      }
+    },
+    {
+      "id": "02",
+      "title": "40-60 minutes économisées par jour : l'impact réel de l'IA sur la productivité",
+      "category": "ROI & Performance",
+      "date": "2025-01-20",
+      "readTime": "4 min",
+      "excerpt": "Selon OpenAI (2025), les utilisateurs réguliers de ChatGPT économisent en moyenne 40 à 60 minutes par jour. Qu'est-ce que cela signifie pour votre établissement de santé ?",
+      "image": "⚡",
+      "tags": ["Productivité", "Gains de temps", "Chiffres clés"],
+      "content": "Les chiffres sont éloquents : 80% de réduction du temps pour accomplir une tâche assistée par IA (Anthropic, 2025). Pour le secteur santé, cela se traduit par plus de temps consacré aux patients, moins d'épuisement professionnel, et une optimisation des ressources. 88% des organisations ont déjà adopté l'IA.",
+      "cta": "Calculer vos gains potentiels",
+      "stats": {
+        "time": "40-60 min/jour",
+        "efficiency": "-80% temps de réalisation",
+        "growth": "+1.8% productivité/an"
+      }
+    },
+    {
+      "id": "03",
+      "title": "Sécurité et confidentialité : les bonnes pratiques IA en établissement de santé",
+      "category": "Sécurité & Conformité",
+      "date": "2025-01-19",
+      "readTime": "6 min",
+      "excerpt": "Utiliser l'IA en respectant le RGPD et la sécurité des données patients : un enjeu majeur pour le secteur santé. Découvrez les 5 règles d'or à appliquer immédiatement.",
+      "image": "🔒",
+      "tags": ["RGPD", "Sécurité", "Confidentialité"],
+      "content": "Les bonnes pratiques essentielles : utiliser un outil validé par votre DSI, ne jamais partager de données patients sensibles, vérifier que le contenu généré n'est pas contrefaisant, travailler sur les données de votre entreprise uniquement, et s'assurer de ne pas demander à l'IA d'imiter un contenu tiers. La conformité RGPD est non-négociable.",
+      "cta": "Auditer votre conformité IA",
+      "checklist": [
+        "✓ Outil IA validé par DSI",
+        "✓ Pas de données sensibles",
+        "✓ Conformité RGPD",
+        "✓ Formation équipes",
+        "✓ Charte d'utilisation"
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Communication augmentée : l'IA au service des personnes non communicantes",
+      "category": "Innovation Sociale",
+      "date": "2025-01-18",
+      "readTime": "5 min",
+      "excerpt": "Des applications mobiles aux dispositifs à commande oculaire : comment l'IA redonne une voix aux personnes polyhandicapées et autistes non verbales.",
+      "image": "💬",
+      "tags": ["Handicap", "Communication", "Inclusion"],
+      "content": "Les personnes non communicantes (adultes polyhandicapés, enfants TSA sévères) rencontrent d'immenses défis pour exprimer leurs besoins. L'IA offre aujourd'hui des solutions révolutionnaires : commande oculaire, agents conversationnels, reconnaissance vocale, et applications mobiles adaptées. Ces outils réduisent l'isolement et améliorent la qualité de vie.",
+      "cta": "Découvrir les solutions IA accessibles",
+      "impact": "Réduction frustration & isolement"
+    },
+    {
+      "id": "05",
+      "title": "De l'écriture à ChatGPT : pourquoi nous avons toujours eu peur des révolutions technologiques",
+      "category": "Perspective Historique",
+      "date": "2025-01-17",
+      "readTime": "7 min",
+      "excerpt": "« L'écriture rend les âmes oublieuses », s'inquiétait Platon il y a 25 siècles. Aujourd'hui, les mêmes craintes ressurgissent face à l'IA. Analyse historique des révolutions technologiques.",
+      "image": "📚",
+      "tags": ["Histoire", "Technologie", "Philosophie"],
+      "content": "En 1943, le président d'IBM prédisait un marché mondial de « cinq ordinateurs maximum ». L'histoire lui a donné tort. Face à l'IA, ferons-nous la même erreur en sous-estimant son potentiel ? De l'écriture à l'imprimerie, de la machine à vapeur à Internet, chaque révolution a suscité peurs et résistances... avant de transformer positivement nos sociétés.",
+      "cta": "Comprendre la transformation IA",
+      "quote": "« C'est une chose terrible que d'inventer l'écriture » - Platon"
+    },
+    {
+      "id": "06",
+      "title": "IA et CODIR : comment sensibiliser efficacement votre comité de direction",
+      "category": "Management & Stratégie",
+      "date": "2025-01-16",
+      "readTime": "5 min",
+      "excerpt": "Votre CODIR est-il prêt pour l'IA ? Les clés d'une sensibilisation réussie pour embarquer dirigeants et managers dans la transformation.",
+      "image": "👔",
+      "tags": ["Direction", "Stratégie", "Change Management"],
+      "content": "Sensibiliser un CODIR à l'IA nécessite une approche structurée : présentation des enjeux stratégiques, démonstrations concrètes de cas d'usage métiers, analyse des risques et opportunités, feuille de route claire, et accompagnement au changement. L'objectif : transformer les résistances en adhésion, et les craintes en opportunités d'innovation.",
+      "cta": "Organiser un séminaire CODIR",
+      "topics": [
+        "Opportunités stratégiques",
+        "Cas d'usage secteur santé",
+        "Risques et conformité",
+        "Feuille de route IA"
+      ]
+    },
+    {
+      "id": "07",
+      "title": "75% d'adoption : l'IA n'est plus une option mais une nécessité stratégique",
+      "category": "Tendances 2025",
+      "date": "2025-01-15",
+      "readTime": "4 min",
+      "excerpt": "Avec 75% d'adoption organisationnelle en 2025, l'IA devient un impératif stratégique. Les retardataires risquent le décrochage compétitif et l'obsolescence des compétences.",
+      "image": "📈",
+      "tags": ["Stratégie", "Compétitivité", "2025"],
+      "content": "Les chiffres parlent d'eux-mêmes : 88% des organisations ont déjà adopté l'IA, 75% prévoient une intégration massive. Pour le secteur santé, ne pas maîtriser l'IA aujourd'hui, c'est risquer le décrochage de vos professionnels face à la société, aux usagers, et dans leur employabilité. L'IA est devenue un enjeu de responsabilité employeur.",
+      "cta": "Évaluer votre maturité IA",
+      "urgency": "Le coût de l'inaction dépasse celui de l'action"
+    },
+    {
+      "id": "08",
+      "title": "Cas d'usage concrets : comment l'IA transforme le quotidien des DRH et DAF",
+      "category": "Cas d'Usage Métiers",
+      "date": "2025-01-14",
+      "readTime": "6 min",
+      "excerpt": "Rédaction d'offres d'emploi, analyse de CV, reporting financier automatisé : découvrez comment l'IA révolutionne les fonctions support dans le secteur santé.",
+      "image": "💼",
+      "tags": ["DRH", "DAF", "Use Cases"],
+      "content": "Pour les DRH : génération automatique d'offres d'emploi adaptées au secteur santé, tri et analyse intelligente de CV, parcours d'onboarding personnalisés, gestion des compétences. Pour les DAF : analyse budgétaire prédictive, reporting automatisé en temps réel, détection d'anomalies, optimisation des coûts. Gains mesurés : 40-60 min/jour, 80% de réduction du temps de réalisation.",
+      "cta": "Voir tous les cas d'usage métiers",
+      "profiles": ["DRH", "DAF", "DG", "Directeurs"]
+    },
+    {
+      "id": "09",
+      "title": "Bénéfices, risques et perspectives : le guide complet de l'IA en médico-social",
+      "category": "Guide Complet",
+      "date": "2025-01-13",
+      "readTime": "10 min",
+      "excerpt": "Bénéfices concrets, risques à anticiper, perspectives stratégiques : le guide de référence pour réussir votre transformation IA dans le secteur médico-social.",
+      "image": "📊",
+      "tags": ["Guide", "Stratégie", "Transformation"],
+      "content": "Un panorama complet des enjeux IA pour le médico-social. Bénéfices : amélioration de la qualité des services, optimisation des ressources, réduction de la charge administrative, meilleure prise en charge usagers. Risques : sécurité des données, dépendance technologique, résistance au changement, conformité RGPD. Perspectives : l'IA comme levier de différenciation stratégique et d'attractivité employeur.",
+      "cta": "Télécharger le guide complet",
+      "sections": [
+        "Enjeux stratégiques",
+        "Bénéfices mesurés",
+        "Risques et mitigation",
+        "Feuille de route IA"
+      ]
+    }
+  ],
+  "metadata": {
+    "totalArticles": 9,
+    "categories": [
+      "Transformation Digitale",
+      "ROI & Performance",
+      "Sécurité & Conformité",
+      "Innovation Sociale",
+      "Perspective Historique",
+      "Management & Stratégie",
+      "Tendances 2025",
+      "Cas d'Usage Métiers",
+      "Guide Complet"
+    ],
+    "sources": [
+      "OpenAI (2025)",
+      "Anthropic (2025)",
+      "BCG (2025)",
+      "McKinsey (2025)",
+      "Documents internes QUUBE"
+    ]
+  }
+}
