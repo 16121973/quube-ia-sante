@@ -207,7 +207,7 @@ app.get('/', (c) => {
                     <i class="fas fa-hospital text-xl"></i>
                   </div>
                   <div>
-                    <div class="font-bold text-quube-black">Secteur Santé</div>
+                    <div class="font-bold text-quube-black">Santé & Solidarité</div>
                     <div class="text-sm text-quube-gray">Hôpitaux, EHPAD, Médico-social, ESS, Social</div>
                   </div>
                 </div>
@@ -963,7 +963,7 @@ app.get('/', (c) => {
               <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
                 <i class="fas fa-certificate text-red-600 text-2xl"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-4 text-quube-black">Normes Secteur Santé</h3>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Normes Santé & Solidarité</h3>
               <ul class="space-y-3 text-quube-gray-dark">
                 <li class="flex items-start">
                   <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
