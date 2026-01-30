@@ -1,5 +1,7 @@
 # QUUBE IA Santé
 
+**Version 4.0.0** - Site enrichi avec nouvelles prestations 2025
+
 ## 🎨 Charte Graphique Officielle QUUBE Appliquée
 
 **Ce site respecte à 100% l'identité visuelle officielle QUUBE** extraite de [www.quube.fr](https://www.quube.fr) :
@@ -13,6 +15,25 @@
 
 ---
 
+## 🚀 Nouveautés Version 4.0.0 (30 janvier 2025)
+
+### 🆕 3 Nouvelles Offres Majeures
+1. **Diagnostic Flash QUUBE®** - Méthode propriétaire 3 niveaux (Base, Support, Cœur métier)
+2. **Conférences & Sensibilisation sur Mesure** - Avec démonstrations sur VOS cas d'usage
+3. **Accompagnement Technique Avancé** - Agents IA, MCP, no-code, outils spécialisés
+
+### 📚 6 Nouveaux Articles Blog DSI/Dirigeants
+- Le vrai coût de l'IA : licences, API tokens, modèles on-premise
+- Coûts RH de maintenance et développement IA
+- Éditeurs qui ouvrent leurs API : opportunités et pièges
+- Qu'est-ce qu'un Proxy IA, AI Gateway et pseudonymisation ?
+- Cloud vs On-Premise vs Hybrid : guide de décision
+- Comparatif 2025 des plateformes IA (Azure, AWS, Google, Mistral)
+
+👉 **Voir le détail complet** : [NOUVELLES_PRESTATIONS_2025.md](./NOUVELLES_PRESTATIONS_2025.md)
+
+---
+
 ## Vue d'Ensemble du Projet
 
 **QUUBE IA Santé** est une plateforme web professionnelle dédiée à l'accompagnement des établissements de santé et médico-sociaux dans leur transformation par l'Intelligence Artificielle. Le site valorise une offre complète de formations, coaching, conseil et audits spécialisés en IA générative pour le secteur de la santé.
@@ -20,8 +41,9 @@
 ## 🎯 Objectifs du Projet
 
 - Présenter l'offre complète de QUUBE en IA pour le secteur santé
-- Valoriser les 5 piliers de l'offre : Formations, Coaching, Conseil, Audits, Séminaires
+- Valoriser les **8 piliers de l'offre** (vs 6 avant) : Formations, Coaching, Conseil & Gouvernance, Audits, Diagnostic Flash, Conférences, Accompagnement Technique, Cas d'Usage
 - Démontrer les cas d'usage métiers concrets (DRH, DAF, DG, Directeurs, Équipes soins/éducatives)
+- Positionner QUUBE auprès des **DSI, Architectes IT** et Responsables Innovation (nouveau)
 - Générer des leads qualifiés via un formulaire de contact optimisé
 - Positionner QUUBE comme expert de la transformation IA en santé
 
@@ -39,12 +61,14 @@
 
 ### Pages et Sections
 - ✅ **Page d'accueil** avec hero section IA percutante
-- ✅ **Section Notre Offre** (6 piliers détaillés)
-  - Formations (initiation, perfectionnement, sur mesure)
+- ✅ **Section Notre Offre** (8 cartes détaillées - vs 6 avant)
+  - Formations (initiation, perfectionnement ChatGPT/Claude/Gemini, outils vidéo/GenSpark)
   - Coaching (dirigeants, CODIR, équipes)
-  - Conseil stratégique (transformation, innovation)
+  - Conseil Stratégique & Gouvernance (chartes éthique/usages, gouvernance IA, RGPD)
   - Audits IA (maturité, processus, opportunités)
-  - Séminaires & Sensibilisation (webinaires, CODIR/CA)
+  - **Diagnostic Flash QUUBE®** (méthode 3 niveaux) - 🆕
+  - **Conférences & Sensibilisation** (formats 2h + CODIR avec démos cas d'usage) - 🆕
+  - **Accompagnement Technique** (agents IA, MCP, N8n, no-code) - 🆕
   - Cas d'Usage Métiers (solutions personnalisées)
 
 - ✅ **Section Cas d'Usage Métiers** (6 profils détaillés)
@@ -54,6 +78,14 @@
   - Directeurs d'Établissement - Gestion opérationnelle
   - Équipes de Soins - Qualité des soins
   - Équipes Éducatives - Accompagnement personnalisé
+
+- ✅ **Section Blog IA Santé** (15 articles - vs 9 avant) - 🆕
+  - 9 articles métiers/transformation (existants)
+  - **6 articles techniques DSI/Dirigeants** (nouveaux) :
+    - Coûts IA (licences, API, infrastructure, RH)
+    - Architecture (Proxy, AI Gateway, pseudonymisation)
+    - Choix déploiement (Cloud, On-Premise, Hybrid)
+    - Comparatif plateformes 2025 (Azure, AWS, Google, Mistral)
 
 - ✅ **Section Notre Approche**
   - Méthodologie en 3 étapes
@@ -67,12 +99,12 @@
 
 - ✅ **Formulaire de Contact Complet**
   - Champs personnalisés secteur santé
-  - Sélection multi-besoins
+  - Sélection multi-besoins (Formation, Coaching, Conseil, Audit, Diagnostic, Conférences)
   - API backend Hono `/api/contact`
   - Validation et feedback utilisateur
 
 - ✅ **Footer Complet**
-  - Liens navigation
+  - Liens navigation (inclus Blog)
   - Coordonnées de contact
   - Réseaux sociaux
 
