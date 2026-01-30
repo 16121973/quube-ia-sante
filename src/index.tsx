@@ -551,39 +551,6 @@ app.get('/', (c) => {
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
             </div>
-
-            {/* Cas d'Usage Métiers */}
-            <div class="group bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
-                <i class="fas fa-briefcase text-2xl"></i>
-              </div>
-              <h3 class="text-2xl font-bold mb-4 text-quube-black">Cas d'Usage Métiers</h3>
-              <p class="text-quube-gray-dark mb-6">
-                Solutions IA personnalisées par métier : DRH, DAF, DG, directeurs d'établissements, équipes de soins et éducatives.
-              </p>
-              <ul class="space-y-3 mb-6">
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">DRH - Recrutement & RH</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">DAF - Finance & Gestion</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">DG - Vision stratégique</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Équipes soins/éducatives</span>
-                </li>
-              </ul>
-              <a href="#cas-usage" class="text-quube-black font-bold inline-flex items-center group-hover:gap-3 transition-all">
-                Voir les cas d'usage
-                <i class="fas fa-arrow-right ml-2"></i>
-              </a>
-            </div>
           </div>
         </div>
       </section>
