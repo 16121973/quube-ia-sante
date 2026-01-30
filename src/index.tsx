@@ -95,6 +95,7 @@ app.get('/', (c) => {
                 </div>
               </div>
               
+              <a href="#cas-usage" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Cas d'Usage</a>
               <a href="#blog" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Blog</a>
               <a href="#contact" class="bg-quube-yellow text-quube-black px-6 py-2 rounded-full hover:bg-quube-yellow-neon transition-all shadow-md hover:shadow-lg font-bold">Contact</a>
             </div>
@@ -135,6 +136,9 @@ app.get('/', (c) => {
                 </div>
               </div>
               
+              <a href="#cas-usage" class="block py-2 text-quube-gray-dark hover:text-quube-black font-medium">
+                👥 Cas d'Usage
+              </a>
               <a href="#blog" class="block py-2 text-quube-gray-dark hover:text-quube-black font-medium">
                 📝 Blog
               </a>
