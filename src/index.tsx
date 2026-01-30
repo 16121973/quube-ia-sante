@@ -21,35 +21,77 @@ app.get('/', (c) => {
               </a>
             </div>
             <div class="hidden md:flex space-x-6 items-center">
-              <a href="#services" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Nos Services</a>
+              <a href="#services" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Notre Offre</a>
               
-              {/* Dropdown Approches Thématiques */}
+              {/* Mega Menu Thématiques */}
               <div class="relative group">
                 <button class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium flex items-center">
-                  Approches
+                  Par Thématique
                   <i class="fas fa-chevron-down ml-1 text-xs"></i>
                 </button>
-                <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <a href="#compliance" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors border-b border-gray-100">
-                    <div class="font-semibold text-quube-black">Compliance & Conformité</div>
-                    <div class="text-xs text-quube-gray">RGPD, AI Act, NIS 2</div>
-                  </a>
-                  <a href="#data-analyse" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors border-b border-gray-100">
-                    <div class="font-semibold text-quube-black">Data Analyse via IA</div>
-                    <div class="text-xs text-quube-gray">Insights & visualisation</div>
-                  </a>
-                  <a href="#gestion-projet" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors border-b border-gray-100">
-                    <div class="font-semibold text-quube-black">Gestion de Projet IA</div>
-                    <div class="text-xs text-quube-gray">Pilotage & méthodologie</div>
-                  </a>
-                  <a href="#fonctions-supports" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors border-b border-gray-100">
-                    <div class="font-semibold text-quube-black">Fonctions Supports</div>
-                    <div class="text-xs text-quube-gray">RH, Finance, Admin</div>
-                  </a>
-                  <a href="#gains-administratifs" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors">
-                    <div class="font-semibold text-quube-black">Gains Administratifs</div>
-                    <div class="text-xs text-quube-gray">Automatisation & efficacité</div>
-                  </a>
+                {/* Mega Menu - Panneau large */}
+                <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 p-6">
+                  <div class="grid grid-cols-2 gap-4">
+                    {/* Carte Compliance */}
+                    <a href="#compliance" class="block p-4 rounded-lg border-l-4 border-quube-yellow bg-gradient-to-r from-quube-yellow/10 to-transparent hover:shadow-md hover:scale-105 transition-all duration-200">
+                      <div class="flex items-start space-x-3">
+                        <div class="text-2xl">🛡️</div>
+                        <div class="flex-1">
+                          <div class="font-bold text-quube-black mb-1">Compliance & Conformité</div>
+                          <div class="text-sm text-quube-gray mb-2">RGPD • AI Act • NIS 2 • Souveraineté</div>
+                          <div class="text-xs text-quube-blue font-medium">En savoir plus →</div>
+                        </div>
+                      </div>
+                    </a>
+                    
+                    {/* Carte Data Analyse */}
+                    <a href="#data-analyse" class="block p-4 rounded-lg border-l-4 border-quube-blue bg-gradient-to-r from-blue-50 to-transparent hover:shadow-md hover:scale-105 transition-all duration-200">
+                      <div class="flex items-start space-x-3">
+                        <div class="text-2xl">📊</div>
+                        <div class="flex-1">
+                          <div class="font-bold text-quube-black mb-1">Data Analyse & BI</div>
+                          <div class="text-sm text-quube-gray mb-2">Insights • Visualisation • Prédictif</div>
+                          <div class="text-xs text-quube-blue font-medium">En savoir plus →</div>
+                        </div>
+                      </div>
+                    </a>
+                    
+                    {/* Carte Gestion Projet */}
+                    <a href="#gestion-projet" class="block p-4 rounded-lg border-l-4 border-gray-400 bg-gradient-to-r from-gray-50 to-transparent hover:shadow-md hover:scale-105 transition-all duration-200">
+                      <div class="flex items-start space-x-3">
+                        <div class="text-2xl">🎯</div>
+                        <div class="flex-1">
+                          <div class="font-bold text-quube-black mb-1">Gestion de Projet IA</div>
+                          <div class="text-sm text-quube-gray mb-2">Roadmap • Pilotage • Change Mgmt</div>
+                          <div class="text-xs text-quube-blue font-medium">En savoir plus →</div>
+                        </div>
+                      </div>
+                    </a>
+                    
+                    {/* Carte Fonctions Supports */}
+                    <a href="#fonctions-supports" class="block p-4 rounded-lg border-l-4 border-green-500 bg-gradient-to-r from-green-50 to-transparent hover:shadow-md hover:scale-105 transition-all duration-200">
+                      <div class="flex items-start space-x-3">
+                        <div class="text-2xl">🏢</div>
+                        <div class="flex-1">
+                          <div class="font-bold text-quube-black mb-1">Fonctions Supports</div>
+                          <div class="text-sm text-quube-gray mb-2">RH • Finance • Direction • Admin</div>
+                          <div class="text-xs text-quube-blue font-medium">En savoir plus →</div>
+                        </div>
+                      </div>
+                    </a>
+                    
+                    {/* Carte Gains Administratifs */}
+                    <a href="#gains-administratifs" class="block p-4 rounded-lg border-l-4 border-yellow-500 bg-gradient-to-r from-yellow-50 to-transparent hover:shadow-md hover:scale-105 transition-all duration-200 col-span-2">
+                      <div class="flex items-start space-x-3">
+                        <div class="text-2xl">⚡</div>
+                        <div class="flex-1">
+                          <div class="font-bold text-quube-black mb-1">Gains Administratifs</div>
+                          <div class="text-sm text-quube-gray mb-2">Automatisation • 40-60 min/jour économisées • ROI mesurable • Efficacité optimisée</div>
+                          <div class="text-xs text-quube-blue font-medium">En savoir plus →</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
               
@@ -57,9 +99,53 @@ app.get('/', (c) => {
               <a href="#blog" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Blog</a>
               <a href="#contact" class="bg-quube-yellow text-quube-black px-6 py-2 rounded-full hover:bg-quube-yellow-neon transition-all shadow-md hover:shadow-lg font-bold">Contact</a>
             </div>
-            <button class="md:hidden text-quube-gray-dark">
+            <button id="mobile-menu-button" class="md:hidden text-quube-gray-dark">
               <i class="fas fa-bars text-2xl"></i>
             </button>
+          </div>
+          
+          {/* Mobile Menu */}
+          <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 pb-4">
+            <div class="px-4 pt-4 space-y-3">
+              <a href="#services" class="block py-2 text-quube-gray-dark hover:text-quube-black font-medium">
+                🎯 Notre Offre
+              </a>
+              
+              {/* Accordéon Thématiques Mobile */}
+              <div class="space-y-2">
+                <button id="mobile-thematiques-toggle" class="w-full flex justify-between items-center py-2 text-quube-gray-dark hover:text-quube-black font-medium">
+                  <span>💼 Par Thématique</span>
+                  <i class="fas fa-chevron-down text-xs transition-transform duration-200" id="mobile-thematiques-icon"></i>
+                </button>
+                <div id="mobile-thematiques-content" class="hidden pl-4 space-y-2 border-l-2 border-quube-yellow">
+                  <a href="#compliance" class="block py-2 text-sm text-quube-gray hover:text-quube-black">
+                    🛡️ Compliance & Conformité
+                  </a>
+                  <a href="#data-analyse" class="block py-2 text-sm text-quube-gray hover:text-quube-black">
+                    📊 Data Analyse & BI
+                  </a>
+                  <a href="#gestion-projet" class="block py-2 text-sm text-quube-gray hover:text-quube-black">
+                    🎯 Gestion de Projet IA
+                  </a>
+                  <a href="#fonctions-supports" class="block py-2 text-sm text-quube-gray hover:text-quube-black">
+                    🏢 Fonctions Supports
+                  </a>
+                  <a href="#gains-administratifs" class="block py-2 text-sm text-quube-gray hover:text-quube-black">
+                    ⚡ Gains Administratifs
+                  </a>
+                </div>
+              </div>
+              
+              <a href="#cas-usage" class="block py-2 text-quube-gray-dark hover:text-quube-black font-medium">
+                👥 Cas d'Usage
+              </a>
+              <a href="#blog" class="block py-2 text-quube-gray-dark hover:text-quube-black font-medium">
+                📝 Blog
+              </a>
+              <a href="#contact" class="block w-full text-center bg-quube-yellow text-quube-black px-6 py-3 rounded-full hover:bg-quube-yellow-neon transition-all shadow-md font-bold mt-4">
+                📞 Contact
+              </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -113,7 +199,7 @@ app.get('/', (c) => {
                   </div>
                   <div>
                     <div class="font-bold text-quube-black">IA Générative</div>
-                    <div class="text-sm text-quube-gray">ChatGPT, Gemini, Claude</div>
+                    <div class="text-sm text-quube-gray">Mistral, ChatGPT, Claude, Gemini, Copilot, IA on-premise...</div>
                   </div>
                 </div>
                 <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-xl hover:bg-quube-yellow/10 transition-colors">
@@ -121,8 +207,8 @@ app.get('/', (c) => {
                     <i class="fas fa-hospital text-xl"></i>
                   </div>
                   <div>
-                    <div class="font-bold text-quube-black">Secteur Santé</div>
-                    <div class="text-sm text-quube-gray">Hôpitaux, EHPAD, Médico-social</div>
+                    <div class="font-bold text-quube-black">Santé & Solidarité</div>
+                    <div class="text-sm text-quube-gray">Hôpitaux, EHPAD, Médico-social, ESS, Social</div>
                   </div>
                 </div>
                 <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-xl hover:bg-quube-yellow/10 transition-colors">
@@ -462,39 +548,6 @@ app.get('/', (c) => {
               </ul>
               <a href="#data-analyse" class="text-purple-600 font-bold inline-flex items-center group-hover:gap-3 transition-all">
                 En savoir plus
-                <i class="fas fa-arrow-right ml-2"></i>
-              </a>
-            </div>
-
-            {/* Cas d'Usage Métiers */}
-            <div class="group bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
-                <i class="fas fa-briefcase text-2xl"></i>
-              </div>
-              <h3 class="text-2xl font-bold mb-4 text-quube-black">Cas d'Usage Métiers</h3>
-              <p class="text-quube-gray-dark mb-6">
-                Solutions IA personnalisées par métier : DRH, DAF, DG, directeurs d'établissements, équipes de soins et éducatives.
-              </p>
-              <ul class="space-y-3 mb-6">
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">DRH - Recrutement & RH</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">DAF - Finance & Gestion</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">DG - Vision stratégique</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Équipes soins/éducatives</span>
-                </li>
-              </ul>
-              <a href="#cas-usage" class="text-quube-black font-bold inline-flex items-center group-hover:gap-3 transition-all">
-                Voir les cas d'usage
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
             </div>
@@ -910,7 +963,7 @@ app.get('/', (c) => {
               <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
                 <i class="fas fa-certificate text-red-600 text-2xl"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-4 text-quube-black">Normes Secteur Santé</h3>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Normes Santé & Solidarité</h3>
               <ul class="space-y-3 text-quube-gray-dark">
                 <li class="flex items-start">
                   <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
@@ -1193,10 +1246,10 @@ app.get('/', (c) => {
                 </span>
               </div>
               <h3 class="text-3xl font-bold text-center mb-8 text-quube-black">
-                L'IA au Service de Vos Missions de Conseil
+                L'IA Accélère Vos Projets
               </h3>
               <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
-                Contrairement aux approches classiques, QUUBE <strong>utilise l'IA générative directement dans vos projets stratégiques</strong> : transformation de l'offre, réorganisation de services, design de nouvelles solutions, gestion de projets complexes.
+                Contrairement aux approches classiques, QUUBE <strong>utilise l'IA générative directement dans vos projets stratégiques</strong> : projets complexes, nouveaux modèles économiques, simulations tarifaires, transformation de l'offre, réorganisation de services.
               </p>
               <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-white rounded-xl p-6 shadow-md">
@@ -2279,6 +2332,52 @@ app.get('/', (c) => {
             setTimeout(() => {
               messageDiv.classList.add('hidden');
             }, 5000);
+          });
+
+          // Mobile menu toggle
+          const mobileMenuButton = document.getElementById('mobile-menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          
+          if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+              mobileMenu.classList.toggle('hidden');
+              const icon = mobileMenuButton.querySelector('i');
+              if (icon) {
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+              }
+            });
+          }
+          
+          // Mobile thématiques accordion
+          const thematiquesToggle = document.getElementById('mobile-thematiques-toggle');
+          const thematiquesContent = document.getElementById('mobile-thematiques-content');
+          const thematiquesIcon = document.getElementById('mobile-thematiques-icon');
+          
+          if (thematiquesToggle && thematiquesContent && thematiquesIcon) {
+            thematiquesToggle.addEventListener('click', () => {
+              thematiquesContent.classList.toggle('hidden');
+              thematiquesIcon.style.transform = thematiquesContent.classList.contains('hidden') 
+                ? 'rotate(0deg)' 
+                : 'rotate(180deg)';
+            });
+          }
+          
+          // Close mobile menu when clicking on a link
+          const mobileLinks = document.querySelectorAll('#mobile-menu a');
+          mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+              if (mobileMenu) {
+                mobileMenu.classList.add('hidden');
+              }
+              if (mobileMenuButton) {
+                const icon = mobileMenuButton.querySelector('i');
+                if (icon) {
+                  icon.classList.remove('fa-times');
+                  icon.classList.add('fa-bars');
+                }
+              }
+            });
           });
 
           // Smooth scroll
