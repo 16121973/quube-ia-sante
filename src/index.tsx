@@ -1246,10 +1246,10 @@ app.get('/', (c) => {
                 </span>
               </div>
               <h3 class="text-3xl font-bold text-center mb-8 text-quube-black">
-                L'IA au Service de Vos Missions de Conseil
+                L'IA Accélère Vos Projets
               </h3>
               <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
-                Contrairement aux approches classiques, QUUBE <strong>utilise l'IA générative directement dans vos projets stratégiques</strong> : transformation de l'offre, réorganisation de services, design de nouvelles solutions, gestion de projets complexes.
+                Contrairement aux approches classiques, QUUBE <strong>utilise l'IA générative directement dans vos projets stratégiques</strong> : projets complexes, nouveaux modèles économiques, simulations tarifaires, transformation de l'offre, réorganisation de services.
               </p>
               <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-white rounded-xl p-6 shadow-md">
