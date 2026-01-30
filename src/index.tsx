@@ -129,7 +129,7 @@ app.get('/', (c) => {
               </div>
               <h3 class="text-2xl font-bold mb-4 text-quube-black">Formations</h3>
               <p class="text-quube-gray-dark mb-6">
-                Modules d'initiation à l'IA générative, perfectionnement métier, et formations sur mesure adaptées aux besoins spécifiques du secteur santé.
+                Modules d'initiation à l'IA générative, perfectionnement sur vos outils (ChatGPT, Claude, Gemini, Mistral) et formations sur mesure adaptées au secteur santé.
               </p>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start">
@@ -138,11 +138,15 @@ app.get('/', (c) => {
                 </li>
                 <li class="flex items-start">
                   <i class="fas fa-check-circle text-quube-blue mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Perfectionnement métier</span>
+                  <span class="text-quube-gray-dark">Perfectionnement ChatGPT, Claude, Gemini</span>
                 </li>
                 <li class="flex items-start">
                   <i class="fas fa-check-circle text-quube-blue mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Formations sur mesure</span>
+                  <span class="text-quube-gray-dark">Outils vidéo, GenSpark & IA multimodale</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-quube-blue mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Formations métier sur mesure</span>
                 </li>
                 <li class="flex items-start">
                   <i class="fas fa-check-circle text-quube-blue mr-3 mt-1"></i>
@@ -190,32 +194,36 @@ app.get('/', (c) => {
 
             {/* Conseil Stratégique */}
             <div class="group bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-gray-700 rounded-xl flex items-center justify-center text-quube-black mb-6 group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gray-700 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-lightbulb text-2xl"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-4 text-quube-black">Conseil Stratégique</h3>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Conseil Stratégique & Gouvernance</h3>
               <p class="text-quube-gray-dark mb-6">
-                Design de nouvelles offres, transformation organisationnelle, gestion de projets assistée par IA pour innover et optimiser vos ressources.
+                Design de nouvelles offres, transformation organisationnelle, et cadrage réglementaire pour une adoption responsable de l'IA.
               </p>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start">
                   <i class="fas fa-check-circle text-gray-700 mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Transformation digitale</span>
+                  <span class="text-quube-gray-dark">Rédaction charte éthique IA</span>
                 </li>
                 <li class="flex items-start">
                   <i class="fas fa-check-circle text-gray-700 mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Design de services innovants</span>
+                  <span class="text-quube-gray-dark">Charte d'usages & RGPD</span>
                 </li>
                 <li class="flex items-start">
                   <i class="fas fa-check-circle text-gray-700 mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Réorganisation métier</span>
+                  <span class="text-quube-gray-dark">Formalisation gouvernance IA</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-gray-700 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Roadmap & Design de services</span>
                 </li>
                 <li class="flex items-start">
                   <i class="fas fa-check-circle text-gray-700 mr-3 mt-1"></i>
                   <span class="text-quube-gray-dark">Gestion de projets IA</span>
                 </li>
               </ul>
-              <a href="#contact" class="text-gray-700 font-semibold inline-flex items-center group-hover:gap-3 transition-all">
+              <a href="#contact" class="text-gray-700 font-bold inline-flex items-center group-hover:gap-3 transition-all">
                 En savoir plus
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
@@ -254,34 +262,100 @@ app.get('/', (c) => {
               </a>
             </div>
 
-            {/* Séminaires */}
+            {/* Diagnostic Flash QUUBE */}
             <div class="group bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center text-quube-black mb-6 group-hover:scale-110 transition-transform">
-                <i class="fas fa-chalkboard-teacher text-2xl"></i>
+              <div class="w-16 h-16 bg-quube-blue rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+                <i class="fas fa-tachometer-alt text-2xl"></i>
               </div>
-              <h3 class="text-2xl font-bold mb-4 text-quube-black">Séminaires & Sensibilisation</h3>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Diagnostic Flash QUUBE®</h3>
               <p class="text-quube-gray-dark mb-6">
-                Webinaires gratuits, sessions de sensibilisation pour CODIR, CA et équipes. Prévention du décrochage numérique des professionnels.
+                Méthode propriétaire en 3 niveaux pour évaluer rapidement votre maturité IA et identifier vos opportunités prioritaires.
               </p>
               <ul class="space-y-3 mb-6">
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Webinaires découverte</span>
+                  <i class="fas fa-check-circle text-quube-blue mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark"><strong>Niveau 1 - Base :</strong> Cas d'usage fréquents</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Sensibilisation CODIR/CA</span>
+                  <i class="fas fa-check-circle text-quube-blue mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark"><strong>Niveau 2 - Support :</strong> Services administratifs</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Ateliers interactifs</span>
+                  <i class="fas fa-check-circle text-quube-blue mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark"><strong>Niveau 3 - Cœur métier :</strong> Soins & éducatif</span>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-check-circle text-quube-black mr-3 mt-1"></i>
-                  <span class="text-quube-gray-dark">Prévention décrochage</span>
+                  <i class="fas fa-check-circle text-quube-blue mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Rapport actionnable sous 48h</span>
+                </li>
+              </ul>
+              <a href="#contact" class="text-quube-blue font-bold inline-flex items-center group-hover:gap-3 transition-all">
+                En savoir plus
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+
+            {/* Conférences & Sensibilisation */}
+            <div class="group bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div class="w-16 h-16 bg-quube-yellow rounded-xl flex items-center justify-center text-quube-black mb-6 group-hover:scale-110 transition-transform">
+                <i class="fas fa-presentation text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Conférences & Sensibilisation</h3>
+              <p class="text-quube-gray-dark mb-6">
+                Formats sur mesure avec démonstrations concrètes sur VOS cas d'usage : appels à projets, analyses territoriales, veille réglementaire.
+              </p>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-quube-yellow-dark mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark"><strong>Format 2h :</strong> Tous personnels (bases IA)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-quube-yellow-dark mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark"><strong>Format CODIR :</strong> Dirigeants + démos live</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-quube-yellow-dark mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Cas d'usage sectoriels préparés</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-quube-yellow-dark mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Démonstrations personnalisées</span>
                 </li>
               </ul>
               <a href="#contact" class="text-quube-black font-bold inline-flex items-center group-hover:gap-3 transition-all">
+                En savoir plus
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+
+            {/* Accompagnement Technique */}
+            <div class="group bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div class="w-16 h-16 bg-gray-800 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+                <i class="fas fa-cogs text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Accompagnement Technique</h3>
+              <p class="text-quube-gray-dark mb-6">
+                Formations spécialisées sur vos outils actuels et accompagnement sur les technologies avancées (agents IA, no-code, automatisation).
+              </p>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-gray-800 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Perfectionnement ChatGPT, Claude, Gemini</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-gray-800 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Outils avancés : GenSpark, vidéo IA</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-gray-800 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Agents IA, MCP, no-code (N8n)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-gray-800 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Automatisation métier sur mesure</span>
+                </li>
+              </ul>
+              <a href="#contact" class="text-gray-800 font-bold inline-flex items-center group-hover:gap-3 transition-all">
                 En savoir plus
                 <i class="fas fa-arrow-right ml-2"></i>
               </a>
@@ -785,8 +859,12 @@ app.get('/', (c) => {
               Blog <span class="text-quube-yellow">IA Santé</span>
             </h2>
             <p class="text-xl text-quube-gray-dark max-w-3xl mx-auto">
-              Actualités, tendances et expertises sur l'Intelligence Artificielle dans le secteur santé et médico-social
+              Actualités, tendances et expertises sur l'Intelligence Artificielle dans le secteur santé : stratégie, coûts, architecture et cas d'usage métiers
             </p>
+            <div class="mt-4 flex items-center justify-center space-x-6 text-sm">
+              <span class="px-4 py-2 bg-quube-yellow/20 rounded-full text-quube-black font-bold">15 Articles</span>
+              <span class="text-quube-gray">Pour Dirigeants, DSI, DRH, DAF</span>
+            </div>
           </div>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -957,6 +1035,120 @@ app.get('/', (c) => {
               </p>
               <div class="flex items-center justify-between pt-4 border-t border-gray-100">
                 <span class="text-xs text-quube-gray">13 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 10 - Coûts IA */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue bg-quube-yellow/20 px-3 py-1 rounded-full">Coûts & Budget</span>
+                <span class="text-sm text-quube-gray">8 min</span>
+              </div>
+              <div class="text-5xl mb-4">💰</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Le vrai coût de l'IA : licences, API tokens et modèles on-premise
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Licences ChatGPT Enterprise, API tokens GPT-4, modèles on-premise : décryptage complet des coûts IA pour DSI et DAF du secteur santé.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">29 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 11 - Coûts RH */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue bg-quube-yellow/20 px-3 py-1 rounded-full">Coûts & RH</span>
+                <span class="text-sm text-quube-gray">7 min</span>
+              </div>
+              <div class="text-5xl mb-4">👥</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Coûts de maintenance et développement IA : l'équation RH des DSI
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Au-delà des licences, les coûts RH représentent 60-70% du budget IA : data scientists, MLOps engineers. Comment optimiser votre équipe ?
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">28 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 12 - API Éditeurs */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue bg-quube-yellow/20 px-3 py-1 rounded-full">Intégration</span>
+                <span class="text-sm text-quube-gray">6 min</span>
+              </div>
+              <div class="text-5xl mb-4">🔌</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Éditeurs qui ouvrent leurs API : opportunités et pièges pour les établissements
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                De plus en plus d'éditeurs de logiciels métiers (DPI, ERP) ouvrent leurs API pour intégrer l'IA. Opportunités ? Risques de dépendance ?
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">27 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 13 - Proxy & AI Gateway */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue bg-quube-yellow/20 px-3 py-1 rounded-full">Architecture</span>
+                <span class="text-sm text-quube-gray">9 min</span>
+              </div>
+              <div class="text-5xl mb-4">🔐</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Qu'est-ce qu'un Proxy IA, un AI Gateway et la pseudonymisation ?
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Proxy IA, AI Gateway, pseudonymisation : 3 briques essentielles pour sécuriser votre infrastructure IA. Concepts, solutions du marché.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">26 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 14 - Cloud vs On-Premise */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue bg-quube-yellow/20 px-3 py-1 rounded-full">Stratégie</span>
+                <span class="text-sm text-quube-gray">10 min</span>
+              </div>
+              <div class="text-5xl mb-4">☁️</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Cloud vs On-Premise vs Hybrid : guide de décision pour le déploiement IA
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Déployer l'IA dans le cloud, on-premise ou hybride ? Matrice de décision, critères de sélection et retours d'expérience santé.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">25 Jan 2025</span>
+                <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
+              </div>
+            </article>
+
+            {/* Article 15 - Comparatif Plateformes */}
+            <article class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-sm font-bold text-quube-blue bg-quube-yellow/20 px-3 py-1 rounded-full">Solutions 2025</span>
+                <span class="text-sm text-quube-gray">12 min</span>
+              </div>
+              <div class="text-5xl mb-4">🏆</div>
+              <h3 class="text-xl font-bold mb-3 text-quube-black">
+                Solutions techniques du marché : comparatif 2025 des plateformes IA pour la santé
+              </h3>
+              <p class="text-quube-gray-dark mb-4 text-sm">
+                Azure OpenAI, AWS Bedrock, Google Vertex AI, Mistral AI : comparatif détaillé des plateformes IA pour DSI santé. Prix, conformité, modèles.
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                <span class="text-xs text-quube-gray">24 Jan 2025</span>
                 <a href="#" class="text-quube-blue font-bold text-sm hover:underline">Lire l'article →</a>
               </div>
             </article>
