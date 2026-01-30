@@ -20,8 +20,39 @@ app.get('/', (c) => {
                 <span class="text-quube-blue">IA Santé</span>
               </a>
             </div>
-            <div class="hidden md:flex space-x-8">
-              <a href="#offre" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Notre Offre</a>
+            <div class="hidden md:flex space-x-6 items-center">
+              <a href="#services" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Nos Services</a>
+              
+              {/* Dropdown Approches Thématiques */}
+              <div class="relative group">
+                <button class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium flex items-center">
+                  Approches
+                  <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                </button>
+                <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <a href="#compliance" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors border-b border-gray-100">
+                    <div class="font-semibold text-quube-black">Compliance & Conformité</div>
+                    <div class="text-xs text-quube-gray">RGPD, AI Act, NIS 2</div>
+                  </a>
+                  <a href="#data-analyse" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors border-b border-gray-100">
+                    <div class="font-semibold text-quube-black">Data Analyse via IA</div>
+                    <div class="text-xs text-quube-gray">Insights & visualisation</div>
+                  </a>
+                  <a href="#gestion-projet" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors border-b border-gray-100">
+                    <div class="font-semibold text-quube-black">Gestion de Projet IA</div>
+                    <div class="text-xs text-quube-gray">Pilotage & méthodologie</div>
+                  </a>
+                  <a href="#fonctions-supports" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors border-b border-gray-100">
+                    <div class="font-semibold text-quube-black">Fonctions Supports</div>
+                    <div class="text-xs text-quube-gray">RH, Finance, Admin</div>
+                  </a>
+                  <a href="#gains-administratifs" class="block px-4 py-3 hover:bg-quube-yellow/10 transition-colors">
+                    <div class="font-semibold text-quube-black">Gains Administratifs</div>
+                    <div class="text-xs text-quube-gray">Automatisation & efficacité</div>
+                  </a>
+                </div>
+              </div>
+              
               <a href="#cas-usage" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Cas d'Usage</a>
               <a href="#blog" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Blog</a>
               <a href="#contact" class="bg-quube-yellow text-quube-black px-6 py-2 rounded-full hover:bg-quube-yellow-neon transition-all shadow-md hover:shadow-lg font-bold">Contact</a>
@@ -109,15 +140,15 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Section Offre */}
-      <section id="offre" class="py-20 bg-white">
+      {/* Section Services */}
+      <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
-              Notre <span class="text-quube-blue">Offre Complète</span>
+              Nos <span class="text-quube-blue">Services</span>
             </h2>
             <p class="text-xl text-quube-gray-dark max-w-3xl mx-auto">
-              Une approche modulaire et personnalisable pour accompagner chaque acteur de votre organisation dans sa transformation IA
+              Une offre modulaire et personnalisable : formations, coaching, conseil et accompagnement technique pour votre transformation IA
             </p>
           </div>
 
@@ -361,9 +392,83 @@ app.get('/', (c) => {
               </a>
             </div>
 
+            {/* Compliance & Conformité */}
+            <div class="group bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+                <i class="fas fa-shield-alt text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Compliance & Conformité</h3>
+              <p class="text-quube-gray-dark mb-6">
+                Sensibilisation sécurité, confidentialité et souveraineté : points de vigilance et recommandations pratiques pour une IA responsable.
+              </p>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-red-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark"><strong>RGPD :</strong> Protection des données patients</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-red-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark"><strong>AI Act :</strong> Conformité réglementation européenne</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-red-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark"><strong>NIS 2 :</strong> Cybersécurité & résilience</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-red-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Souveraineté & sécurité des données</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-red-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Normes secteur santé (HDS, ISO 27001)</span>
+                </li>
+              </ul>
+              <a href="#compliance" class="text-red-600 font-bold inline-flex items-center group-hover:gap-3 transition-all">
+                En savoir plus
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+
+            {/* Data Analyse via IA */}
+            <div class="group bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+                <i class="fas fa-chart-bar text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Data Analyse via IA</h3>
+              <p class="text-quube-gray-dark mb-6">
+                Exploitez vos données avec l'IA générative : analyse automatisée, visualisation intelligente et extraction d'insights actionnables.
+              </p>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Analyse automatisée de données métiers</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Visualisation intelligente & dashboards IA</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Extraction d'insights actionnables</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Analyse prédictive & tendances</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Reporting automatisé personnalisé</span>
+                </li>
+              </ul>
+              <a href="#data-analyse" class="text-purple-600 font-bold inline-flex items-center group-hover:gap-3 transition-all">
+                En savoir plus
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+
             {/* Cas d'Usage Métiers */}
             <div class="group bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-quube-yellow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center text-quube-black mb-6 group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                 <i class="fas fa-briefcase text-2xl"></i>
               </div>
               <h3 class="text-2xl font-bold mb-4 text-quube-black">Cas d'Usage Métiers</h3>
@@ -678,6 +783,363 @@ app.get('/', (c) => {
         </div>
       </section>
 
+      {/* Section Compliance & Conformité */}
+      <section id="compliance" class="py-20 bg-gradient-to-br from-red-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <div class="inline-block mb-4">
+              <span class="bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-shield-alt mr-2"></i>Compliance & Conformité
+              </span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+              IA <span class="text-red-600">Responsable</span> & Conforme
+            </h2>
+            <p class="text-xl text-quube-gray-dark max-w-3xl mx-auto">
+              Sécurité, confidentialité et souveraineté : points de vigilance et recommandations pratiques pour déployer l'IA en toute conformité
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* RGPD */}
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-user-shield text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">RGPD & Données Patients</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Protection données personnelles de santé</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Consentement & information patients</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Droit à l'oubli & portabilité</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Registre des traitements IA</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* AI Act */}
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-balance-scale text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">AI Act Européen</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Classification risques IA (haut, limité, minimal)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Obligations par niveau de risque</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Documentation & traçabilité</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Mise en conformité 2025-2027</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* NIS 2 */}
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-lock text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">NIS 2 & Cybersécurité</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Cybersécurité des systèmes IA</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Gestion des incidents & crises</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Résilience organisationnelle</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Obligations secteur santé (entités essentielles)</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Souveraineté */}
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-flag text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Souveraineté & Sécurité</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Hébergement des données en Europe</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Choix de modèles IA souverains (Mistral)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Cloud Act & transferts internationaux</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Indépendance technologique</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Normes Santé */}
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-certificate text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Normes Secteur Santé</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>HDS (Hébergeur Données de Santé)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>ISO 27001 (Sécurité information)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Certifications sectorielles</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Référentiels ANSSI & CNIL</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Points de Vigilance */}
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-exclamation-triangle text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Points de Vigilance</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Anonymisation / Pseudonymisation</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Contrats fournisseurs IA (DPA, SLA)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Audits de conformité réguliers</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-red-600 mr-3 mt-1"></i>
+                  <span>Sensibilisation collaborateurs</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a href="#contact" class="inline-flex items-center bg-red-600 text-white px-8 py-4 rounded-full hover:bg-red-700 transition-all shadow-lg hover:shadow-xl font-bold">
+              Auditer votre conformité IA
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Data Analyse via IA */}
+      <section id="data-analyse" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <div class="inline-block mb-4">
+              <span class="bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-chart-bar mr-2"></i>Data Analyse via IA
+              </span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+              Exploitez vos <span class="text-purple-600">Données</span> avec l'IA
+            </h2>
+            <p class="text-xl text-quube-gray-dark max-w-3xl mx-auto">
+              Analyse automatisée, visualisation intelligente et extraction d'insights actionnables pour piloter votre activité
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12 mb-12">
+            <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg">
+              <h3 class="text-2xl font-bold mb-6 text-quube-black">
+                <i class="fas fa-robot text-purple-600 mr-3"></i>
+                Analyse Automatisée
+              </h3>
+              <p class="text-quube-gray-dark mb-6">
+                L'IA générative analyse vos données métiers (Excel, CSV, bases de données) et extrait automatiquement des patterns, tendances et anomalies.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Analyse de fichiers Excel/CSV via ChatGPT Code Interpreter</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Détection automatique de tendances et corrélations</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Identification d'anomalies et valeurs atypiques</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Segmentation intelligente de populations</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg">
+              <h3 class="text-2xl font-bold mb-6 text-quube-black">
+                <i class="fas fa-chart-line text-purple-600 mr-3"></i>
+                Visualisation Intelligente
+              </h3>
+              <p class="text-quube-gray-dark mb-6">
+                Génération automatique de graphiques, dashboards et visualisations adaptées à votre contexte métier.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Création automatique de graphiques pertinents</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Dashboards dynamiques personnalisés</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Mise en forme automatique des rapports</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Storytelling data pour présentation</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg">
+              <h3 class="text-2xl font-bold mb-6 text-quube-black">
+                <i class="fas fa-lightbulb text-purple-600 mr-3"></i>
+                Insights Actionnables
+              </h3>
+              <p class="text-quube-gray-dark mb-6">
+                L'IA interprète les données et génère des recommandations concrètes pour l'action.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Interprétation intelligente des résultats</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Recommandations contextualisées</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Prédictions et scénarios prospectifs</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Synthèses exécutives automatiques</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg">
+              <h3 class="text-2xl font-bold mb-6 text-quube-black">
+                <i class="fas fa-sync text-purple-600 mr-3"></i>
+                Reporting Automatisé
+              </h3>
+              <p class="text-quube-gray-dark mb-6">
+                Génération automatique de rapports récurrents avec analyse et commentaires.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Rapports mensuels/trimestriels automatisés</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Comparaisons période vs période</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Alertes sur écarts significatifs</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                  <span class="text-quube-gray-dark">Formats adaptés (PPT, PDF, Excel)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-purple-600 to-purple-800 rounded-2xl p-8 text-white mb-12">
+            <h3 class="text-2xl font-bold mb-4">Cas d'Usage Data Analyse Santé</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div>
+                <div class="font-bold mb-2"><i class="fas fa-hospital mr-2"></i>Activité & Performance</div>
+                <ul class="text-sm space-y-1 opacity-90">
+                  <li>• Analyse taux d'occupation</li>
+                  <li>• Durées moyennes de séjour</li>
+                  <li>• Files actives par service</li>
+                  <li>• Indicateurs qualité</li>
+                </ul>
+              </div>
+              <div>
+                <div class="font-bold mb-2"><i class="fas fa-euro-sign mr-2"></i>Finance & Budget</div>
+                <ul class="text-sm space-y-1 opacity-90">
+                  <li>• Analyse écarts budgétaires</li>
+                  <li>• Évolution masse salariale</li>
+                  <li>• Coûts par pathologie/GHM</li>
+                  <li>• Optimisation achats</li>
+                </ul>
+              </div>
+              <div>
+                <div class="font-bold mb-2"><i class="fas fa-users mr-2"></i>RH & Gestion</div>
+                <ul class="text-sm space-y-1 opacity-90">
+                  <li>• Absentéisme & turn-over</li>
+                  <li>• Pyramide des âges</li>
+                  <li>• Compétences & formation</li>
+                  <li>• Satisfaction collaborateurs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="#contact" class="inline-flex items-center bg-purple-600 text-white px-8 py-4 rounded-full hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl font-bold">
+              Démarrer l'analyse de vos données
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Section Notre Approche */}
       <section id="approche" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -847,6 +1309,413 @@ app.get('/', (c) => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Gestion de Projet IA */}
+      <section id="gestion-projet" class="py-20 bg-gradient-to-br from-blue-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <div class="inline-block mb-4">
+              <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-project-diagram mr-2"></i>Gestion de Projet IA
+              </span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+              Pilotez vos <span class="text-blue-600">Projets</span> avec l'IA
+            </h2>
+            <p class="text-xl text-quube-gray-dark max-w-3xl mx-auto">
+              Méthodologie, outils et pilotage de projets assistés par IA pour optimiser délais, ressources et livrables
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-tasks text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Planification Assistée par IA</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Génération automatique de WBS (Work Breakdown Structure)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Estimation de charge et délais</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Identification des risques projet</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Optimisation de l'allocation ressources</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-file-alt text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Documentation Projet</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Rédaction automatique cahiers des charges</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Templates documents projet (charte, RACI, PV)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Synthèses automatiques de réunions</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Reporting d'avancement automatisé</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-chart-gantt text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Pilotage & Suivi</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Dashboards de suivi temps réel</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Alertes automatiques sur dérives</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Analyse prédictive d'achèvement</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Recommandations d'actions correctives</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-users-cog text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Collaboration Équipe</h3>
+              <ul class="space-y-3 text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Assistants IA pour chaque membre d'équipe</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Onboarding automatisé nouveaux membres</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Knowledge base projet intelligente</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                  <span>Résolution collaborative assistée par IA</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="#contact" class="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl font-bold">
+              Optimiser vos projets avec l'IA
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Fonctions Supports */}
+      <section id="fonctions-supports" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <div class="inline-block mb-4">
+              <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-briefcase mr-2"></i>Fonctions Supports
+              </span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+              <span class="text-green-600">RH, Finance, Admin</span> Optimisés par IA
+            </h2>
+            <p class="text-xl text-quube-gray-dark max-w-3xl mx-auto">
+              Transformez vos fonctions supports avec l'IA : automatisation, aide à la décision et optimisation des processus
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            {/* RH */}
+            <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-user-tie text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Ressources Humaines</h3>
+              <ul class="space-y-3 text-sm text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Rédaction offres d'emploi ciblées</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Présélection CV automatisée</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Parcours onboarding personnalisés</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>GPEC & cartographie compétences</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Fiches de poste automatiques</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Plans de formation optimisés</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Finance */}
+            <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-chart-line text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Finance & Contrôle de Gestion</h3>
+              <ul class="space-y-3 text-sm text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Analyse budgétaire automatisée</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Reporting financier temps réel</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Détection anomalies & fraudes</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Prévisions de trésorerie IA</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Optimisation achats & fournisseurs</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Aide à la décision investissements</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Administration */}
+            <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-cogs text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4 text-quube-black">Administration Générale</h3>
+              <ul class="space-y-3 text-sm text-quube-gray-dark">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Rédaction courriers & emails</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Synthèse documents administratifs</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Gestion agendas & réunions</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Traitement demandes usagers</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Veille réglementaire automatisée</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                  <span>Archivage & classification docs</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white mt-12">
+            <h3 class="text-2xl font-bold mb-6 text-center">Gains de Temps Mesurés par Fonction Support</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="text-center">
+                <div class="text-5xl font-bold mb-2">40-60min</div>
+                <div class="text-sm opacity-90">Économisées / jour / collaborateur RH</div>
+              </div>
+              <div class="text-center">
+                <div class="text-5xl font-bold mb-2">80%</div>
+                <div class="text-sm opacity-90">Réduction temps reporting financier</div>
+              </div>
+              <div class="text-center">
+                <div class="text-5xl font-bold mb-2">50%</div>
+                <div class="text-sm opacity-90">Temps gagné sur tâches administratives</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a href="#contact" class="inline-flex items-center bg-green-600 text-white px-8 py-4 rounded-full hover:bg-green-700 transition-all shadow-lg hover:shadow-xl font-bold">
+              Optimiser vos fonctions supports
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Gains Administratifs */}
+      <section id="gains-administratifs" class="py-20 bg-gradient-to-br from-yellow-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <div class="inline-block mb-4">
+              <span class="bg-quube-yellow/80 text-quube-black px-4 py-2 rounded-full text-sm font-bold">
+                <i class="fas fa-clock mr-2"></i>Gains Administratifs
+              </span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+              <span class="text-quube-yellow-dark">Temps Gagné</span> & Efficacité
+            </h2>
+            <p class="text-xl text-quube-gray-dark max-w-3xl mx-auto">
+              Automatisation des tâches répétitives et chronophages : libérez du temps pour vos missions à valeur ajoutée
+            </p>
+          </div>
+
+          {/* Grands chiffres */}
+          <div class="grid md:grid-cols-4 gap-6 mb-16">
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+              <div class="text-4xl font-bold text-quube-yellow-dark mb-2">40-60min</div>
+              <div class="text-sm text-quube-gray">Gagnées par jour</div>
+              <div class="text-xs text-quube-gray-dark mt-2">(Source: OpenAI 2025)</div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+              <div class="text-4xl font-bold text-quube-yellow-dark mb-2">80%</div>
+              <div class="text-sm text-quube-gray">Réduction temps tâches</div>
+              <div class="text-xs text-quube-gray-dark mt-2">(Anthropic 2025)</div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+              <div class="text-4xl font-bold text-quube-yellow-dark mb-2">+1.8%</div>
+              <div class="text-sm text-quube-gray">Productivité annuelle</div>
+              <div class="text-xs text-quube-gray-dark mt-2">(BCG 2025)</div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+              <div class="text-4xl font-bold text-quube-yellow-dark mb-2">88%</div>
+              <div class="text-sm text-quube-gray">Organisations adoptent IA</div>
+              <div class="text-xs text-quube-gray-dark mt-2">(McKinsey 2025)</div>
+            </div>
+          </div>
+
+          {/* Tâches automatisables */}
+          <div class="bg-white rounded-2xl p-8 shadow-xl mb-12">
+            <h3 class="text-2xl font-bold mb-8 text-center text-quube-black">Top 10 Tâches Administratives Automatisables</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="space-y-4">
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">1</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Rédaction d'emails & courriers</div>
+                    <div class="text-sm text-quube-gray">Gain: 30-45 min/jour</div>
+                  </div>
+                </div>
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">2</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Comptes-rendus de réunions</div>
+                    <div class="text-sm text-quube-gray">Gain: 20-30 min/réunion</div>
+                  </div>
+                </div>
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">3</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Saisie & formatage de données</div>
+                    <div class="text-sm text-quube-gray">Gain: 1-2h/semaine</div>
+                  </div>
+                </div>
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">4</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Synthèse de documents longs</div>
+                    <div class="text-sm text-quube-gray">Gain: 80% du temps de lecture</div>
+                  </div>
+                </div>
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">5</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Classement & archivage</div>
+                    <div class="text-sm text-quube-gray">Gain: 1h/semaine</div>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">6</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Reporting & tableaux de bord</div>
+                    <div class="text-sm text-quube-gray">Gain: 2-3h/mois</div>
+                  </div>
+                </div>
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">7</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Recherche d'informations</div>
+                    <div class="text-sm text-quube-gray">Gain: 30-60 min/jour</div>
+                  </div>
+                </div>
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">8</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Planification & agendas</div>
+                    <div class="text-sm text-quube-gray">Gain: 20-30 min/jour</div>
+                  </div>
+                </div>
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">9</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Traduction de documents</div>
+                    <div class="text-sm text-quube-gray">Gain: 90% du temps</div>
+                  </div>
+                </div>
+                <div class="flex items-start p-4 bg-quube-yellow/10 rounded-lg">
+                  <div class="w-8 h-8 bg-quube-yellow rounded-full flex items-center justify-center mr-4 flex-shrink-0 font-bold">10</div>
+                  <div>
+                    <div class="font-bold text-quube-black">Mise en forme PowerPoint</div>
+                    <div class="text-sm text-quube-gray">Gain: 1-2h/présentation</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="#contact" class="inline-flex items-center bg-quube-yellow text-quube-black px-8 py-4 rounded-full hover:bg-quube-yellow-neon transition-all shadow-lg hover:shadow-xl font-bold">
+              Calculer vos gains de temps
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
           </div>
         </div>
       </section>
