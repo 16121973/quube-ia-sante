@@ -208,7 +208,7 @@ app.get('/', (c) => {
                   </div>
                   <div>
                     <div class="font-bold text-quube-black">Secteur Santé</div>
-                    <div class="text-sm text-quube-gray">Hôpitaux, EHPAD, Médico-social</div>
+                    <div class="text-sm text-quube-gray">Hôpitaux, EHPAD, Médico-social, ESS, Social</div>
                   </div>
                 </div>
                 <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-xl hover:bg-quube-yellow/10 transition-colors">
