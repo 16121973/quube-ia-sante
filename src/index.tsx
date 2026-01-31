@@ -300,14 +300,29 @@ app.get('/', (c) => {
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">04</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Accompagnement Technique</h3>
+                    <h3 class="text-2xl font-medium text-quube-black">Automatisation de Workflow</h3>
                   </div>
-                  <p class="text-lg font-light text-quube-gray-dark ml-16">Implémentation et déploiement</p>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">Optimisation et gains de productivité</p>
                 </div>
                 <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
               </summary>
-              <div class="mt-6 ml-16 text-quube-gray-dark leading-relaxed">
-                Support technique pour l'implémentation concrète des solutions IA dans vos processus métiers.
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  Transformez vos processus métiers grâce à l'automatisation intelligente par l'IA. Réduisez les tâches répétitives, accélérez vos workflows et libérez du temps pour vos équipes.
+                </p>
+                <ul class="space-y-2">
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>Automatisation documentaire :</strong> Traitement intelligent de documents, extraction et classement automatisés</span></li>
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>Workflows administratifs :</strong> Automatisation des processus RH, facturation, suivi qualité</span></li>
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>Assistants IA métiers :</strong> Chatbots intelligents, agents conversationnels spécialisés</span></li>
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>Intégrations & connecteurs :</strong> Connexion avec vos outils existants (ERP, CRM, logiciels métiers)</span></li>
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>ROI mesurable :</strong> Gains de temps quantifiés, réduction des erreurs, amélioration de la qualité</span></li>
+                </ul>
+                <div class="mt-4 p-4 bg-gray-50 border-l-4 border-quube-yellow">
+                  <p class="text-sm font-medium text-quube-black">💡 Valeur ajoutée</p>
+                  <p class="text-sm mt-2">
+                    Nos solutions d'automatisation génèrent en moyenne <strong>30% de gain de temps</strong> sur les tâches administratives, permettant à vos équipes de se concentrer sur les missions à forte valeur ajoutée : accompagnement des patients, qualité des soins et innovation.
+                  </p>
+                </div>
               </div>
             </details>
 
