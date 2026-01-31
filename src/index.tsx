@@ -61,30 +61,30 @@ app.get('/', (c) => {
               De la stratégie aux usages concrets, nous vous guidons pour libérer le potentiel de l'IA <span class="text-quube-black font-medium">sans jargon</span>, au service des soignants et des patients.
             </p>
 
-            <div class="flex flex-wrap gap-4 text-sm text-quube-gray pt-8">
-              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/></svg>
-                Mistral
+            <div class="flex flex-wrap gap-4 text-sm text-quube-gray pt-8 items-center">
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow hover:shadow-sm transition-all">
+                <i class="fas fa-brain" style="color: #10A37F;"></i>
+                <span class="font-medium">ChatGPT</span>
               </span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
-                ChatGPT
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow hover:shadow-sm transition-all">
+                <i class="fas fa-wind" style="color: #F2A73B;"></i>
+                <span class="font-medium">Mistral AI</span>
               </span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4 8v12l8 4 8-4V8l-8-6z"/></svg>
-                Claude
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow hover:shadow-sm transition-all">
+                <i class="fas fa-cube" style="color: #D97757;"></i>
+                <span class="font-medium">Claude</span>
               </span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15,8 22,9 17,14 18,21 12,18 6,21 7,14 2,9 9,8"/></svg>
-                Gemini
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow hover:shadow-sm transition-all">
+                <i class="fas fa-gem" style="color: #4285F4;"></i>
+                <span class="font-medium">Gemini</span>
               </span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg>
-                Copilot
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow hover:shadow-sm transition-all">
+                <i class="fab fa-github" style="color: #000000;"></i>
+                <span class="font-medium">Copilot</span>
               </span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9h4V5H3v4zm0 5h4v-4H3v4zm5 0h4v-4H8v4zm5 0h4v-4h-4v4zM8 9h4V5H8v4zm5-4v4h4V5h-4zm5 9h4v-4h-4v4zM3 19h4v-4H3v4zm5 0h4v-4H8v4zm5 0h4v-4h-4v4zm5 0h4v-4h-4v4z"/></svg>
-                IA on-premise
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow hover:shadow-sm transition-all">
+                <i class="fas fa-server" style="color: #6B7280;"></i>
+                <span class="font-medium">IA on-premise</span>
               </span>
             </div>
           </div>
