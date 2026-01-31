@@ -456,6 +456,283 @@ app.get('/', (c) => {
       </section>
 
       {/* Services avec accordéon - ANCIENNE VERSION */}
+      <section id="services" class="py-32 bg-white border-t-4 border-yellow-400">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-8 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-exclamation-triangle text-yellow-600 text-xl mt-1"></i>
+              <div>
+                <h3 class="text-lg font-semibold text-yellow-900 mb-2">⚠️ En cours de restructuration</h3>
+                <p class="text-sm text-yellow-800">
+                  Cette section présente notre ancienne organisation de services. 
+                  Découvrez notre <a href="#phase-sensibiliser" class="underline font-medium">nouveau parcours en 5 phases</a> 
+                  et notre offre signature <a href="#acceleration-projets" class="underline font-medium">Accélération de Projet</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-24">
+            <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
+              Nos <span class="font-bold">Services</span>
+            </h2>
+            <div class="w-20 h-1 bg-quube-yellow"></div>
+          </div>
+
+          <div class="space-y-4">
+            {/* Service 1 - Conférences IA Inspirantes */}
+            <details class="group border-b border-gray-200 pb-4">
+              <summary class="cursor-pointer list-none flex justify-between items-start">
+                <div class="flex-1">
+                  <div class="flex items-baseline space-x-4 mb-2">
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">01</span>
+                    <h3 class="text-2xl font-medium text-quube-black">Conférences IA Inspirantes</h3>
+                  </div>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Des interventions pour démystifier l'IA auprès de vos équipes et dirigeants
+                  </p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  <strong>Inspirez vos équipes grâce à nos conférences ludiques et pédagogiques.</strong> En 1 à 2 heures, nos experts démystifient l'IA (ChatGPT, vision médicale, etc.) en partageant exemples concrets et retours d'expérience.
+                </p>
+                <p class="leading-relaxed">
+                  <strong>Objectif :</strong> lever les idées reçues et susciter des vocations, du COMEX aux soignants.
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">💡 Formats disponibles</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Conférences plénières (50-200 personnes)</li>
+                    <li>• Webinaires interactifs</li>
+                    <li>• Séminaires de sensibilisation</li>
+                    <li>• Ateliers découverte et démonstrations live</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            {/* Service 2 - Coaching IA Dirigeants */}
+            <details class="group border-b border-gray-200 pb-4">
+              <summary class="cursor-pointer list-none flex justify-between items-start">
+                <div class="flex-1">
+                  <div class="flex items-baseline space-x-4 mb-2">
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">02</span>
+                    <h3 class="text-2xl font-medium text-quube-black">Coaching IA Individuel pour Dirigeants</h3>
+                  </div>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Un mentor dédié pour intégrer l'IA à votre vision stratégique
+                  </p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  <strong>Bénéficiez d'un sparring-partner de haut niveau pour vous approprier l'IA.</strong> Sur quelques séances confidentielles, un coach QUUBE vous aide à comprendre les outils (de ChatGPT aux IA d'imagerie), à identifier les opportunités pour votre organisation et à anticiper les impacts managériaux.
+                </p>
+                <p class="leading-relaxed">
+                  <strong>Résultat :</strong> une vision 360° de l'IA appliquée à votre feuille de route de dirigeant.
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">🎯 Bénéfices</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Coaching 1-to-1 exclusif et confidentiel</li>
+                    <li>• Appropriation des outils IA stratégiques</li>
+                    <li>• Identification des opportunités business</li>
+                    <li>• Anticipation des impacts managériaux et RH</li>
+                    <li>• Plan d'action personnalisé</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            {/* Service 3 - Formations IA sur Mesure */}
+            <details class="group border-b border-gray-200 pb-4">
+              <summary class="cursor-pointer list-none flex justify-between items-start">
+                <div class="flex-1">
+                  <div class="flex items-baseline space-x-4 mb-2">
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">03</span>
+                    <h3 class="text-2xl font-medium text-quube-black">Formations IA sur Mesure</h3>
+                  </div>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Ateliers pratiques pour rendre vos équipes autonomes avec l'IA
+                  </p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-colors mt-2"></i>
+              </summary>
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  <strong>Formez vos collaborateurs aux usages concrets de l'IA.</strong> Nos ateliers, en petits groupes, sont 100% pratiques : exercices avec des données et cas réels de votre organisation.
+                </p>
+                <p class="leading-relaxed">
+                  <strong>Objectif :</strong> rendre chaque participant opérationnel et responsable dans l'usage de ces nouveaux outils (y compris sur les aspects éthiques et RGPD).
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">📚 Thématiques disponibles</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Initiation à l'IA pour cadres de santé</li>
+                    <li>• Optimiser son temps avec ChatGPT</li>
+                    <li>• IA & data pour médecins</li>
+                    <li>• Formations certifiantes</li>
+                    <li>• Cas d'usage secteur santé & médico-social</li>
+                    <li>• Prompting avancé et RGPD/éthique</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            {/* Service 4 - Diagnostic IA & Feuille de Route */}
+            <details class="group border-b border-gray-200 pb-4">
+              <summary class="cursor-pointer list-none flex justify-between items-start">
+                <div class="flex-1">
+                  <div class="flex items-baseline space-x-4 mb-2">
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">04</span>
+                    <h3 class="text-2xl font-medium text-quube-black">Diagnostic IA & Feuille de Route</h3>
+                  </div>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Évaluez votre maturité IA et recevez un plan d'action sur 3 ans
+                  </p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  <strong>Obtenez un diagnostic Flash express en 2 heures chrono.</strong> Nos consultants évaluent rapidement votre maturité IA, identifient les quick wins et vous fournissent une feuille de route pragmatique : stratégie IA, gouvernance, priorisation des use cases à fort ROI.
+                </p>
+                <p class="leading-relaxed">
+                  <strong>Bénéfice :</strong> une vision claire de vos opportunités IA et un plan d'action immédiatement opérationnel.
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">🎯 Livrables</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Audit complet de maturité IA</li>
+                    <li>• Stratégie IA et roadmap de transformation sur 3 ans</li>
+                    <li>• Gouvernance IA et comité de pilotage</li>
+                    <li>• Priorisation des use cases à fort ROI</li>
+                    <li>• Identification des opportunités stratégiques</li>
+                    <li>• Recommandations personnalisées et actionnables</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            {/* Service 5 - Aide au Choix des Solutions IA */}
+            <details class="group border-b border-gray-200 pb-4">
+              <summary class="cursor-pointer list-none flex justify-between items-start">
+                <div class="flex-1">
+                  <div class="flex items-baseline space-x-4 mb-2">
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">05</span>
+                    <h3 class="text-2xl font-medium text-quube-black">Aide au Choix des Solutions IA</h3>
+                  </div>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Benchmark neutre et recommandation de la meilleure solution
+                  </p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  <strong>Faites le bon choix parmi des centaines de solutions IA disponibles.</strong> Notre benchmark neutre et indépendant vous aide à sélectionner l'outil qui répond vraiment à vos besoins : analyse comparative, grilles d'évaluation, démonstrations, négociation avec les éditeurs.
+                </p>
+                <p class="leading-relaxed">
+                  <strong>Notre promesse :</strong> aucun partenariat exclusif, préconisations 100% objectives basées sur vos critères (budget, souveraineté, intégration, conformité RGPD).
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">📋 Notre méthode</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Analyse de vos besoins métiers et techniques</li>
+                    <li>• Benchmark complet des solutions du marché</li>
+                    <li>• Grilles d'évaluation multicritères objectives</li>
+                    <li>• Organisation de démonstrations éditeurs</li>
+                    <li>• Accompagnement négociation et contractualisation</li>
+                    <li>• Support au déploiement et à l'intégration</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            {/* Service 6 - Pilotage de Projet IA & Change */}
+            <details class="group border-b border-gray-200 pb-4">
+              <summary class="cursor-pointer list-none flex justify-between items-start">
+                <div class="flex-1">
+                  <div class="flex items-baseline space-x-4 mb-2">
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">06</span>
+                    <h3 class="text-2xl font-medium text-quube-black">Pilotage de Projet IA & Change</h3>
+                  </div>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Mise en œuvre, formation des utilisateurs et adoption durable
+                  </p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  <strong>Assurez le succès de vos projets IA de bout en bout.</strong> Nous pilotez l'implémentation technique, formons vos équipes aux nouveaux outils et orchestrons la conduite du changement pour garantir une adoption massive et pérenne.
+                </p>
+                <p class="leading-relaxed">
+                  <strong>Résultat :</strong> des projets IA qui dépassent le stade POC pour devenir des outils métiers adoptés par tous au quotidien.
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">🚀 Accompagnement complet</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Pilotage MOA/MOE des projets IA</li>
+                    <li>• Gestion de projet agile et méthodologie adaptée</li>
+                    <li>• Formation des utilisateurs finaux et référents métiers</li>
+                    <li>• Conduite du changement et communication interne</li>
+                    <li>• Mesure d'impact et suivi des KPIs d'adoption</li>
+                    <li>• Support post-déploiement et amélioration continue</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            {/* Service 7 - Club IA Santé */}
+            <details class="group border-b border-gray-200 pb-4">
+              <summary class="cursor-pointer list-none flex justify-between items-start">
+                <div class="flex-1">
+                  <div class="flex items-baseline space-x-4 mb-2">
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">07</span>
+                    <h3 class="text-2xl font-medium text-quube-black">Club IA Santé – Veille & Réseau</h3>
+                  </div>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Veille mensuelle et retours d'expérience
+                  </p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  <strong>Restez à la pointe de l'innovation IA en santé.</strong> Rejoignez notre communauté exclusive de décideurs et cadres du secteur : veille mensuelle sur les nouveautés IA, retours d'expérience entre pairs, webinaires thématiques et accès privilégié à nos analyses sectorielles.
+                </p>
+                <p class="leading-relaxed">
+                  <strong>Objectif :</strong> anticiper les disruptions, découvrir les innovations avant tout le monde et bénéficier d'un réseau d'entraide entre professionnels de santé engagés dans la transformation IA.
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">🌐 Avantages membres</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Newsletter mensuelle exclusive : innovations, réglementation, cas d'usage</li>
+                    <li>• Webinaires thématiques avec experts et témoins terrain</li>
+                    <li>• Retours d'expérience entre pairs (REX anonymisés)</li>
+                    <li>• Accès prioritaire aux formations et événements QUUBE</li>
+                    <li>• Réseau privé de décideurs et cadres de santé</li>
+                    <li>• Benchmark et analyses sectorielles IA Santé</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* NOUVEAU PARCOURS CLIENT EN 5 PHASES */}
       
       {/* Phase 1 - SENSIBILISER */}
       <section id="phase-sensibiliser" class="py-32 bg-gradient-to-br from-quube-yellow/5 to-white">
@@ -1618,57 +1895,11 @@ app.get('/', (c) => {
       </section>
 
       {/* Footer */}
-      <footer class="py-16 bg-gray-50 border-t border-gray-200">
-        <div class="max-w-6xl mx-auto px-8">
-          <div class="grid md:grid-cols-4 gap-8 mb-12">
-            {/* Colonne 1 - Parcours */}
-            <div>
-              <h4 class="font-semibold text-quube-black mb-4">Parcours Client</h4>
-              <ul class="space-y-2 text-sm text-quube-gray-dark">
-                <li><a href="#phase-sensibiliser" class="hover:text-quube-blue transition-colors">① Sensibiliser</a></li>
-                <li><a href="#phase-competences" class="hover:text-quube-blue transition-colors">② Monter en Compétences</a></li>
-                <li><a href="#phase-structurer" class="hover:text-quube-blue transition-colors">③ Structurer</a></li>
-                <li><a href="#phase-deployer" class="hover:text-quube-blue transition-colors">④ Déployer</a></li>
-                <li><a href="#phase-perenniser" class="hover:text-quube-blue transition-colors">⑤ Pérenniser & Mesurer</a></li>
-              </ul>
-            </div>
-            
-            {/* Colonne 2 - Offres */}
-            <div>
-              <h4 class="font-semibold text-quube-black mb-4">Offres</h4>
-              <ul class="space-y-2 text-sm text-quube-gray-dark">
-                <li><a href="#acceleration-projets" class="hover:text-quube-blue transition-colors font-medium">⚡ Accélération de Projet</a></li>
-                <li><a href="#cas-usage" class="hover:text-quube-blue transition-colors">Cas d'Usage ROI++</a></li>
-                <li><a href="#blog" class="hover:text-quube-blue transition-colors">Blog IA Santé</a></li>
-              </ul>
-            </div>
-            
-            {/* Colonne 3 - Par Métier */}
-            <div>
-              <h4 class="font-semibold text-quube-black mb-4">Par Métier</h4>
-              <ul class="space-y-2 text-sm text-quube-gray-dark">
-                <li><a href="#cas-usage-dg" class="hover:text-quube-blue transition-colors">Direction Générale</a></li>
-                <li><a href="#cas-usage-finance" class="hover:text-quube-blue transition-colors">Finance & Gestion</a></li>
-                <li><a href="#cas-usage-rh" class="hover:text-quube-blue transition-colors">Ressources Humaines</a></li>
-                <li><a href="#cas-usage-soins" class="hover:text-quube-blue transition-colors">Soins & Médical</a></li>
-              </ul>
-            </div>
-            
-            {/* Colonne 4 - Contact */}
-            <div>
-              <h4 class="font-semibold text-quube-black mb-4">Contact</h4>
-              <ul class="space-y-2 text-sm text-quube-gray-dark">
-                <li><a href="#contact" class="hover:text-quube-blue transition-colors">Nous contacter</a></li>
-                <li><a href="mailto:contact@quube.fr" class="hover:text-quube-blue transition-colors">contact@quube.fr</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="pt-8 border-t border-gray-200 text-center">
-            <p class="text-sm font-light text-quube-gray">
-              © 2026 QUUBE × IA Santé · Formations & Conseil en Intelligence Artificielle pour le secteur Santé
-            </p>
-          </div>
+      <footer class="py-12 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-8 text-center">
+          <p class="text-sm font-light text-quube-gray">
+            © 2026 QUUBE × IA Santé · Formations & Conseil en Intelligence Artificielle
+          </p>
         </div>
       </footer>
 
