@@ -480,17 +480,17 @@ app.get('/', (c) => {
 
           {/* Onglets minimalistes */}
           <div class="flex flex-wrap gap-2 mb-12 border-b border-gray-200 pb-4">
-            <button onclick="showTab('drh')" id="tab-drh" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors active">DRH</button>
+            <button onclick="showTab('roi')" id="tab-roi" class="tab-btn px-6 py-3 text-sm font-bold rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors bg-quube-yellow/30 text-quube-black shadow-sm active">⚡ ROI++</button>
+            <button onclick="showTab('drh')" id="tab-drh" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">DRH</button>
             <button onclick="showTab('daf')" id="tab-daf" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">DAF</button>
             <button onclick="showTab('dg')" id="tab-dg" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">DG</button>
             <button onclick="showTab('directeurs')" id="tab-directeurs" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Directeurs</button>
             <button onclick="showTab('soins')" id="tab-soins" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Équipes Soins</button>
             <button onclick="showTab('educatif')" id="tab-educatif" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Équipes Éducatives</button>
-            <button onclick="showTab('roi')" id="tab-roi" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors bg-quube-yellow/10">ROI++ ⚡</button>
           </div>
 
           {/* Contenu onglets */}
-          <div id="content-drh" class="tab-content">
+          <div id="content-drh" class="tab-content hidden">
             <h3 class="text-3xl font-medium text-quube-black mb-4">DRH - Recrutement & RH</h3>
             <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
               Optimisez vos processus RH avec l'IA : rédaction d'offres d'emploi, screening de CV, onboarding personnalisé.
@@ -544,7 +544,7 @@ app.get('/', (c) => {
             </p>
           </div>
 
-          <div id="content-roi" class="tab-content hidden">
+          <div id="content-roi" class="tab-content">
             <h3 class="text-3xl font-medium text-quube-black mb-4">ROI++ ⚡ - Cas d'Usage à Forte Valeur Ajoutée</h3>
             <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
               L'IA générative transforme vos processus stratégiques les plus complexes et chronophages. 
