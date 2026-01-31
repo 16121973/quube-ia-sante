@@ -266,11 +266,27 @@ interface ContactForm {
 ## 🔧 Maintenance et Mises à Jour
 
 ### Dernière Mise à Jour
-- **Date** : 2025-01-21
-- **Version** : 1.0.0
+- **Date** : 2025-01-31
+- **Version** : 1.2.0
 - **Statut** : ✅ En ligne et fonctionnel
 
 ### Changelog
+- **v1.2.0** (2025-01-31)
+  - 🔧 **Correction logos LLM** : Remplacement images CDN par icônes Font Awesome colorées
+    - ChatGPT (fa-brain, vert OpenAI #10A37F)
+    - Mistral AI (fa-wind, orange #F2A73B)
+    - Claude (fa-cube, terracotta #D97757)
+    - Gemini (fa-gem, bleu Google #4285F4)
+    - Copilot (fab fa-github, noir #000000)
+    - IA on-premise (fa-server, gris #6B7280)
+  - ✨ **Renforcement proposition de valeur "Double Expertise"**
+    - Ajout paragraphe explicite sur connaissance cas d'usage secteur
+    - Mention expertise métiers précise (soignants, directions, fonctions support)
+    - Mise en avant compréhension contraintes réglementaires et budgétaires
+    - Positionnement QUUBE comme expert terrain avec vision 360°
+  - 📦 **Bundle size** : 111.21 kB (stable)
+  - 🔄 **2 commits Git** propres avec messages explicites
+
 - **v1.0.0** (2025-01-21)
   - Création initiale du site complet
   - 6 sections principales implémentées
