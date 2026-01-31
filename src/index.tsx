@@ -1150,432 +1150,594 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Cas d'Usage avec onglets */}
+      {/* NOUVEAU : Cas d'Usage Par Métier (rationalisé + tags transversaux) */}
+      {/* NOUVEAU : Cas d'Usage Par Métier (rationalisé + tags transversaux) */}
       <section id="cas-usage" class="py-32 bg-gray-50">
         <div class="max-w-6xl mx-auto px-8">
-          <div class="mb-24">
+          <div class="mb-16">
             <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
               Cas d'<span class="font-bold">Usage</span> par Métier
             </h2>
             <div class="w-20 h-1 bg-quube-yellow"></div>
-          </div>
-
-          <div class="mb-12 p-6 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r-lg">
-            <p class="text-lg font-light text-quube-gray-dark leading-relaxed">
-              <strong class="text-quube-black">💡 Découvrez comment l'IA générative transforme concrètement le quotidien des professionnels de santé.</strong> Ces cas d'usage sont issus de notre expérience terrain dans les hôpitaux publics, établissements privés, EHPAD, IME, structures de soins à domicile…
+            <p class="text-xl font-light text-quube-gray-dark mt-6 max-w-3xl">
+              Navigation par fonction métier + filtres transversaux (Conformité, Data, Automatisation)
             </p>
           </div>
 
-          {/* Onglets combinés : ROI++ + Terrain + Métiers */}
+          {/* Tags Transversaux (Filtres) */}
+          <div class="mb-8 flex flex-wrap gap-4">
+            <div class="flex items-center gap-2 px-4 py-2 bg-purple-50 border border-purple-200 rounded-lg">
+              <span class="text-2xl">🏛️</span>
+              <div>
+                <p class="text-sm font-semibold text-purple-900">Conformité</p>
+                <p class="text-xs text-purple-700">RGPD, AI Act, HDS, HAS, ESSMS</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-lg">
+              <span class="text-2xl">📊</span>
+              <div>
+                <p class="text-sm font-semibold text-blue-900">Data & Analytics</p>
+                <p class="text-xs text-blue-700">BI, tableaux de bord, prédictif</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-yellow-50 border border-yellow-200 rounded-lg">
+              <span class="text-2xl">⚡</span>
+              <div>
+                <p class="text-sm font-semibold text-yellow-900">Automatisation</p>
+                <p class="text-xs text-yellow-700">Gains de temps, workflows, documents</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Onglets Par Métier (8 onglets : ROI++ + 7 métiers) */}
           <div class="flex flex-wrap gap-2 mb-12 border-b border-gray-200 pb-4">
-            {/* ROI++ - Premier et actif */}
-            <button onclick="showTab('roi')" id="tab-roi" class="tab-btn px-6 py-3 text-sm font-bold rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors bg-quube-yellow/30 text-quube-black shadow-sm active">⚡ ROI++</button>
-            
-            {/* Séparateur visuel */}
+            <button onclick="showTab('metier-roi')" id="tab-metier-roi" class="tab-btn px-6 py-3 text-sm font-bold rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors bg-quube-yellow/30 text-quube-black shadow-sm active">⚡ ROI++</button>
             <div class="h-10 w-px bg-gray-300 self-center mx-2"></div>
-            
-            {/* Cas d'usage Terrain détaillés */}
-            <button onclick="showTab('reunions')" id="tab-reunions" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🧠 Réunions</button>
-            <button onclick="showTab('rapports')" id="tab-rapports" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">📊 Rapports</button>
-            <button onclick="showTab('tutelle')" id="tab-tutelle" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🏛 Tutelle</button>
-            <button onclick="showTab('rh')" id="tab-rh" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">👥 RH</button>
-            <button onclick="showTab('communication')" id="tab-communication" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">💬 Communication</button>
-            <button onclick="showTab('medical')" id="tab-medical" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🩺 Médical</button>
-            <button onclick="showTab('usager')" id="tab-usager" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">👪 Parcours</button>
-            <button onclick="showTab('qualite')" id="tab-qualite" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">✍️ Qualité</button>
-            
-            {/* Séparateur visuel */}
-            <div class="h-10 w-px bg-gray-300 self-center mx-2"></div>
-            
-            {/* Par Métiers/Fonctions */}
-            <button onclick="showTab('drh')" id="tab-drh" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">DRH</button>
-            <button onclick="showTab('daf')" id="tab-daf" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">DAF</button>
-            <button onclick="showTab('dg')" id="tab-dg" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">DG</button>
-            <button onclick="showTab('directeurs')" id="tab-directeurs" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Directeurs</button>
-            <button onclick="showTab('soins')" id="tab-soins" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Soins</button>
-            <button onclick="showTab('educatif')" id="tab-educatif" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Éducatif</button>
+            <button onclick="showTab('metier-dg')" id="tab-metier-dg" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🎯 Direction Générale</button>
+            <button onclick="showTab('metier-daf')" id="tab-metier-daf" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">💰 Finance (DAF)</button>
+            <button onclick="showTab('metier-drh')" id="tab-metier-drh" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">👥 RH (DRH)</button>
+            <button onclick="showTab('metier-qualite')" id="tab-metier-qualite" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">✅ Qualité</button>
+            <button onclick="showTab('metier-soins')" id="tab-metier-soins" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🩺 Soins</button>
+            <button onclick="showTab('metier-educatif')" id="tab-metier-educatif" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🎓 Éducatif</button>
+            <button onclick="showTab('metier-transverse')" id="tab-metier-transverse" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🔄 Transverse</button>
           </div>
 
-          {/* Contenu onglets */}
-          
-          {/* ROI++ - Cas d'usage stratégiques génériques */}
-          <div id="content-roi" class="tab-content">
-            <h3 class="text-3xl font-medium text-quube-black mb-4">⚡ ROI++ - Cas d'Usage à Forte Valeur Ajoutée</h3>
-            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
-              L'IA générative transforme vos processus stratégiques les plus complexes et chronophages. 
-              Découvrez les cas d'usage qui génèrent un <strong>ROI immédiat et mesurable</strong>.
-            </p>
+          {/* Contenu ROI++ */}
+          <div id="content-metier-roi" class="tab-content">
+            <div class="mb-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r">
+              <p class="text-sm font-medium text-yellow-900">
+                ⚡ <strong>Cas d'usage ROI++</strong> : Ces applications génèrent un retour sur investissement mesurable de <strong>50-70% de gain de temps</strong>
+              </p>
+            </div>
             
-            <div class="grid md:grid-cols-2 gap-8 mt-8">
-              {/* Colonne 1 : Stratégie & Pilotage */}
+            <div class="grid md:grid-cols-2 gap-8">
               <div class="space-y-6">
-                <div>
-                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
-                    <span class="text-2xl mr-2">📊</span> Stratégie & Pilotage
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 class="text-xl font-semibold text-quube-black mb-4 flex items-center">
+                    <span class="text-2xl mr-3">📊</span> Stratégie & Pilotage
                   </h4>
-                  <ul class="space-y-3 text-quube-gray-dark">
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Rapports d'activité</strong> : Génération automatique de rapports structurés, synthèses annuelles</span>
-                    </li>
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Projets d'établissement/services</strong> : Rédaction collaborative, alignement stratégique</span>
-                    </li>
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Notes stratégiques</strong> : Synthèses décisionnelles, recommandations argumentées</span>
-                    </li>
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Analyse concurrentielle</strong> : Veille stratégique, positionnement marché</span>
-                    </li>
+                  <ul class="space-y-3 text-sm text-quube-gray-dark">
+                    <li>• <strong>Rapports d'activité</strong> : Génération automatique, synthèses annuelles</li>
+                    <li>• <strong>Projets d'établissement</strong> : Rédaction collaborative, alignement stratégique</li>
+                    <li>• <strong>Business plans</strong> : Modèles financiers, projections, scénarios</li>
+                    <li>• <strong>Analyse concurrentielle</strong> : Veille stratégique, positionnement</li>
                   </ul>
+                  <div class="mt-4 flex gap-2">
+                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                    <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                  </div>
                 </div>
 
-                <div>
-                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
-                    <span class="text-2xl mr-2">📈</span> Finance & Développement
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 class="text-xl font-semibold text-quube-black mb-4 flex items-center">
+                    <span class="text-2xl mr-3">📈</span> Finance & Développement
                   </h4>
-                  <ul class="space-y-3 text-quube-gray-dark">
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Business plan</strong> : Modèles financiers, projections économiques, scénarios</span>
-                    </li>
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Simulations financières</strong> : Modélisation tarifaire, optimisation budgétaire</span>
-                    </li>
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Appels à projets</strong> : Rédaction de dossiers de financement, réponses AAP/AAC</span>
-                    </li>
+                  <ul class="space-y-3 text-sm text-quube-gray-dark">
+                    <li>• <strong>Appels à projets</strong> : Rédaction dossiers AAP/AAC, financement</li>
+                    <li>• <strong>Simulations financières</strong> : Modélisation tarifaire, optimisation</li>
+                    <li>• <strong>Rapports DGOS/MIGAC</strong> : Conformité réglementaire</li>
                   </ul>
+                  <div class="mt-4 flex gap-2">
+                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                    <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">🏛️ Conformité</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Colonne 2 : Veille & Production */}
               <div class="space-y-6">
-                <div>
-                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
-                    <span class="text-2xl mr-2">🔍</span> Veille & Intelligence
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 class="text-xl font-semibold text-quube-black mb-4 flex items-center">
+                    <span class="text-2xl mr-3">🔍</span> Veille & Intelligence
                   </h4>
-                  <ul class="space-y-3 text-quube-gray-dark">
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Veille réglementaire</strong> : Monitoring automatisé des évolutions législatives, analyse d'impact</span>
-                    </li>
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Revue de littérature</strong> : Synthèse documentaire, état de l'art scientifique</span>
-                    </li>
+                  <ul class="space-y-3 text-sm text-quube-gray-dark">
+                    <li>• <strong>Veille réglementaire</strong> : Monitoring automatisé, analyse d'impact</li>
+                    <li>• <strong>Revue de littérature</strong> : Synthèse documentaire, état de l'art</li>
+                    <li>• <strong>Benchmark sectoriel</strong> : Comparaisons établissements, bonnes pratiques</li>
                   </ul>
+                  <div class="mt-4 flex gap-2">
+                    <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">🏛️ Conformité</span>
+                    <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                  </div>
                 </div>
 
-                <div>
-                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
-                    <span class="text-2xl mr-2">🎨</span> Production & Communication
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 class="text-xl font-semibold text-quube-black mb-4 flex items-center">
+                    <span class="text-2xl mr-3">📋</span> Documentation & Conformité
                   </h4>
-                  <ul class="space-y-3 text-quube-gray-dark">
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Présentations PowerPoint</strong> : Génération de slides structurés, storytelling visuel</span>
-                    </li>
-                    <li class="flex items-start">
-                      <span class="text-quube-yellow mr-3 mt-1">•</span>
-                      <span><strong>Design de processus</strong> : Cartographie métiers, optimisation workflows</span>
-                    </li>
+                  <ul class="space-y-3 text-sm text-quube-gray-dark">
+                    <li>• <strong>Procédures qualité</strong> : Rédaction, mise à jour, harmonisation</li>
+                    <li>• <strong>Dossiers certification HAS</strong> : Préparation, preuves, traçabilité</li>
+                    <li>• <strong>Évaluation ESSMS</strong> : Auto-évaluation, plans d'action</li>
                   </ul>
+                  <div class="mt-4 flex gap-2">
+                    <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">🏛️ Conformité</span>
+                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Encadré ROI */}
-            <div class="mt-8 p-6 bg-gradient-to-r from-quube-yellow/10 to-quube-blue/10 border-l-4 border-quube-yellow rounded-r-lg">
-              <div class="flex items-start space-x-4">
-                <span class="text-3xl">💰</span>
-                <div>
-                  <p class="text-lg font-medium text-quube-black mb-2">ROI Mesurable</p>
-                  <p class="text-quube-gray-dark leading-relaxed">
-                    Ces cas d'usage génèrent en moyenne <strong class="text-quube-black">50-70% de gain de temps</strong> sur les tâches stratégiques complexes. 
-                    Un rapport d'activité qui prenait 3 jours est désormais produit en <strong class="text-quube-black">6 heures</strong>, 
-                    un business plan de 2 semaines en <strong class="text-quube-black">3 jours</strong>.
-                  </p>
+            <div class="mt-8 p-6 bg-gradient-to-r from-quube-yellow/20 to-quube-blue/10 rounded-lg">
+              <p class="text-lg text-quube-black">
+                <strong>ROI Mesurable :</strong> 50-70% de gain de temps sur ces tâches stratégiques
+              </p>
+            </div>
+          </div>
+
+          {/* Contenu Direction Générale & Stratégie */}
+          <div id="content-metier-dg" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-6">🎯 Direction Générale & Stratégie</h3>
+            <p class="text-lg font-light text-quube-gray-dark mb-8">
+              Cas d'usage emblématiques : Projets d'établissement, CPOM, notes stratégiques, veille concurrentielle, préparation CA/COMEX
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-quube-yellow">
+                <h4 class="font-semibold text-quube-black mb-3">📋 Pilotage Stratégique</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Rédaction projets d'établissement et de service</li>
+                  <li>• Contrats pluriannuels d'objectifs (CPOM)</li>
+                  <li>• Notes stratégiques et synthèses décisionnelles</li>
+                  <li>• Préparation CA, COMEX, CME</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ ROI++</span>
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
                 </div>
               </div>
-            </div>
-          </div>
-          
-          {/* Cas d'usage Terrain détaillés - 8 onglets */}
-          <div id="content-reunions" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-6">🧠 Réunions Stratégiques : Préparez, Structurez, Diffusez</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-6">
-              <div class="p-6 bg-gray-50 rounded-lg">
-                <p class="text-sm font-semibold text-quube-blue mb-2">POUR QUI ?</p>
-                <p class="text-quube-gray-dark">Directions, cadres de pôle, secrétariats de direction</p>
-              </div>
-              <div class="p-6 bg-quube-yellow/10 rounded-lg">
-                <p class="text-sm font-semibold text-quube-black mb-2">⏱ GAIN MOYEN CONSTATÉ</p>
-                <p class="text-2xl font-bold text-quube-black">10h/semaine/cadre</p>
-              </div>
-            </div>
 
-            <div class="space-y-6">
-              <div>
-                <h4 class="text-lg font-semibold text-quube-black mb-3">❌ Avant l'IA</h4>
-                <p class="text-quube-gray-dark">Préparation chronophage des ordres du jour, rédaction manuelle des comptes rendus, relances par mail manuelles</p>
-              </div>
-
-              <div>
-                <h4 class="text-lg font-semibold text-quube-black mb-3">✅ Avec l'IA</h4>
-                <ul class="space-y-3 text-quube-gray-dark">
-                  <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Génération automatique de l'ordre du jour</strong> à partir de mails ou documents</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Compte rendu synthétique en 2 minutes</strong>, structuré par décision, action, vigilance</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Relances personnalisées</strong> aux responsables d'actions</span></li>
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                <h4 class="font-semibold text-quube-black mb-3">🔍 Veille & Analyse</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Veille concurrentielle et positionnement marché</li>
+                  <li>• Analyse réglementaire et impact législatif</li>
+                  <li>• Benchmark inter-établissements</li>
+                  <li>• Études de faisabilité diversification</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-
-          <div id="content-rapports" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-6">📊 Rapports & Indicateurs : Synthétisez l'Essentiel</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-6">
-              <div class="p-6 bg-gray-50 rounded-lg">
-                <p class="text-sm font-semibold text-quube-blue mb-2">POUR QUI ?</p>
-                <p class="text-quube-gray-dark">Qualité, gestion des risques, contrôle de gestion, médical, SSR</p>
-              </div>
-              <div class="p-6 bg-quube-yellow/10 rounded-lg">
-                <p class="text-sm font-semibold text-quube-black mb-2">⏱ GAIN MOYEN</p>
-                <p class="text-2xl font-bold text-quube-black">2h → 15 minutes</p>
-              </div>
-            </div>
-
-            <div class="space-y-6">
-              <div>
-                <h4 class="text-lg font-semibold text-quube-black mb-3">❌ Avant l'IA</h4>
-                <p class="text-quube-gray-dark">Tableaux Excel lourds à analyser, rédaction longue de bilans et de rapports</p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ ROI++</span>
+                  <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                </div>
               </div>
 
-              <div>
-                <h4 class="text-lg font-semibold text-quube-black mb-3">✅ Avec l'IA</h4>
-                <ul class="space-y-3 text-quube-gray-dark">
-                  <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Résumé automatique des tendances clés</strong></span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Recommandations argumentées</strong> pour les plans d'actions</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Mise en forme directe</strong> dans Word/PowerPoint</span></li>
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                <h4 class="font-semibold text-quube-black mb-3">💼 Développement</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Business plans et modèles économiques</li>
+                  <li>• Dossiers appels à projets (AAP/AAC)</li>
+                  <li>• Stratégies de diversification</li>
+                  <li>• Partenariats et conventionnements</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-
-          <div id="content-tutelle" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-6">🏛 Réponses aux Autorités de Tutelle (ARS, DGOS, HAS)</h3>
-            
-            <div class="p-6 bg-gray-50 rounded-lg mb-6">
-              <p class="text-sm font-semibold text-quube-blue mb-2">POUR QUI ?</p>
-              <p class="text-quube-gray-dark">Directions, secrétariat de direction, DAF, DIM</p>
-            </div>
-
-            <div class="space-y-6">
-              <div>
-                <h4 class="text-lg font-semibold text-quube-black mb-3">❌ Avant l'IA</h4>
-                <p class="text-quube-gray-dark">Réponses longues à rédiger, données à compiler, délais courts</p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ ROI++</span>
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
               </div>
 
-              <div>
-                <h4 class="text-lg font-semibold text-quube-black mb-3">✅ Avec l'IA</h4>
-                <ul class="space-y-3 text-quube-gray-dark">
-                  <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Rédaction automatisée d'un argumentaire structuré</strong> (format CPOM, dotation MIGAC, bilan d'activité, etc.)</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Intégration des références réglementaires</strong></span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Mise en page prête à l'envoi</strong></span></li>
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
+                <h4 class="font-semibold text-quube-black mb-3">📊 Communication Institutionnelle</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Rapports d'activité annuels</li>
+                  <li>• Communication de crise</li>
+                  <li>• Relations presse et institutionnelles</li>
+                  <li>• Discours et allocutions</li>
                 </ul>
-                
-                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
-                  <p class="text-sm font-medium text-quube-black">📄 Bénéfice : documents plus robustes, stress réduit, temps divisé par 3</p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div id="content-rh" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-6">👥 Ressources Humaines : Professionnaliser, Fluidifier</h3>
+          {/* Contenu Finance & Gestion (DAF) */}
+          <div id="content-metier-daf" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-6">💰 Finance & Gestion (DAF)</h3>
+            <p class="text-lg font-light text-quube-gray-dark mb-8">
+              Cas d'usage emblématiques : Business plans, simulations tarifaires, rapports financiers, réponses DGOS/MIGAC, analyse budgétaire
+            </p>
             
-            <div class="grid md:grid-cols-2 gap-8 mb-6">
-              <div class="p-6 bg-gray-50 rounded-lg">
-                <p class="text-sm font-semibold text-quube-blue mb-2">POUR QUI ?</p>
-                <p class="text-quube-gray-dark">DRH, gestionnaires RH, managers</p>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-quube-yellow">
+                <h4 class="font-semibold text-quube-black mb-3">📈 Planification & Modélisation</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Business plans et projections financières</li>
+                  <li>• Simulations tarifaires (T2A, dotation)</li>
+                  <li>• Scénarios budgétaires multiples</li>
+                  <li>• Analyse coûts/bénéfices projets</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ ROI++</span>
+                  <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                </div>
               </div>
-              <div class="p-6 bg-quube-yellow/10 rounded-lg">
-                <p class="text-sm font-semibold text-quube-black mb-2">📈 ROI CONSTATÉ</p>
-                <p class="text-2xl font-bold text-quube-black">12h/mois/manager</p>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                <h4 class="font-semibold text-quube-black mb-3">📊 Reporting & Conformité</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Rapports financiers DGOS/ARS</li>
+                  <li>• Réponses MIGAC/FIR</li>
+                  <li>• Tableaux de bord de gestion</li>
+                  <li>• Comptes administratifs (CA/EPRD)</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ ROI++</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">🏛️ Conformité</span>
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
               </div>
-            </div>
 
-            <div>
-              <h4 class="text-lg font-semibold text-quube-black mb-3">✅ Avec l'IA</h4>
-              <ul class="space-y-3 text-quube-gray-dark">
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Rédaction automatique des fiches de poste</strong> conformes FPH</span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Génération des trames d'entretien</strong> et bilans individuels</span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Planification optimisée</strong> (roulements, remplacements, astreintes)</span></li>
-              </ul>
-            </div>
-          </div>
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                <h4 class="font-semibold text-quube-black mb-3">💼 Analyse & Optimisation</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Analyse des écarts budget/réel</li>
+                  <li>• Optimisation masse salariale</li>
+                  <li>• Suivi analytical par pôle/service</li>
+                  <li>• Détection anomalies et fraude</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                </div>
+              </div>
 
-          <div id="content-communication" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-6">💬 Aide à la Communication Interne & Externe</h3>
-            
-            <div class="p-6 bg-gray-50 rounded-lg mb-6">
-              <p class="text-sm font-semibold text-quube-blue mb-2">POUR QUI ?</p>
-              <p class="text-quube-gray-dark">Communication, direction, chef de projet</p>
-            </div>
-
-            <div>
-              <h4 class="text-lg font-semibold text-quube-black mb-3">✅ Avec l'IA</h4>
-              <ul class="space-y-3 text-quube-gray-dark">
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Rédaction de newsletters, notes internes, courriers de crise</strong></span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Traduction, simplification ou mise au format FALC</strong></span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Génération d'infographies ou slides de présentation</strong></span></li>
-              </ul>
-            </div>
-          </div>
-
-          <div id="content-medical" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-6">🩺 Soutien aux Équipes Médicales et Paramédicales</h3>
-            
-            <div class="p-6 bg-gray-50 rounded-lg mb-6">
-              <p class="text-sm font-semibold text-quube-blue mb-2">POUR QUI ?</p>
-              <p class="text-quube-gray-dark">Médecins, cadres de santé, secrétaires médicales</p>
-            </div>
-
-            <div>
-              <h4 class="text-lg font-semibold text-quube-black mb-3">✅ Avec l'IA</h4>
-              <ul class="space-y-3 text-quube-gray-dark">
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Génération de comptes rendus</strong> à partir de notes dictées</span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Préparation de synthèses RCP</strong> ou d'anamnèses</span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Aide à la recherche bibliographique rapide</strong></span></li>
-              </ul>
-              
-              <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
-                <p class="text-sm font-medium text-quube-black">📚 Cas concrets : IME, SSR, HDJ, CHU avec des gains de temps et qualité</p>
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
+                <h4 class="font-semibold text-quube-black mb-3">📋 Achats & Marchés</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Cahiers des charges achats</li>
+                  <li>• Analyse offres fournisseurs</li>
+                  <li>• Négociation contrats cadres</li>
+                  <li>• Suivi performance achats</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div id="content-usager" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-6">👪 Amélioration du Parcours Usager</h3>
+          {/* Contenu RH (DRH) */}
+          <div id="content-metier-drh" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-6">👥 Ressources Humaines (DRH)</h3>
+            <p class="text-lg font-light text-quube-gray-dark mb-8">
+              Cas d'usage emblématiques : Fiches de poste, entretiens annuels, plannings, onboarding, GPEC, QVT
+            </p>
             
-            <div class="p-6 bg-gray-50 rounded-lg mb-6">
-              <p class="text-sm font-semibold text-quube-blue mb-2">POUR QUI ?</p>
-              <p class="text-quube-gray-dark">Équipes sociales, médico-sociales, accueil, vie institutionnelle</p>
-            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-quube-yellow">
+                <h4 class="font-semibold text-quube-black mb-3">📝 Recrutement & Intégration</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Rédaction fiches de poste</li>
+                  <li>• Tri et analyse CV</li>
+                  <li>• Guides d'entretien structurés</li>
+                  <li>• Parcours onboarding personnalisés</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
 
-            <div>
-              <h4 class="text-lg font-semibold text-quube-black mb-3">✅ Avec l'IA</h4>
-              <ul class="space-y-3 text-quube-gray-dark">
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Création de guides d'accueil personnalisés</strong></span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Rédaction de projets personnalisés d'accompagnement (PPA)</strong></span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Génération de lettres type</strong> (convocations, notifications, relances)</span></li>
-              </ul>
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                <h4 class="font-semibold text-quube-black mb-3">📊 Gestion des Compétences</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Entretiens annuels et professionnels</li>
+                  <li>• Plans de formation individuels</li>
+                  <li>• GPEC (Gestion Prévisionnelle Emplois)</li>
+                  <li>• Cartographie compétences</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                  <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                <h4 class="font-semibold text-quube-black mb-3">⏰ Planning & Organisation</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Plannings prévisionnels</li>
+                  <li>• Gestion congés et remplacements</li>
+                  <li>• Optimisation effectifs</li>
+                  <li>• Tableaux de bord RH</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                  <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
+                <h4 class="font-semibold text-quube-black mb-3">💚 QVT & Relations Sociales</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Plans QVT et prévention RPS</li>
+                  <li>• Communication interne</li>
+                  <li>• Préparation CSE/CSSCT</li>
+                  <li>• Gestion conflits et médiation</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">🏛️ Conformité</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div id="content-qualite" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-6">✍️ Soutien aux Écrits Professionnels et Qualité</h3>
+          {/* Contenu Qualité & Conformité */}
+          <div id="content-metier-qualite" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-6">✅ Qualité & Conformité</h3>
+            <p class="text-lg font-light text-quube-gray-dark mb-8">
+              Cas d'usage emblématiques : Préparation certification HAS, évaluation ESSMS, procédures qualité, RGPD, AI Act, signalements EI
+            </p>
             
-            <div class="p-6 bg-gray-50 rounded-lg mb-6">
-              <p class="text-sm font-semibold text-quube-blue mb-2">POUR QUI ?</p>
-              <p class="text-quube-gray-dark">Cadres, soignants, responsables qualité</p>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-quube-yellow">
+                <h4 class="font-semibold text-quube-black mb-3">🏆 Certification & Évaluation</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Préparation certification HAS</li>
+                  <li>• Auto-évaluation ESSMS</li>
+                  <li>• Dossiers de preuves et traçabilité</li>
+                  <li>• Plans d'amélioration continue</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ ROI++</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">🏛️ Conformité</span>
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                <h4 class="font-semibold text-quube-black mb-3">📋 Procédures & Documentation</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Rédaction procédures qualité</li>
+                  <li>• Mise à jour protocoles</li>
+                  <li>• Harmonisation documentaire</li>
+                  <li>• Gestion documentaire qualité</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ ROI++</span>
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                <h4 class="font-semibold text-quube-black mb-3">⚠️ Gestion des Risques</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Signalement événements indésirables (EI)</li>
+                  <li>• Analyse RMM (Revue Morbi-Mortalité)</li>
+                  <li>• Cartographie des risques</li>
+                  <li>• Plans d'actions correctives</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">🏛️ Conformité</span>
+                  <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
+                <h4 class="font-semibold text-quube-black mb-3">🔒 Conformité Réglementaire</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Conformité RGPD et protection données</li>
+                  <li>• AI Act et éthique IA</li>
+                  <li>• HDS (Hébergement Données Santé)</li>
+                  <li>• Audits et contrôles réglementaires</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ ROI++</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">🏛️ Conformité</span>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div>
-              <h4 class="text-lg font-semibold text-quube-black mb-3">✅ Avec l'IA</h4>
-              <ul class="space-y-3 text-quube-gray-dark">
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Relecture et reformulation des écrits</strong> (audit qualité, procédures, signalements)</span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Préparation de documents pour certification HAS</strong> ou évaluation ESSMS</span></li>
-                <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Synthèse des réclamations usagers</strong> ou événements indésirables</span></li>
-              </ul>
+          {/* Contenu Soins & Médical */}
+          <div id="content-metier-soins" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-6">🩺 Soins & Médical</h3>
+            <p class="text-lg font-light text-quube-gray-dark mb-8">
+              Cas d'usage emblématiques : Comptes rendus médicaux, synthèses RCP, protocoles, transmissions, recherche bibliographique
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-quube-yellow">
+                <h4 class="font-semibold text-quube-black mb-3">📝 Documentation Médicale</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Comptes rendus opératoires/consultations</li>
+                  <li>• Synthèses RCP (Réunion Concertation Pluridisciplinaire)</li>
+                  <li>• Courriers médicaux structurés</li>
+                  <li>• Transmissions ciblées IDE</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                <h4 class="font-semibold text-quube-black mb-3">📚 Protocoles & Référentiels</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Rédaction protocoles de soins</li>
+                  <li>• Adaptation recommandations HAS</li>
+                  <li>• Recherche bibliographique médicale</li>
+                  <li>• Veille scientifique ciblée</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">🏛️ Conformité</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                <h4 class="font-semibold text-quube-black mb-3">🔬 Analyse & Décision</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Aide à la décision diagnostique</li>
+                  <li>• Analyse interactions médicamenteuses</li>
+                  <li>• Synthèse dossiers patients complexes</li>
+                  <li>• Alertes cliniques personnalisées</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
+                <h4 class="font-semibold text-quube-black mb-3">👥 Coordination & Formation</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Staffs médicaux et EPP</li>
+                  <li>• Formation continue soignants</li>
+                  <li>• Simulation cas cliniques</li>
+                  <li>• Supports pédagogiques patients</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
             </div>
           </div>
-          
-          {/* Par Métiers/Fonctions - 6 onglets */}
-          <div id="content-drh" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-4">DRH - Recrutement & Ressources Humaines</h3>
-            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
-              Optimisez vos processus RH avec l'IA : rédaction d'offres d'emploi, screening de CV, onboarding personnalisé.
+
+          {/* Contenu Éducatif & Médico-social */}
+          <div id="content-metier-educatif" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-6">🎓 Éducatif & Médico-social</h3>
+            <p class="text-lg font-light text-quube-gray-dark mb-8">
+              Cas d'usage emblématiques : Projets personnalisés (PPA), bilans éducatifs, supports pédagogiques, parcours usagers
             </p>
-            <ul class="space-y-3 text-quube-gray-dark">
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Rédaction automatisée d'offres d'emploi ciblées</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Screening de CV et matching candidats</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Génération de plans d'onboarding personnalisés</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Création de fiches de poste et référentiels</span></li>
-            </ul>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-quube-yellow">
+                <h4 class="font-semibold text-quube-black mb-3">📋 Projets Personnalisés</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Projets Personnalisés d'Accompagnement (PPA)</li>
+                  <li>• Projets Individuels d'Accompagnement (PIA)</li>
+                  <li>• Contrats de séjour personnalisés</li>
+                  <li>• Plans d'actions individuels</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                <h4 class="font-semibold text-quube-black mb-3">📊 Bilans & Évaluations</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Bilans éducatifs et rééducatifs</li>
+                  <li>• Évaluations psycho-éducatives</li>
+                  <li>• Comptes rendus de synthèse</li>
+                  <li>• Suivi évolution et progrès</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                  <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                <h4 class="font-semibold text-quube-black mb-3">🎨 Supports Pédagogiques</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Création supports FALC (Facile à Lire)</li>
+                  <li>• Activités éducatives adaptées</li>
+                  <li>• Fiches techniques méthodologiques</li>
+                  <li>• Outils communication alternative</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
+                <h4 class="font-semibold text-quube-black mb-3">👪 Parcours & Famille</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Parcours usagers personnalisés</li>
+                  <li>• Communication avec familles</li>
+                  <li>• Livrets d'accueil adaptés</li>
+                  <li>• Coordination partenaires (MDPH, écoles)</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div id="content-daf" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-4">DAF - Finance & Gestion</h3>
-            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
-              Accélérez vos analyses financières, simulations budgétaires et reporting avec l'IA.
+          {/* Contenu Fonctions Transverses */}
+          <div id="content-metier-transverse" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-6">🔄 Fonctions Transverses</h3>
+            <p class="text-lg font-light text-quube-gray-dark mb-8">
+              Cas d'usage emblématiques : Communication interne/externe, secrétariat, accueil, logistique, réunions et CR
             </p>
-            <ul class="space-y-3 text-quube-gray-dark">
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Analyse automatisée des données financières</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Simulations tarifaires et modèles économiques</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Reporting financier automatisé</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Prévisions budgétaires assistées par IA</span></li>
-            </ul>
-          </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-quube-yellow">
+                <h4 class="font-semibold text-quube-black mb-3">💬 Communication</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Communication interne (newsletters, notes)</li>
+                  <li>• Communication externe (réseaux sociaux, site web)</li>
+                  <li>• Relations presse et médias</li>
+                  <li>• Campagnes de sensibilisation</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
 
-          <div id="content-dg" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-4">DG - Vision Stratégique</h3>
-            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
-              Pilotez votre stratégie avec l'IA : analyse concurrentielle, synthèses stratégiques, aide à la décision.
-            </p>
-            <ul class="space-y-3 text-quube-gray-dark">
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Analyse de marché et positionnement stratégique</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Synthèses stratégiques et notes de cadrage</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Aide à la décision et scénarios prospectifs</span></li>
-            </ul>
-          </div>
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                <h4 class="font-semibold text-quube-black mb-3">📋 Secrétariat & Administration</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Comptes rendus réunions</li>
+                  <li>• Courriers et réponses types</li>
+                  <li>• Gestion agenda et prise RDV</li>
+                  <li>• Classement et archivage intelligent</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ ROI++</span>
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
 
-          <div id="content-directeurs" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-4">Directeurs d'Établissements</h3>
-            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
-              Optimisez le pilotage de votre établissement : indicateurs qualité, rapports d'activité, communication.
-            </p>
-            <ul class="space-y-3 text-quube-gray-dark">
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Tableaux de bord et indicateurs de pilotage</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Rapports d'activité et bilans annuels</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Communication interne et externe</span></li>
-            </ul>
-          </div>
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+                <h4 class="font-semibold text-quube-black mb-3">🏢 Accueil & Services Généraux</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Guides d'accueil multilingues</li>
+                  <li>• FAQ et chatbots d'information</li>
+                  <li>• Gestion réclamations usagers</li>
+                  <li>• Maintenance et signalements</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                </div>
+              </div>
 
-          <div id="content-soins" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-4">Équipes de Soins</h3>
-            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
-              Gagnez du temps sur la documentation : dossiers patients, transmissions, protocoles de soins.
-            </p>
-            <ul class="space-y-3 text-quube-gray-dark">
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Aide à la rédaction de dossiers patients</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Transmissions et comptes rendus de soins</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Protocoles et procédures de soins</span></li>
-            </ul>
-          </div>
-
-          <div id="content-educatif" class="tab-content hidden">
-            <h3 class="text-3xl font-medium text-quube-black mb-4">Équipes Éducatives</h3>
-            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
-              Améliorez vos programmes éducatifs : projets personnalisés, suivi individuel, supports pédagogiques.
-            </p>
-            <ul class="space-y-3 text-quube-gray-dark">
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Projets personnalisés d'accompagnement (PPA)</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Supports pédagogiques et fiches d'activité</span></li>
-              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Suivi individuel et bilans éducatifs</span></li>
-            </ul>
+              <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
+                <h4 class="font-semibold text-quube-black mb-3">📦 Logistique & Achats</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Gestion stocks et commandes</li>
+                  <li>• Suivi livraisons fournisseurs</li>
+                  <li>• Optimisation circuits logistiques</li>
+                  <li>• Inventaires et audits</li>
+                </ul>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⚡ Automatisation</span>
+                  <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">📊 Data</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Blog - Grid simple */}
       <section id="blog" class="py-32 bg-white">
         <div class="max-w-6xl mx-auto px-8">
           <div class="mb-24">
