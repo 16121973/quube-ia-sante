@@ -1,6 +1,6 @@
 # QUUBE IA Santé
 
-**Version 4.0.0** - Site enrichi avec nouvelles prestations 2025
+**Version 2.0.0** - Refonte complète avec parcours client en 5 phases (31 janvier 2026)
 
 ## 🎨 Charte Graphique Officielle QUUBE Appliquée
 
@@ -15,37 +15,88 @@
 
 ---
 
-## 🚀 Nouveautés Version 4.0.0 (30 janvier 2025)
+## 🚀 Nouveautés Version 2.0.0 (31 janvier 2026)
 
-### 🆕 3 Nouvelles Offres Majeures
-1. **Diagnostic Flash QUUBE®** - Méthode propriétaire 3 niveaux (Base, Support, Cœur métier)
-2. **Conférences & Sensibilisation sur Mesure** - Avec démonstrations sur VOS cas d'usage
-3. **Accompagnement Technique Avancé** - Agents IA, MCP, no-code, outils spécialisés
+### ♻️ TRANSFORMATION MAJEURE : Parcours Client en 5 Phases
 
-### 📚 6 Nouveaux Articles Blog DSI/Dirigeants
-- Le vrai coût de l'IA : licences, API tokens, modèles on-premise
-- Coûts RH de maintenance et développement IA
-- Éditeurs qui ouvrent leurs API : opportunités et pièges
-- Qu'est-ce qu'un Proxy IA, AI Gateway et pseudonymisation ?
-- Cloud vs On-Premise vs Hybrid : guide de décision
-- Comparatif 2025 des plateformes IA (Azure, AWS, Google, Mistral)
+L'offre QUUBE a été entièrement restructurée autour d'un **parcours client progressif** qui accompagne les organisations de la sensibilisation à la pérennisation :
 
-👉 **Voir le détail complet** : [NOUVELLES_PRESTATIONS_2025.md](./NOUVELLES_PRESTATIONS_2025.md)
+#### **① SENSIBILISER** - Créer l'appétence
+- 1.1 Conférences IA Inspirantes (COMEX, CODIR, CSE, CME)
+- 1.2 Coaching IA Individuel pour Dirigeants
+
+#### **② MONTER EN COMPÉTENCES** - Former les équipes
+- Formations 3 niveaux : Débutant (0,5j) | Intermédiaire (1j) | Expert (2j + certification)
+- Formations Sur-Mesure (Claude, Copilot, Data, Automatisation)
+
+#### **③ STRUCTURER** - Poser les fondations
+- 3.1 Diagnostic Flash & Feuille de Route (2-5 jours)
+- 3.2 Aide au Choix des Solutions IA (benchmark neutre)
+
+#### **④ DÉPLOYER** - Passer à l'action
+- 4.1 Pilotage de Projet IA (MOA/MOE)
+- 4.2 Conduite du Changement
+- **⭐ OFFRE SIGNATURE : Accélération de Projet** (livrables 2x-3x plus rapides)
+
+#### **⑤ PÉRENNISER & MESURER** - Ancrer la transformation
+- 5.1 Club IA Santé (veille, REX, réseau)
+- 5.2 Mesure de ROI (KPI, gains, tableaux de bord)
+
+### 🎯 Offre Signature : ACCÉLÉRATION DE PROJET
+
+**L'IA comme outil de production du conseil** - Une approche innovante qui utilise l'IA pour co-produire les livrables de conseil stratégique.
+
+**Bénéfices clés :**
+- ⏱ **Délais divisés par 2 à 3** (ex: Business Plan 2-3 sem → 5-7j)
+- 💰 **Coûts réduits** (tarifs compétitifs grâce à la productivité IA)
+- 🎓 **Transfert de compétences inclus** (kit IA + formation)
+
+**Projets éligibles :**
+1. Stratégie & Gouvernance (projet établissement, CPOM, schéma SI)
+2. Développement & Financement (AAP, business plan, financement)
+3. Transformation (diversification, réorg, performance)
+4. Analyse & Benchmark (études marché, benchmark, analyses)
+
+### 🗂️ Cas d'Usage par Métier - Structure Rationalisée
+
+**Nouvelle organisation avec 8 onglets :**
+- ⚡ **ROI++ (1er onglet actif)** : Cas d'usage stratégiques à forte valeur ajoutée (50-70% gains de temps)
+- 🎯 Direction Générale
+- 💰 Finance & Gestion (DAF)
+- 👥 Ressources Humaines (DRH)
+- 🏛️ Qualité & Conformité
+- 🩺 Soins & Médical
+- 📚 Éducatif & Médico-social
+- ⚙️ Fonctions Transverses
+
+**Tags transversaux :** Conformité 🏛️ | Data & Analytics 📊 | Automatisation ⚡
+
+### 🧭 Navigation Enrichie
+
+**3 menus déroulants principaux :**
+1. **Services** ▼ → 5 phases du parcours client
+2. **Par Métier** ▼ → 7 fonctions métier
+3. **Cas d'Usage** ▼ → ROI++ + 7 onglets métier
+
+**Footer structuré en 4 colonnes :**
+- Parcours Client (5 phases)
+- Offres (Accélération, ROI++, Blog)
+- Par Métier (DG, Finance, RH, Soins)
+- Contact
 
 ---
 
 ## Vue d'Ensemble du Projet
 
-**QUUBE IA Santé** est une plateforme web professionnelle dédiée à l'accompagnement des établissements de santé et médico-sociaux dans leur transformation par l'Intelligence Artificielle. Le site valorise une offre complète de formations, coaching, conseil et audits spécialisés en IA générative pour le secteur de la santé.
+**QUUBE IA Santé** est une plateforme web professionnelle dédiée à l'accompagnement des établissements de santé et médico-sociaux dans leur transformation par l'Intelligence Artificielle. Le site valorise un **parcours client en 5 phases** allant de la sensibilisation à la pérennisation.
 
 ## 🎯 Objectifs du Projet
 
-- Présenter l'offre complète de QUUBE en IA pour le secteur santé
-- Valoriser les **8 piliers de l'offre** (vs 6 avant) : Formations, Coaching, Conseil & Gouvernance, Audits, Diagnostic Flash, Conférences, Accompagnement Technique, Cas d'Usage
-- Démontrer les cas d'usage métiers concrets (DRH, DAF, DG, Directeurs, Équipes soins/éducatives)
-- Positionner QUUBE auprès des **DSI, Architectes IT** et Responsables Innovation (nouveau)
-- Générer des leads qualifiés via un formulaire de contact optimisé
+- Présenter le **parcours client en 5 phases** de QUUBE
+- Valoriser l'**offre signature Accélération de Projet**
+- Démontrer les cas d'usage métiers concrets avec gains mesurés
 - Positionner QUUBE comme expert de la transformation IA en santé
+- Générer des leads qualifiés via un formulaire de contact optimisé
 
 ## 🌐 URLs du Projet
 
@@ -271,6 +322,63 @@ interface ContactForm {
 - **Statut** : ✅ En ligne et fonctionnel
 
 ### Changelog
+
+- **v2.0.0** (2026-01-31) - 🔄 **REFONTE MAJEURE : Parcours Client en 5 Phases**
+  
+  **Phase A - Navigation & Structure Globale**
+  - ✅ Menu déroulant "Services" avec 5 phases (① Sensibiliser → ⑤ Pérenniser)
+  - ✅ Menu déroulant "Par Métier" avec 7 fonctions métier
+  - ✅ Menu déroulant "Cas d'Usage" avec ROI++ + 7 onglets métier
+  - ✅ Menu mobile responsive avec structure identique
+  - 📦 **Bundle**: 115.93 kB (+4.72 kB)
+  
+  **Phase B - Section Accélération de Projet (Offre Signature)**
+  - ⭐ Hero teaser "Offre Signature" avec badge jaune
+  - 📊 Triple bénéfice : Délais ÷2-3 | Coûts réduits | Transfert inclus
+  - 🎯 4 catégories projets éligibles (Stratégie, Développement, Transformation, Analyse)
+  - 📈 Tableau gains concrets : AAP -50%, Business Plan -60%, Projet Établissement -50%, Étude -65%
+  - 🤝 Méthode travail en binôme (Cadrage → Production → Livraison)
+  - 📦 **Bundle**: 124.75 kB (+8.82 kB)
+  
+  **Phase C - Services par Phase (5 Phases Complètes)**
+  - ① **SENSIBILISER** : Conférences IA + Coaching DG (jaune/blanc)
+  - ② **MONTER EN COMPÉTENCES** : Formations 3 niveaux (Débutant/Intermédiaire/Expert) + Sur-mesure (blanc)
+  - ③ **STRUCTURER** : Diagnostic Flash + Aide au choix solutions (gris clair)
+  - ④ **DÉPLOYER** : Pilotage Projet + Conduite changement + CTA Accélération (blanc)
+  - ⑤ **PÉRENNISER & MESURER** : Club IA + Mesure ROI (gradient vert/blanc)
+  - 🗺️ Mapping ancien → nouveau : Service 06/02 → Phase 1, Service 01 → Phase 2, etc.
+  - 📦 **Bundle**: 139.91 kB (+15.16 kB pour 5 sections complètes)
+  
+  **Phase D - Cas d'Usage par Métier (Fusion ROI++ + Métiers)**
+  - ⚡ **ROI++ en 1er onglet actif** avec badge "Gains 50-70%"
+  - 📂 8 onglets au total : ROI++ + 7 fonctions métier
+  - 🎯 Contenu enrichi : 4-6 cas d'usage par métier avec gains quantifiés
+  - 🏷️ Tags transversaux : Conformité 🏛️ | Data 📊 | Automatisation ⚡
+  - 🎨 Design : onglets horizontaux, cards hover, couleurs par métier
+  - 📦 **Bundle**: 143.25 kB (+3.34 kB)
+  - 🔀 **Rationalisation**: Fusion intelligente 14 onglets anciens → 8 onglets nouveaux
+  
+  **Phase E - Mise en Cohérence Globale**
+  - 🗑️ **Suppression ancienne section Services** (277 lignes) avec badge "En cours de restructuration"
+  - ✍️ **Enrichissement "Notre Promesse"** : Mention explicite "parcours en 5 phases"
+  - 🦶 **Footer enrichi** : 4 colonnes structurées (Parcours, Offres, Métier, Contact)
+  - 🧭 **Liens internes cohérents** : Tous les liens pointent vers nouvelles sections
+  - 📦 **Bundle**: 135.05 kB (-8.20 kB grâce à suppression ancienne section)
+  
+  **Phase F - Tests & Documentation** ✅
+  - ✅ Navigation testée (menus desktop + mobile)
+  - ✅ Smooth scroll vérifié sur tous les liens
+  - ✅ README.md v2.0.0 complet avec parcours en 5 phases
+  - ✅ Commits Git propres (6 commits pour 6 phases)
+  - ✅ Backup complet créé
+
+  **Métriques Finales v2.0.0 :**
+  - 📦 **Bundle final**: 135.05 kB (optimisé)
+  - ⏱️ **Build time**: ~900ms (constant)
+  - 🔀 **Modifications totales**: +2000 insertions, -300 suppressions
+  - 💾 **Commits**: 6 commits propres (A → B → C → D → E → F)
+  - 🎯 **Migration**: Progressive avec validation à chaque étape
+
 - **v1.2.0** (2025-01-31)
   - 🔧 **Correction logos LLM** : Remplacement images CDN par icônes Font Awesome colorées
     - ChatGPT (fa-brain, vert OpenAI #10A37F)
