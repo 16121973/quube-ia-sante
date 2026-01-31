@@ -62,12 +62,30 @@ app.get('/', (c) => {
             </p>
 
             <div class="flex flex-wrap gap-4 text-sm text-quube-gray pt-8">
-              <span class="px-4 py-2 border border-gray-200 rounded-full">Mistral</span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full">ChatGPT</span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full">Claude</span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full">Gemini</span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full">Copilot</span>
-              <span class="px-4 py-2 border border-gray-200 rounded-full">IA on-premise</span>
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/></svg>
+                Mistral
+              </span>
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                ChatGPT
+              </span>
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4 8v12l8 4 8-4V8l-8-6z"/></svg>
+                Claude
+              </span>
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15,8 22,9 17,14 18,21 12,18 6,21 7,14 2,9 9,8"/></svg>
+                Gemini
+              </span>
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg>
+                Copilot
+              </span>
+              <span class="px-4 py-2 border border-gray-200 rounded-full flex items-center gap-2 hover:border-quube-yellow transition-colors">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9h4V5H3v4zm0 5h4v-4H3v4zm5 0h4v-4H8v4zm5 0h4v-4h-4v4zM8 9h4V5H8v4zm5-4v4h4V5h-4zm5 9h4v-4h-4v4zM3 19h4v-4H3v4zm5 0h4v-4H8v4zm5 0h4v-4h-4v4zm5 0h4v-4h-4v4z"/></svg>
+                IA on-premise
+              </span>
             </div>
           </div>
         </div>
@@ -773,10 +791,10 @@ app.get('/', (c) => {
           </div>
 
           <div class="grid md:grid-cols-3 gap-8">
-            {/* 3 articles en exemple - style minimaliste */}
+            {/* 6 articles - style minimaliste */}
             <article class="group cursor-pointer">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
-                <div class="text-sm text-quube-gray mb-3">Article</div>
+                <div class="text-sm text-quube-gray mb-3">Article · 5 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
                   IA générative dans le médico-social : enjeux et bénéfices
                 </h3>
@@ -788,7 +806,7 @@ app.get('/', (c) => {
 
             <article class="group cursor-pointer">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
-                <div class="text-sm text-quube-gray mb-3">Article</div>
+                <div class="text-sm text-quube-gray mb-3">Article · 7 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
                   RGPD et IA : ce que vous devez savoir
                 </h3>
@@ -800,12 +818,48 @@ app.get('/', (c) => {
 
             <article class="group cursor-pointer">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
-                <div class="text-sm text-quube-gray mb-3">Article</div>
+                <div class="text-sm text-quube-gray mb-3">Article · 4 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
-                  40 minutes gagnées par jour : retour d'expérience
+                  60 minutes gagnées par jour : retour d'expérience
                 </h3>
                 <p class="text-quube-gray-dark font-light leading-relaxed">
                   Comment l'IA transforme concrètement le quotidien des professionnels de santé
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Article · 6 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  AI Act européen : impacts sur les établissements de santé
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Comprendre les obligations réglementaires et préparer votre mise en conformité IA
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Guide · 8 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Choisir sa solution IA en santé : guide pratique
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Les critères essentiels pour sélectionner l'outil adapté à vos besoins métiers
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Témoignage · 5 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Déploiement IA en EHPAD : 3 mois après
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Retour d'expérience d'un directeur d'EHPAD sur l'adoption de l'IA par ses équipes
                 </p>
               </div>
             </article>
