@@ -231,6 +231,188 @@ app.get('/', (c) => {
         </div>
       </section>
 
+      {/* Section Teaser - ACCÉLÉRATION DE PROJET (Offre Signature) */}
+      <section id="acceleration-projets" class="py-32 bg-gradient-to-br from-quube-yellow/5 via-white to-quube-blue/5">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="text-center mb-16">
+            <div class="inline-block px-6 py-2 bg-quube-yellow rounded-full mb-6">
+              <span class="text-sm font-bold text-quube-black uppercase tracking-wide">Offre Signature</span>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
+              <span class="font-bold">Accélération</span> de Projet
+            </h2>
+            <p class="text-xl font-light text-quube-gray-dark max-w-3xl mx-auto leading-relaxed">
+              Utilisez l'IA comme <span class="font-medium text-quube-black">outil de production du conseil</span> pour vos projets stratégiques. 
+              Livrables <span class="font-medium text-quube-black">2 à 3 fois plus rapides</span>, avec transfert de compétences inclus.
+            </p>
+          </div>
+
+          {/* Triple Bénéfice */}
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div class="text-4xl mb-4">⏱️</div>
+              <h3 class="text-2xl font-bold text-quube-black mb-3">Délais ÷ 2 à 3</h3>
+              <p class="text-quube-gray-dark">
+                Accélération massive de la production des livrables grâce à l'IA en co-pilote
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div class="text-4xl mb-4">💰</div>
+              <h3 class="text-2xl font-bold text-quube-black mb-3">Coûts Réduits</h3>
+              <p class="text-quube-gray-dark">
+                Tarif compétitif vs. cabinets classiques grâce à l'efficacité de l'IA
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div class="text-4xl mb-4">🎓</div>
+              <h3 class="text-2xl font-bold text-quube-black mb-3">Transfert Inclus</h3>
+              <p class="text-quube-gray-dark">
+                Vos équipes montent en compétence IA en situation réelle de travail
+              </p>
+            </div>
+          </div>
+
+          {/* Projets Éligibles - 4 catégories */}
+          <div class="mb-16">
+            <h3 class="text-3xl font-light text-quube-black text-center mb-12">
+              Projets <span class="font-bold">Éligibles</span>
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg border-l-4 border-quube-yellow">
+                <h4 class="text-lg font-semibold text-quube-black mb-3">📋 Stratégie & Gouvernance</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Projet d'établissement</li>
+                  <li>• Projet de service</li>
+                  <li>• CPOM (Contrat Pluriannuel d'Objectifs et de Moyens)</li>
+                  <li>• Schéma directeur SI</li>
+                </ul>
+              </div>
+              <div class="bg-white p-6 rounded-lg border-l-4 border-quube-blue">
+                <h4 class="text-lg font-semibold text-quube-black mb-3">💼 Développement & Financement</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Réponse AAP / AMI (Appels à projets)</li>
+                  <li>• Business plan / Étude de faisabilité</li>
+                  <li>• Dossier de financement</li>
+                  <li>• Nouveau modèle économique</li>
+                </ul>
+              </div>
+              <div class="bg-white p-6 rounded-lg border-l-4 border-green-500">
+                <h4 class="text-lg font-semibold text-quube-black mb-3">🔄 Transformation</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Transformation de l'offre de services</li>
+                  <li>• Diversification (habitat inclusif, SSIAD...)</li>
+                  <li>• Réorganisation de services</li>
+                  <li>• Optimisation de la performance</li>
+                </ul>
+              </div>
+              <div class="bg-white p-6 rounded-lg border-l-4 border-purple-500">
+                <h4 class="text-lg font-semibold text-quube-black mb-3">📊 Analyse & Benchmark</h4>
+                <ul class="space-y-2 text-sm text-quube-gray-dark">
+                  <li>• Étude de marché / Positionnement</li>
+                  <li>• Benchmark concurrentiel</li>
+                  <li>• Analyse réglementaire</li>
+                  <li>• Revue de littérature / État de l'art</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Tableau Gains Concrets */}
+          <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 mb-12">
+            <h3 class="text-2xl font-medium text-quube-black text-center mb-8">
+              Gains de Temps <span class="font-bold text-quube-blue">Mesurés</span>
+            </h3>
+            <div class="overflow-x-auto">
+              <table class="w-full">
+                <thead>
+                  <tr class="border-b-2 border-quube-yellow">
+                    <th class="text-left py-4 px-4 font-semibold text-quube-black">Type de Projet</th>
+                    <th class="text-center py-4 px-4 font-semibold text-quube-gray-dark">Délai Classique</th>
+                    <th class="text-center py-4 px-4 font-semibold text-quube-blue">Délai Augmenté</th>
+                    <th class="text-center py-4 px-4 font-semibold text-green-600">Gain</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                  <tr class="hover:bg-gray-50">
+                    <td class="py-4 px-4 font-medium">Réponse AAP</td>
+                    <td class="py-4 px-4 text-center text-quube-gray-dark">3-4 semaines</td>
+                    <td class="py-4 px-4 text-center text-quube-blue font-semibold">1-2 semaines</td>
+                    <td class="py-4 px-4 text-center text-green-600 font-bold">50-60%</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="py-4 px-4 font-medium">Business Plan</td>
+                    <td class="py-4 px-4 text-center text-quube-gray-dark">2-3 semaines</td>
+                    <td class="py-4 px-4 text-center text-quube-blue font-semibold">5-7 jours</td>
+                    <td class="py-4 px-4 text-center text-green-600 font-bold">60-70%</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="py-4 px-4 font-medium">Projet d'Établissement</td>
+                    <td class="py-4 px-4 text-center text-quube-gray-dark">3-4 mois</td>
+                    <td class="py-4 px-4 text-center text-quube-blue font-semibold">6-8 semaines</td>
+                    <td class="py-4 px-4 text-center text-green-600 font-bold">50%</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="py-4 px-4 font-medium">Étude de Diversification</td>
+                    <td class="py-4 px-4 text-center text-quube-gray-dark">6-8 semaines</td>
+                    <td class="py-4 px-4 text-center text-quube-blue font-semibold">2-3 semaines</td>
+                    <td class="py-4 px-4 text-center text-green-600 font-bold">60-65%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Méthode de Travail en Binôme */}
+          <div class="bg-gradient-to-r from-quube-yellow/10 to-quube-blue/10 p-8 rounded-lg mb-12">
+            <h3 class="text-2xl font-medium text-quube-black text-center mb-8">
+              Méthode : <span class="font-bold">Travail en Binôme</span>
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="text-center">
+                <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                  <span class="text-2xl font-bold text-quube-yellow">1</span>
+                </div>
+                <h4 class="font-semibold text-quube-black mb-2">Cadrage</h4>
+                <p class="text-sm text-quube-gray-dark">
+                  Consultant QUUBE structure le projet et définit les workflows IA. 
+                  Référent client apporte la connaissance terrain.
+                </p>
+              </div>
+              <div class="text-center">
+                <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                  <span class="text-2xl font-bold text-quube-blue">2</span>
+                </div>
+                <h4 class="font-semibold text-quube-black mb-2">Production</h4>
+                <p class="text-sm text-quube-gray-dark">
+                  Consultant pilote l'IA et affine les outputs. 
+                  Référent co-produit en temps réel et apprend les techniques.
+                </p>
+              </div>
+              <div class="text-center">
+                <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                  <span class="text-2xl font-bold text-green-600">3</span>
+                </div>
+                <h4 class="font-semibold text-quube-black mb-2">Livraison</h4>
+                <p class="text-sm text-quube-gray-dark">
+                  Livrables projet finalisés + Kit de transfert IA 
+                  (prompts, templates, méthodologie reproductible).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div class="text-center">
+            <a href="#contact" class="inline-block px-12 py-4 bg-quube-yellow text-quube-black font-semibold rounded-lg hover:bg-quube-yellow/90 transition-colors shadow-md hover:shadow-lg">
+              Accélérez Votre Prochain Projet →
+            </a>
+            <p class="text-sm text-quube-gray mt-4">
+              Échangeons sur votre projet stratégique et son potentiel d'accélération
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Services avec accordéon - ANCIENNE VERSION */}
       <section id="services" class="py-32 bg-white border-t-4 border-yellow-400">
         <div class="max-w-6xl mx-auto px-8">
