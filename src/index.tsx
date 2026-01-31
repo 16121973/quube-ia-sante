@@ -209,64 +209,71 @@ app.get('/', (c) => {
                 <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
               </summary>
               <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
-                <p class="leading-relaxed">
-                  Définition de votre stratégie IA, roadmap de déploiement et mise en place d'une gouvernance adaptée à votre structure.
+                <p class="leading-relaxed font-medium">
+                  Définition de votre stratégie IA, audits de maturité, roadmap de déploiement et mise en place d'une gouvernance adaptée à votre structure.
                 </p>
-                <ul class="space-y-2">
-                  <li class="flex items-start">
-                    <span class="text-quube-yellow mr-2">•</span>
-                    <span>Stratégie IA & roadmap de transformation</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-quube-yellow mr-2">•</span>
-                    <span>Gouvernance IA et comité de pilotage</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-quube-yellow mr-2">•</span>
-                    <span>Priorisation des use cases à fort ROI</span>
-                  </li>
-                </ul>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Stratégie & Gouvernance</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Stratégie IA & roadmap de transformation</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Gouvernance IA et comité de pilotage</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Priorisation des use cases à fort ROI</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Audits IA</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Audit complet de maturité IA</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Identification des opportunités stratégiques</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Recommandations personnalisées</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Diagnostic Flash QUUBE®</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Évaluation express en 2 heures chrono</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Potentiel IA et quick wins identifiés</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Recommandations immédiates actionnables</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </details>
 
-            {/* Services 4-9 condensés */}
             <details class="group border-b border-gray-200 pb-4">
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">04</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Audits IA</h3>
-                  </div>
-                  <p class="text-lg font-light text-quube-gray-dark ml-16">Évaluation de maturité et opportunités</p>
-                </div>
-                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
-              </summary>
-              <div class="mt-6 ml-16 text-quube-gray-dark leading-relaxed">
-                Audit complet de votre maturité IA, identification des opportunités stratégiques et recommandations personnalisées.
-              </div>
-            </details>
-
-            <details class="group border-b border-gray-200 pb-4">
-              <summary class="cursor-pointer list-none flex justify-between items-start">
-                <div class="flex-1">
-                  <div class="flex items-baseline space-x-4 mb-2">
-                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">05</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Diagnostic Flash QUUBE®</h3>
-                  </div>
-                  <p class="text-lg font-light text-quube-gray-dark ml-16">Évaluation rapide en 2h</p>
-                </div>
-                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
-              </summary>
-              <div class="mt-6 ml-16 text-quube-gray-dark leading-relaxed">
-                Évaluation express de votre potentiel IA en 2 heures chrono avec recommandations immédiates.
-              </div>
-            </details>
-
-            <details class="group border-b border-gray-200 pb-4">
-              <summary class="cursor-pointer list-none flex justify-between items-start">
-                <div class="flex-1">
-                  <div class="flex items-baseline space-x-4 mb-2">
-                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">06</span>
                     <h3 class="text-2xl font-medium text-quube-black">Accompagnement Technique</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">Implémentation et déploiement</p>
@@ -282,7 +289,7 @@ app.get('/', (c) => {
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
-                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">07</span>
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">05</span>
                     <h3 class="text-2xl font-medium text-quube-black">Compliance & Conformité</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">RGPD, AI Act, NIS 2</p>
@@ -306,7 +313,7 @@ app.get('/', (c) => {
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
-                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">08</span>
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">06</span>
                     <h3 class="text-2xl font-medium text-quube-black">Data Analyse via IA</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">Analytics et insights automatisés</p>
