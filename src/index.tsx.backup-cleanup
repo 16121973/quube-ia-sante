@@ -34,6 +34,23 @@ app.get('/', (c) => {
               </div>
             </div>
 
+            {/* Menu déroulant Par Métier */}
+            <div class="relative group">
+              <button class="text-quube-gray-dark hover:text-quube-black transition-colors flex items-center gap-1">
+                Par Métier <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+              <div class="absolute top-full left-0 mt-2 w-72 bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div class="py-2">
+                  <a href="#metier-dg" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Direction Générale & Stratégie</a>
+                  <a href="#metier-daf" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Finance & Gestion (DAF)</a>
+                  <a href="#metier-drh" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Ressources Humaines (DRH)</a>
+                  <a href="#metier-qualite" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Qualité & Conformité</a>
+                  <a href="#metier-soins" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Soins & Médical</a>
+                  <a href="#metier-educatif" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Éducatif & Médico-social</a>
+                  <a href="#metier-transverse" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Fonctions Transverses</a>
+                </div>
+              </div>
+            </div>
 
             {/* Menu déroulant Cas d'Usage */}
             <div class="relative group">
@@ -76,6 +93,16 @@ app.get('/', (c) => {
               <a href="#phase-structurer" class="block text-sm text-quube-gray-dark">③ Structurer</a>
               <a href="#phase-deployer" class="block text-sm text-quube-gray-dark">④ Déployer</a>
               <a href="#phase-perenniser" class="block text-sm text-quube-gray-dark">⑤ Pérenniser & Mesurer</a>
+            </div>
+            <div class="pl-4 space-y-2 border-l-2 border-quube-blue">
+              <div class="text-xs text-quube-gray font-semibold mb-2">PAR MÉTIER</div>
+              <a href="#metier-dg" class="block text-sm text-quube-gray-dark">Direction Générale</a>
+              <a href="#metier-daf" class="block text-sm text-quube-gray-dark">Finance (DAF)</a>
+              <a href="#metier-drh" class="block text-sm text-quube-gray-dark">RH (DRH)</a>
+              <a href="#metier-qualite" class="block text-sm text-quube-gray-dark">Qualité</a>
+              <a href="#metier-soins" class="block text-sm text-quube-gray-dark">Soins</a>
+              <a href="#metier-educatif" class="block text-sm text-quube-gray-dark">Éducatif</a>
+              <a href="#metier-transverse" class="block text-sm text-quube-gray-dark">Transverse</a>
             </div>
             <div class="pl-4 space-y-2 border-l-2 border-purple-500">
               <div class="text-xs text-quube-gray font-semibold mb-2">CAS D'USAGE</div>
@@ -792,6 +819,99 @@ app.get('/', (c) => {
       </section>
 
       {/* Thématiques avec accordéon */}
+      <section id="thematiques" class="py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-24">
+            <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
+              Par <span class="font-bold">Thématique</span>
+            </h2>
+            <div class="w-20 h-1 bg-quube-yellow"></div>
+          </div>
+
+          <div class="space-y-4">
+            <details class="group border-b border-gray-100 pb-6">
+              <summary class="cursor-pointer list-none flex items-start space-x-8 py-4 hover:bg-gray-50 transition-colors rounded-lg px-4">
+                <div class="text-quube-gray group-open:text-quube-blue transition-colors text-lg font-light whitespace-nowrap">01</div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-medium text-quube-black mb-2">Compliance & Conformité</h3>
+                  <p class="text-lg font-light text-quube-gray-dark">RGPD · AI Act · NIS 2 · Souveraineté</p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="ml-16 mt-4 space-y-3 text-quube-gray-dark">
+                <p class="leading-relaxed">Maîtrisez les enjeux réglementaires liés à l'IA dans le secteur santé avec nos formations et audits de conformité.</p>
+                <ul class="space-y-2 mt-4">
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>RGPD et protection des données de santé</span></li>
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>AI Act européen et réglementation IA</span></li>
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>NIS 2 : cybersécurité et résilience</span></li>
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Souveraineté des données et hébergement HDS</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="group border-b border-gray-100 pb-6">
+              <summary class="cursor-pointer list-none flex items-start space-x-8 py-4 hover:bg-gray-50 transition-colors rounded-lg px-4">
+                <div class="text-quube-gray group-open:text-quube-blue transition-colors text-lg font-light whitespace-nowrap">02</div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-medium text-quube-black mb-2">Data Analyse & BI</h3>
+                  <p class="text-lg font-light text-quube-gray-dark">Insights · Visualisation · Prédictif</p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="ml-16 mt-4 space-y-3 text-quube-gray-dark">
+                <p class="leading-relaxed">Exploitez pleinement vos données avec l'IA pour des décisions éclairées et un pilotage optimisé.</p>
+                <ul class="space-y-2 mt-4">
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>BI augmentée par l'IA générative</span></li>
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Tableaux de bord temps réel</span></li>
+                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Analyse prédictive et détection de tendances</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="group border-b border-gray-100 pb-6">
+              <summary class="cursor-pointer list-none flex items-start space-x-8 py-4 hover:bg-gray-50 transition-colors rounded-lg px-4">
+                <div class="text-quube-gray group-open:text-quube-blue transition-colors text-lg font-light whitespace-nowrap">03</div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-medium text-quube-black mb-2">Gestion de Projet IA</h3>
+                  <p class="text-lg font-light text-quube-gray-dark">Roadmap · Pilotage · Change Management</p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="ml-16 mt-4 text-quube-gray-dark leading-relaxed">
+                Pilotez vos projets IA de A à Z avec méthodologie, outils et accompagnement change management.
+              </div>
+            </details>
+
+            <details class="group border-b border-gray-100 pb-6">
+              <summary class="cursor-pointer list-none flex items-start space-x-8 py-4 hover:bg-gray-50 transition-colors rounded-lg px-4">
+                <div class="text-quube-gray group-open:text-quube-blue transition-colors text-lg font-light whitespace-nowrap">04</div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-medium text-quube-black mb-2">Fonctions Supports</h3>
+                  <p class="text-lg font-light text-quube-gray-dark">RH · Finance · Direction · Admin</p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="ml-16 mt-4 text-quube-gray-dark leading-relaxed">
+                Optimisez vos fonctions supports (RH, finance, direction, administration) avec l'IA générative.
+              </div>
+            </details>
+
+            <details class="group border-b border-gray-100 pb-6">
+              <summary class="cursor-pointer list-none flex items-start space-x-8 py-4 hover:bg-gray-50 transition-colors rounded-lg px-4">
+                <div class="text-quube-gray group-open:text-quube-blue transition-colors text-lg font-light whitespace-nowrap">05</div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-medium text-quube-black mb-2">Gains Administratifs</h3>
+                  <p class="text-lg font-light text-quube-gray-dark">Automatisation · 40-60 min/jour · ROI mesurable</p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="ml-16 mt-4 text-quube-gray-dark leading-relaxed">
+                Gagnez 40 à 60 minutes par jour grâce à l'automatisation intelligente des tâches administratives répétitives.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
 
       {/* NOUVEAU : Cas d'Usage Par Métier (rationalisé + tags transversaux) */}
       {/* NOUVEAU : Cas d'Usage Par Métier (rationalisé + tags transversaux) */}
@@ -1381,6 +1501,178 @@ app.get('/', (c) => {
         </div>
       </section>
 
+      <section id="blog" class="hidden py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-24">
+            <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
+              <span class="font-bold">13 Articles</span> de Référence
+            </h2>
+            <div class="w-20 h-1 bg-quube-yellow mb-6"></div>
+            <p class="text-lg font-light text-quube-gray-dark max-w-2xl">
+              Asseoir votre expertise IA en santé et médico-social : transformation, gouvernance, ROI, éthique et prospective
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            {/* 13 articles de référence QUUBE - tous 3 min */}
+            <a href="#" onclick="event.preventDefault(); openArticle(1);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Transformation · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Acculturer à l'IA en santé : réussir le passage à l'échelle
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Comment passer du test individuel à la compétence collective ? La clé : former, outiller, sécuriser et surtout faire adopter.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(1);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">ROI & Productivité · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Fonctions support : où l'IA crée de la valeur dès maintenant
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  6 fonctions, 18 cas d'usage terrain pour libérer du temps sur la rédaction, les rapports et les tutelles.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Pilotage & Gouvernance · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Licences IA, API, coûts cachés : reprendre le contrôle avant l'explosion
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Le vrai coût de l'IA n'est pas le prix facial. Inventaire, classification et rationalisation en 30 jours.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(3);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Architecture & Tech · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Gateway IA : l'infrastructure manquante pour démocratiser l'IA en santé
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Transformer l'IA d'un ensemble d'essais en capacité organisationnelle avec SSO, DLP, logs et catalogue d'usages.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(4);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Conformité & Sécurité · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  IA en santé : sécurité, confidentialité, souveraineté
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Pourquoi l'hybride devient la norme : adapter l'architecture au niveau de sensibilité des données.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(5);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">ROI & Pilotage · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  ROI de l'IA en santé : ce qui est mesurable, ce qui est illusoire
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Méthode simple et défendable pour mesurer les gains réels sans tomber dans les mythes classiques.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(6);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Shadow IA : le vrai sujet n'est pas l'interdiction
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  68% des salariés utilisent l'IA sans en informer leur employeur. La solution : proposer une alternative cadrée.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(7);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Bonnes Pratiques · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Hygiène IA : 12 réflexes non négociables
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Les règles simples qui évitent les erreurs de base, les fuites de données et les usages hors cadre.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(8);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Gouverner l'IA en santé : comitologie légère, rôles clairs
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Comment garder la maîtrise sans bureaucratie : 3 instances, 6 rôles et un dispositif d'escalade.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(9);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Formation · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Apprendre l'IA avec l'IA : le parcours 30 jours
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Faire monter en compétence 50, 100 ou 500 collaborateurs avec un parcours progressif et ancré.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(10);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Éthique & Inclusion · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Accès aux droits à l'ère de l'IA : éviter le non-recours
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  L'IA ne doit pas créer une nouvelle barrière pour les publics fragiles. Simplicité et accompagnement humain.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(11);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Éthique & RH · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  IA et inégalités : éviter la fracture professionnelle
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Comment l'IA peut devenir un accélérateur d'inégalités entre professionnels — et comment l'éviter.
+                </p>
+              </div>
+            </a>
+
+            <a href="#" onclick="event.preventDefault(); openArticle(12);" class="group cursor-pointer block">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Prospective · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  IA et transformation des métiers en santé : ce qui change vraiment
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Plus de besoins, moins de ressources : l'IA comme levier de réorganisation du travail en santé.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Final */}
       <section id="contact" class="py-32 bg-quube-black text-white">
@@ -1457,9 +1749,9 @@ app.get('/', (c) => {
               </ul>
             </div>
             
-            {/* Colonne 3 - Cas d'Usage par Métier */}
+            {/* Colonne 3 - Par Métier */}
             <div>
-              <h4 class="font-semibold text-quube-black mb-4">Cas d'Usage par Métier</h4>
+              <h4 class="font-semibold text-quube-black mb-4">Par Métier</h4>
               <ul class="space-y-2 text-sm text-quube-gray-dark">
                 <li><a href="#cas-usage-dg" class="hover:text-quube-blue transition-colors">Direction Générale</a></li>
                 <li><a href="#cas-usage-finance" class="hover:text-quube-blue transition-colors">Finance & Gestion</a></li>
