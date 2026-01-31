@@ -486,6 +486,7 @@ app.get('/', (c) => {
             <button onclick="showTab('directeurs')" id="tab-directeurs" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Directeurs</button>
             <button onclick="showTab('soins')" id="tab-soins" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Équipes Soins</button>
             <button onclick="showTab('educatif')" id="tab-educatif" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Équipes Éducatives</button>
+            <button onclick="showTab('roi')" id="tab-roi" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors bg-quube-yellow/10">ROI++ ⚡</button>
           </div>
 
           {/* Contenu onglets */}
@@ -541,6 +542,113 @@ app.get('/', (c) => {
             <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
               Améliorez vos programmes éducatifs : projets personnalisés, suivi individuel, supports pédagogiques.
             </p>
+          </div>
+
+          <div id="content-roi" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-4">ROI++ ⚡ - Cas d'Usage à Forte Valeur Ajoutée</h3>
+            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
+              L'IA générative transforme vos processus stratégiques les plus complexes et chronophages. 
+              Découvrez les cas d'usage qui génèrent un <strong>ROI immédiat et mesurable</strong>.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+              {/* Colonne 1 : Stratégie & Pilotage */}
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
+                    <span class="text-2xl mr-2">📊</span> Stratégie & Pilotage
+                  </h4>
+                  <ul class="space-y-3 text-quube-gray-dark">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Rapports d'activité</strong> : Génération automatique de rapports structurés, synthèses annuelles</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Projets d'établissement/services</strong> : Rédaction collaborative, alignement stratégique</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Notes stratégiques</strong> : Synthèses décisionnelles, recommandations argumentées</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Analyse concurrentielle</strong> : Veille stratégique, positionnement marché</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
+                    <span class="text-2xl mr-2">📈</span> Finance & Développement
+                  </h4>
+                  <ul class="space-y-3 text-quube-gray-dark">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Business plan</strong> : Modèles financiers, projections économiques, scénarios</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Simulations financières</strong> : Modélisation tarifaire, optimisation budgétaire</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Appels à projets</strong> : Rédaction de dossiers de financement, réponses AAP/AAC</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Colonne 2 : Veille & Production */}
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
+                    <span class="text-2xl mr-2">🔍</span> Veille & Intelligence
+                  </h4>
+                  <ul class="space-y-3 text-quube-gray-dark">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Veille réglementaire</strong> : Monitoring automatisé des évolutions législatives, analyse d'impact</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Revue de littérature</strong> : Synthèse documentaire, état de l'art scientifique</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
+                    <span class="text-2xl mr-2">🎨</span> Production & Communication
+                  </h4>
+                  <ul class="space-y-3 text-quube-gray-dark">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Présentations PowerPoint</strong> : Génération de slides structurés, storytelling visuel</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Design de processus</strong> : Cartographie métiers, optimisation workflows</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Encadré ROI */}
+            <div class="mt-8 p-6 bg-gradient-to-r from-quube-yellow/10 to-quube-blue/10 border-l-4 border-quube-yellow rounded-r-lg">
+              <div class="flex items-start space-x-4">
+                <span class="text-3xl">💰</span>
+                <div>
+                  <p class="text-lg font-medium text-quube-black mb-2">ROI Mesurable</p>
+                  <p class="text-quube-gray-dark leading-relaxed">
+                    Ces cas d'usage génèrent en moyenne <strong class="text-quube-black">50-70% de gain de temps</strong> sur les tâches stratégiques complexes. 
+                    Un rapport d'activité qui prenait 3 jours est désormais produit en <strong class="text-quube-black">6 heures</strong>, 
+                    un business plan de 2 semaines en <strong class="text-quube-black">3 jours</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
