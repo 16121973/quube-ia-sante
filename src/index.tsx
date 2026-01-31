@@ -1517,7 +1517,7 @@ app.get('/', (c) => {
 
           <div class="grid md:grid-cols-3 gap-8">
             {/* 13 articles de référence QUUBE - tous 3 min */}
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Transformation · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1527,9 +1527,9 @@ app.get('/', (c) => {
                   Comment passer du test individuel à la compétence collective ? La clé : former, outiller, sécuriser et surtout faire adopter.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">ROI & Productivité · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1539,9 +1539,9 @@ app.get('/', (c) => {
                   6 fonctions, 18 cas d'usage terrain pour libérer du temps sur la rédaction, les rapports et les tutelles.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Pilotage & Gouvernance · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1551,9 +1551,9 @@ app.get('/', (c) => {
                   Le vrai coût de l'IA n'est pas le prix facial. Inventaire, classification et rationalisation en 30 jours.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Architecture & Tech · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1563,9 +1563,9 @@ app.get('/', (c) => {
                   Transformer l'IA d'un ensemble d'essais en capacité organisationnelle avec SSO, DLP, logs et catalogue d'usages.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Conformité & Sécurité · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1575,9 +1575,9 @@ app.get('/', (c) => {
                   Pourquoi l'hybride devient la norme : adapter l'architecture au niveau de sensibilité des données.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">ROI & Pilotage · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1587,9 +1587,9 @@ app.get('/', (c) => {
                   Méthode simple et défendable pour mesurer les gains réels sans tomber dans les mythes classiques.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1599,9 +1599,9 @@ app.get('/', (c) => {
                   68% des salariés utilisent l'IA sans en informer leur employeur. La solution : proposer une alternative cadrée.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Bonnes Pratiques · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1611,9 +1611,9 @@ app.get('/', (c) => {
                   Les règles simples qui évitent les erreurs de base, les fuites de données et les usages hors cadre.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1623,9 +1623,9 @@ app.get('/', (c) => {
                   Comment garder la maîtrise sans bureaucratie : 3 instances, 6 rôles et un dispositif d'escalade.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Formation · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1635,9 +1635,9 @@ app.get('/', (c) => {
                   Faire monter en compétence 50, 100 ou 500 collaborateurs avec un parcours progressif et ancré.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Éthique & Inclusion · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1647,9 +1647,9 @@ app.get('/', (c) => {
                   L'IA ne doit pas créer une nouvelle barrière pour les publics fragiles. Simplicité et accompagnement humain.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Éthique & RH · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1659,9 +1659,9 @@ app.get('/', (c) => {
                   Comment l'IA peut devenir un accélérateur d'inégalités entre professionnels — et comment l'éviter.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
+            <a href="mailto:contact@quube.fr?subject=Demande d'accès aux articles complets&body=Bonjour, je souhaite accéder aux articles complets du blog QUUBE IA Santé." class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Prospective · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1671,7 +1671,7 @@ app.get('/', (c) => {
                   Plus de besoins, moins de ressources : l'IA comme levier de réorganisation du travail en santé.
                 </p>
               </div>
-            </article>
+            </a>
           </div>
         </div>
       </section>
