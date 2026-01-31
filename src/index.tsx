@@ -104,36 +104,58 @@ app.get('/', (c) => {
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">01</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Formations IA Générative</h3>
+                    <h3 class="text-2xl font-medium text-quube-black">Acculturation IA</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">
-                    Montée en compétences sur les outils IA
+                    Formations, conférences et sensibilisation
                   </p>
                 </div>
                 <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
               </summary>
               <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
-                <p class="leading-relaxed">
-                  Formation complète sur ChatGPT, Claude, Mistral, Gemini et Copilot pour une adoption rapide et efficace de l'IA générative dans vos processus métiers.
+                <p class="leading-relaxed font-medium">
+                  Formations, conférences et sensibilisation pour une adoption rapide et efficace de l'IA générative dans vos processus métiers.
                 </p>
-                <ul class="space-y-2">
-                  <li class="flex items-start">
-                    <span class="text-quube-yellow mr-2">•</span>
-                    <span>Prise en main des outils IA (ChatGPT, Claude, Mistral)</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-quube-yellow mr-2">•</span>
-                    <span>Prompting avancé et techniques d'interaction</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-quube-yellow mr-2">•</span>
-                    <span>Cas d'usage secteur santé & médico-social</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span class="text-quube-yellow mr-2">•</span>
-                    <span>Formations certifiantes et sur-mesure</span>
-                  </li>
-                </ul>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Formations IA Générative</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Formation complète sur ChatGPT, Claude, Mistral, Gemini et Copilot</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Prise en main des outils IA avec prompting avancé</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Cas d'usage secteur santé & médico-social</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Formations certifiantes et sur-mesure</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Conférences & Sensibilisation</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Conférences et webinaires sur les enjeux de l'IA</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Séminaires de sensibilisation pour vos équipes</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Ateliers découverte et démonstrations</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </details>
 
@@ -245,22 +267,6 @@ app.get('/', (c) => {
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">06</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Conférences & Sensibilisation</h3>
-                  </div>
-                  <p class="text-lg font-light text-quube-gray-dark ml-16">Événements et séminaires IA</p>
-                </div>
-                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
-              </summary>
-              <div class="mt-6 ml-16 text-quube-gray-dark leading-relaxed">
-                Conférences, webinaires et séminaires pour sensibiliser vos équipes aux enjeux et opportunités de l'IA.
-              </div>
-            </details>
-
-            <details class="group border-b border-gray-200 pb-4">
-              <summary class="cursor-pointer list-none flex justify-between items-start">
-                <div class="flex-1">
-                  <div class="flex items-baseline space-x-4 mb-2">
-                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">07</span>
                     <h3 class="text-2xl font-medium text-quube-black">Accompagnement Technique</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">Implémentation et déploiement</p>
@@ -276,7 +282,7 @@ app.get('/', (c) => {
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
-                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">08</span>
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">07</span>
                     <h3 class="text-2xl font-medium text-quube-black">Compliance & Conformité</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">RGPD, AI Act, NIS 2</p>
@@ -300,7 +306,7 @@ app.get('/', (c) => {
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
-                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">09</span>
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">08</span>
                     <h3 class="text-2xl font-medium text-quube-black">Data Analyse via IA</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">Analytics et insights automatisés</p>
