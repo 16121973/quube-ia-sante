@@ -1507,93 +1507,171 @@ app.get('/', (c) => {
         <div class="max-w-6xl mx-auto px-8">
           <div class="mb-24">
             <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
-              Nos <span class="font-bold">Articles</span>
+              <span class="font-bold">13 Articles</span> de Référence
             </h2>
             <div class="w-20 h-1 bg-quube-yellow mb-6"></div>
             <p class="text-lg font-light text-quube-gray-dark max-w-2xl">
-              Découvrez nos analyses et retours d'expérience sur l'IA dans le secteur santé
+              Asseoir votre expertise IA en santé et médico-social : transformation, gouvernance, ROI, éthique et prospective
             </p>
           </div>
 
           <div class="grid md:grid-cols-3 gap-8">
-            {/* 6 articles - style minimaliste */}
+            {/* 13 articles de référence QUUBE - tous 3 min */}
             <article class="group cursor-pointer">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
-                <div class="text-sm text-quube-gray mb-3">Article · 5 min</div>
+                <div class="text-sm text-quube-gray mb-3">Transformation · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
-                  IA générative dans le médico-social : enjeux et bénéfices
+                  Acculturer à l'IA en santé : réussir le passage à l'échelle
                 </h3>
                 <p class="text-quube-gray-dark font-light leading-relaxed">
-                  Les cas d'usage concrets de l'IA dans le secteur médico-social et leurs impacts mesurables
+                  Comment passer du test individuel à la compétence collective ? La clé : former, outiller, sécuriser et surtout faire adopter.
                 </p>
               </div>
             </article>
 
             <article class="group cursor-pointer">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
-                <div class="text-sm text-quube-gray mb-3">Article · 7 min</div>
+                <div class="text-sm text-quube-gray mb-3">ROI & Productivité · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
-                  RGPD et IA : ce que vous devez savoir
+                  Fonctions support : où l'IA crée de la valeur dès maintenant
                 </h3>
                 <p class="text-quube-gray-dark font-light leading-relaxed">
-                  Compliance et conformité dans l'utilisation de l'IA générative en santé
+                  6 fonctions, 18 cas d'usage terrain pour libérer du temps sur la rédaction, les rapports et les tutelles.
                 </p>
               </div>
             </article>
 
             <article class="group cursor-pointer">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
-                <div class="text-sm text-quube-gray mb-3">Article · 4 min</div>
+                <div class="text-sm text-quube-gray mb-3">Pilotage & Gouvernance · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
-                  60 minutes gagnées par jour : retour d'expérience
+                  Licences IA, API, coûts cachés : reprendre le contrôle avant l'explosion
                 </h3>
                 <p class="text-quube-gray-dark font-light leading-relaxed">
-                  Comment l'IA transforme concrètement le quotidien des professionnels de santé
+                  Le vrai coût de l'IA n'est pas le prix facial. Inventaire, classification et rationalisation en 30 jours.
                 </p>
               </div>
             </article>
 
             <article class="group cursor-pointer">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
-                <div class="text-sm text-quube-gray mb-3">Article · 6 min</div>
+                <div class="text-sm text-quube-gray mb-3">Architecture & Tech · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
-                  AI Act européen : impacts sur les établissements de santé
+                  Gateway IA : l'infrastructure manquante pour démocratiser l'IA en santé
                 </h3>
                 <p class="text-quube-gray-dark font-light leading-relaxed">
-                  Comprendre les obligations réglementaires et préparer votre mise en conformité IA
+                  Transformer l'IA d'un ensemble d'essais en capacité organisationnelle avec SSO, DLP, logs et catalogue d'usages.
                 </p>
               </div>
             </article>
 
             <article class="group cursor-pointer">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
-                <div class="text-sm text-quube-gray mb-3">Guide · 8 min</div>
+                <div class="text-sm text-quube-gray mb-3">Conformité & Sécurité · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
-                  Choisir sa solution IA en santé : guide pratique
+                  IA en santé : sécurité, confidentialité, souveraineté
                 </h3>
                 <p class="text-quube-gray-dark font-light leading-relaxed">
-                  Les critères essentiels pour sélectionner l'outil adapté à vos besoins métiers
+                  Pourquoi l'hybride devient la norme : adapter l'architecture au niveau de sensibilité des données.
                 </p>
               </div>
             </article>
 
             <article class="group cursor-pointer">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
-                <div class="text-sm text-quube-gray mb-3">Témoignage · 5 min</div>
+                <div class="text-sm text-quube-gray mb-3">ROI & Pilotage · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
-                  Déploiement IA en EHPAD : 3 mois après
+                  ROI de l'IA en santé : ce qui est mesurable, ce qui est illusoire
                 </h3>
                 <p class="text-quube-gray-dark font-light leading-relaxed">
-                  Retour d'expérience d'un directeur d'EHPAD sur l'adoption de l'IA par ses équipes
+                  Méthode simple et défendable pour mesurer les gains réels sans tomber dans les mythes classiques.
                 </p>
               </div>
             </article>
-          </div>
 
-          <div class="mt-12 text-center">
-            <a href="#blog" class="inline-block px-8 py-3 border-2 border-gray-200 hover:border-quube-yellow text-quube-black hover:text-quube-blue transition-colors font-medium">
-              Voir tous les articles
-            </a>
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Shadow IA : le vrai sujet n'est pas l'interdiction
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  68% des salariés utilisent l'IA sans en informer leur employeur. La solution : proposer une alternative cadrée.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Bonnes Pratiques · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Hygiène IA : 12 réflexes non négociables
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Les règles simples qui évitent les erreurs de base, les fuites de données et les usages hors cadre.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Gouverner l'IA en santé : comitologie légère, rôles clairs
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Comment garder la maîtrise sans bureaucratie : 3 instances, 6 rôles et un dispositif d'escalade.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Formation · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Apprendre l'IA avec l'IA : le parcours 30 jours
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Faire monter en compétence 50, 100 ou 500 collaborateurs avec un parcours progressif et ancré.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Éthique & Inclusion · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Accès aux droits à l'ère de l'IA : éviter le non-recours
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  L'IA ne doit pas créer une nouvelle barrière pour les publics fragiles. Simplicité et accompagnement humain.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Éthique & RH · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  IA et inégalités : éviter la fracture professionnelle
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Comment l'IA peut devenir un accélérateur d'inégalités entre professionnels — et comment l'éviter.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Prospective · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  IA et transformation des métiers en santé : ce qui change vraiment
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Plus de besoins, moins de ressources : l'IA comme levier de réorganisation du travail en santé.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>

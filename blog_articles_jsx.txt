@@ -1,0 +1,156 @@
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Transformation · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Acculturer à l'IA en santé : réussir le passage à l'échelle
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Comment passer du test individuel à la compétence collective ? La clé : former, outiller, sécuriser et surtout faire adopter.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">ROI & Productivité · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Fonctions support : où l'IA crée de la valeur dès maintenant
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  6 fonctions, 18 cas d'usage terrain pour libérer du temps sur la rédaction, les rapports et les tutelles.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Pilotage & Gouvernance · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Licences IA, API, coûts cachés : reprendre le contrôle avant l'explosion
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Le vrai coût de l'IA n'est pas le prix facial. Inventaire, classification et rationalisation en 30 jours.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Architecture & Tech · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Gateway IA : l'infrastructure manquante pour démocratiser l'IA en santé
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Transformer l'IA d'un ensemble d'essais en capacité organisationnelle avec SSO, DLP, logs et catalogue d'usages.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Conformité & Sécurité · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  IA en santé : sécurité, confidentialité, souveraineté
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Pourquoi l'hybride devient la norme : adapter l'architecture au niveau de sensibilité des données.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">ROI & Pilotage · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  ROI de l'IA en santé : ce qui est mesurable, ce qui est illusoire
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Méthode simple et défendable pour mesurer les gains réels sans tomber dans les mythes classiques.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Shadow IA : le vrai sujet n'est pas l'interdiction
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  68% des salariés utilisent l'IA sans en informer leur employeur. La solution : proposer une alternative cadrée.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Bonnes Pratiques · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Hygiène IA : 12 réflexes non négociables
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Les règles simples qui évitent les erreurs de base, les fuites de données et les usages hors cadre.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Gouverner l'IA en santé : comitologie légère, rôles clairs
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Comment garder la maîtrise sans bureaucratie : 3 instances, 6 rôles et un dispositif d'escalade.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Formation · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Apprendre l'IA avec l'IA : le parcours 30 jours
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Faire monter en compétence 50, 100 ou 500 collaborateurs avec un parcours progressif et ancré.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Éthique & Inclusion · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  Accès aux droits à l'ère de l'IA : éviter le non-recours
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  L'IA ne doit pas créer une nouvelle barrière pour les publics fragiles. Simplicité et accompagnement humain.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Éthique & RH · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  IA et inégalités : éviter la fracture professionnelle
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Comment l'IA peut devenir un accélérateur d'inégalités entre professionnels — et comment l'éviter.
+                </p>
+              </div>
+            </article>
+
+            <article class="group cursor-pointer">
+              <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
+                <div class="text-sm text-quube-gray mb-3">Prospective · 3 min</div>
+                <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
+                  IA et transformation des métiers en santé : ce qui change vraiment
+                </h3>
+                <p class="text-quube-gray-dark font-light leading-relaxed">
+                  Plus de besoins, moins de ressources : l'IA comme levier de réorganisation du travail en santé.
+                </p>
+              </div>
+            </article>
