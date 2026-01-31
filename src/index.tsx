@@ -690,6 +690,351 @@ app.get('/', (c) => {
         </div>
       </section>
 
+      {/* NOUVEAU PARCOURS CLIENT EN 5 PHASES */}
+      
+      {/* Phase 1 - SENSIBILISER */}
+      <section id="phase-sensibiliser" class="py-32 bg-gradient-to-br from-quube-yellow/5 to-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-16">
+            <div class="inline-block px-6 py-2 bg-quube-yellow/30 rounded-full mb-6">
+              <span class="text-sm font-bold text-quube-black uppercase tracking-wide">Phase 1</span>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
+              ① <span class="font-bold">Sensibiliser</span>
+            </h2>
+            <p class="text-xl font-light text-quube-gray-dark max-w-3xl">
+              Créer l'appétence et lever les freins. Premier contact avec l'IA pour les décideurs.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            {/* Service 1.1 - Conférences */}
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="text-4xl">🎤</div>
+                <div>
+                  <h3 class="text-2xl font-semibold text-quube-black mb-2">Conférences IA Inspirantes</h3>
+                  <p class="text-sm text-quube-gray-dark mb-4">COMEX, CODIR, CSE, CME | 2h | 50-200 personnes</p>
+                </div>
+              </div>
+              <p class="text-quube-gray-dark mb-4">
+                Démystification de l'IA, exemples concrets santé, démonstrations live, état de l'art.
+              </p>
+              <div class="bg-quube-yellow/10 p-4 rounded">
+                <p class="text-sm font-medium text-quube-black">📦 Livrables</p>
+                <p class="text-sm text-quube-gray-dark">Support de présentation, démonstration en live</p>
+              </div>
+            </div>
+
+            {/* Service 1.2 - Coaching DG */}
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="text-4xl">👔</div>
+                <div>
+                  <h3 class="text-2xl font-semibold text-quube-black mb-2">Coaching IA pour Dirigeants</h3>
+                  <p class="text-sm text-quube-gray-dark mb-4">DG, Directeurs | 3-6 séances (1h30) | Confidentiel</p>
+                </div>
+              </div>
+              <p class="text-quube-gray-dark mb-4">
+                Appropriation des outils, vision stratégique, impacts managériaux, cas d'usage personnalisés.
+              </p>
+              <div class="bg-quube-yellow/10 p-4 rounded">
+                <p class="text-sm font-medium text-quube-black">📦 Livrables</p>
+                <p class="text-sm text-quube-gray-dark">Plan d'action personnel, hotline 3 mois</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 2 - MONTER EN COMPÉTENCES */}
+      <section id="phase-competences" class="py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-16">
+            <div class="inline-block px-6 py-2 bg-quube-blue/20 rounded-full mb-6">
+              <span class="text-sm font-bold text-quube-black uppercase tracking-wide">Phase 2</span>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
+              ② <span class="font-bold">Monter en Compétences</span>
+            </h2>
+            <p class="text-xl font-light text-quube-gray-dark max-w-3xl">
+              Rendre les équipes autonomes et opérationnelles. Formation progressive selon le niveau.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-8">
+            {/* Niveau Débutant */}
+            <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-lg border-l-4 border-green-500">
+              <div class="text-3xl mb-3">🌱</div>
+              <h3 class="text-xl font-semibold text-quube-black mb-2">Niveau Débutant</h3>
+              <p class="text-sm text-quube-gray mb-3">Découverte</p>
+              <p class="text-sm text-quube-gray-dark mb-4">
+                <strong>Durée :</strong> 0,5 jour (3h30)<br/>
+                <strong>Cible :</strong> Nouveaux utilisateurs
+              </p>
+              <ul class="text-sm text-quube-gray-dark space-y-1 mb-4">
+                <li>• Qu'est-ce que l'IA générative ?</li>
+                <li>• Premiers pas ChatGPT/Claude</li>
+                <li>• 5 cas d'usage simples</li>
+                <li>• Bonnes pratiques RGPD</li>
+              </ul>
+              <p class="text-xs font-medium text-green-700">✓ Guide démarrage + 10 prompts</p>
+            </div>
+
+            {/* Niveau Intermédiaire */}
+            <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-lg border-l-4 border-quube-blue">
+              <div class="text-3xl mb-3">📈</div>
+              <h3 class="text-xl font-semibold text-quube-black mb-2">Niveau Intermédiaire</h3>
+              <p class="text-sm text-quube-gray mb-3">Productivité</p>
+              <p class="text-sm text-quube-gray-dark mb-4">
+                <strong>Durée :</strong> 1 jour<br/>
+                <strong>Cible :</strong> Utilisateurs réguliers
+              </p>
+              <ul class="text-sm text-quube-gray-dark space-y-1 mb-4">
+                <li>• Prompting avancé</li>
+                <li>• Chaînage de prompts</li>
+                <li>• Intégration Office 365</li>
+                <li>• Cas d'usage métier approfondis</li>
+              </ul>
+              <p class="text-xs font-medium text-blue-700">✓ Bibliothèque prompts + Charte d'usage</p>
+            </div>
+
+            {/* Niveau Expert */}
+            <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-lg border-l-4 border-purple-600">
+              <div class="text-3xl mb-3">🎓</div>
+              <h3 class="text-xl font-semibold text-quube-black mb-2">Niveau Expert</h3>
+              <p class="text-sm text-quube-gray mb-3">Maîtrise</p>
+              <p class="text-sm text-quube-gray-dark mb-4">
+                <strong>Durée :</strong> 2 jours<br/>
+                <strong>Cible :</strong> Référents IA, chefs de projet
+              </p>
+              <ul class="text-sm text-quube-gray-dark space-y-1 mb-4">
+                <li>• Automatisation workflows</li>
+                <li>• APIs et intégrations</li>
+                <li>• Benchmark solutions</li>
+                <li>• Formation de formateurs</li>
+              </ul>
+              <p class="text-xs font-medium text-purple-700">✓ Certification QUUBE + Kit déploiement</p>
+            </div>
+          </div>
+
+          <div class="bg-quube-yellow/10 p-6 rounded-lg border-l-4 border-quube-yellow">
+            <h4 class="font-semibold text-quube-black mb-2">🎯 Sur-mesure — Expertise</h4>
+            <p class="text-sm text-quube-gray-dark">
+              Approfondissements outils (Claude, Copilot...), analyse de données, automatisations simples, optimisation workflows (nous consulter)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 3 - STRUCTURER */}
+      <section id="phase-structurer" class="py-32 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-16">
+            <div class="inline-block px-6 py-2 bg-purple-100 rounded-full mb-6">
+              <span class="text-sm font-bold text-quube-black uppercase tracking-wide">Phase 3</span>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
+              ③ <span class="font-bold">Structurer</span>
+            </h2>
+            <p class="text-xl font-light text-quube-gray-dark max-w-3xl">
+              Définir la stratégie IA et prendre les bonnes décisions. Cadrage avant déploiement.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            {/* Service 3.1 - Diagnostic Flash */}
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="text-4xl">🔍</div>
+                <div>
+                  <h3 class="text-2xl font-semibold text-quube-black mb-2">Diagnostic Flash & Feuille de Route</h3>
+                  <p class="text-sm text-quube-gray-dark mb-4">DG, DSI | 2-5 jours selon taille</p>
+                </div>
+              </div>
+              <p class="text-quube-gray-dark mb-4">
+                Audit de maturité IA (processus, données, culture). Cartographie cas d'usage prioritaires. 
+                Analyse quick wins. Priorisation par ROI et faisabilité.
+              </p>
+              <div class="bg-purple-50 p-4 rounded space-y-2">
+                <p class="text-sm font-medium text-quube-black">📦 Livrables</p>
+                <ul class="text-xs text-quube-gray-dark space-y-1">
+                  <li>• Rapport diagnostic + scoring maturité</li>
+                  <li>• Feuille de route IA à 3 ans</li>
+                  <li>• Matrice priorisation cas d'usage</li>
+                  <li>• Recommandations gouvernance</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Service 3.2 - Aide au Choix */}
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="text-4xl">🎯</div>
+                <div>
+                  <h3 class="text-2xl font-semibold text-quube-black mb-2">Aide au Choix des Solutions IA</h3>
+                  <p class="text-sm text-quube-gray-dark mb-4">DSI, Directions métiers, Achats | 3-10 jours</p>
+                </div>
+              </div>
+              <p class="text-quube-gray-dark mb-4">
+                Analyse besoins métiers et techniques. Benchmark neutre des solutions du marché. 
+                Grille d'évaluation multicritères. Organisation POC/démos. Accompagnement négociation.
+              </p>
+              <div class="bg-purple-50 p-4 rounded space-y-2">
+                <p class="text-sm font-medium text-quube-black">📦 Livrables</p>
+                <ul class="text-xs text-quube-gray-dark space-y-1">
+                  <li>• Cahier des charges fonctionnel</li>
+                  <li>• Benchmark comparatif (5-10 solutions)</li>
+                  <li>• Recommandation argumentée</li>
+                  <li>• Support présentation COMEX</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 4 - DÉPLOYER */}
+      <section id="phase-deployer" class="py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-16">
+            <div class="inline-block px-6 py-2 bg-quube-yellow rounded-full mb-6">
+              <span class="text-sm font-bold text-quube-black uppercase tracking-wide">Phase 4</span>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
+              ④ <span class="font-bold">Déployer</span>
+            </h2>
+            <p class="text-xl font-light text-quube-gray-dark max-w-3xl">
+              Mettre en œuvre les projets IA et assurer leur adoption. Passage à l'action.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            {/* Service 4.1 - Pilotage Projet */}
+            <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-quube-blue">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="text-4xl">⚙️</div>
+                <div>
+                  <h3 class="text-xl font-semibold text-quube-black mb-2">Pilotage de Projet IA</h3>
+                  <p class="text-sm text-quube-gray-dark mb-3">DSI, Directions métiers, Chefs de projet</p>
+                </div>
+              </div>
+              <ul class="text-sm text-quube-gray-dark space-y-2">
+                <li>• Pilotage MOA/MOE</li>
+                <li>• Méthodologie agile adaptée santé</li>
+                <li>• Coordination éditeurs/SI</li>
+                <li>• Tests et recette</li>
+                <li>• Déploiement progressif</li>
+              </ul>
+            </div>
+
+            {/* Service 4.2 - Conduite du Changement */}
+            <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-green-500">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="text-4xl">🚀</div>
+                <div>
+                  <h3 class="text-xl font-semibold text-quube-black mb-2">Conduite du Changement</h3>
+                  <p class="text-sm text-quube-gray-dark mb-3">DRH, Communication, Managers</p>
+                </div>
+              </div>
+              <ul class="text-sm text-quube-gray-dark space-y-2">
+                <li>• Plan de communication</li>
+                <li>• Identification ambassadeurs</li>
+                <li>• Formation utilisateurs finaux</li>
+                <li>• Accompagnement résistances</li>
+                <li>• Support post-déploiement</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Lien vers Accélération de Projet */}
+          <div class="bg-gradient-to-r from-quube-yellow/20 to-quube-blue/10 p-8 rounded-lg border-2 border-quube-yellow">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="text-5xl">⚡</div>
+              <div>
+                <h3 class="text-2xl font-bold text-quube-black mb-2">ACCÉLÉRATION DE PROJET</h3>
+                <p class="text-sm font-medium text-quube-gray-dark">OFFRE SIGNATURE</p>
+              </div>
+            </div>
+            <p class="text-quube-gray-dark mb-4">
+              Utilisez l'IA comme outil de production du conseil pour accélérer vos projets stratégiques : 
+              <strong>délais ÷2-3, coûts réduits, transfert de compétences inclus</strong>.
+            </p>
+            <a href="#acceleration-projets" class="inline-block px-8 py-3 bg-quube-yellow text-quube-black font-semibold rounded-lg hover:bg-quube-yellow/90 transition-colors">
+              Découvrir l'offre Accélération →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Phase 5 - PÉRENNISER & MESURER */}
+      <section id="phase-perenniser" class="py-32 bg-gradient-to-br from-green-50 to-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-16">
+            <div class="inline-block px-6 py-2 bg-green-100 rounded-full mb-6">
+              <span class="text-sm font-bold text-quube-black uppercase tracking-wide">Phase 5</span>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
+              ⑤ <span class="font-bold">Pérenniser & Mesurer</span>
+            </h2>
+            <p class="text-xl font-light text-quube-gray-dark max-w-3xl">
+              Ancrer l'IA dans la durée et démontrer la valeur. Amélioration continue.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            {/* Service 5.1 - Club IA Santé */}
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="text-4xl">🌐</div>
+                <div>
+                  <h3 class="text-2xl font-semibold text-quube-black mb-2">Club IA Santé — Veille & Réseau</h3>
+                  <p class="text-sm text-quube-gray-dark mb-4">Décideurs et cadres | Abonnement annuel</p>
+                </div>
+              </div>
+              <p class="text-quube-gray-dark mb-4">
+                Restez à la pointe de l'innovation IA en santé : veille mensuelle, retours d'expérience entre pairs, 
+                webinaires thématiques, accès privilégié aux analyses sectorielles.
+              </p>
+              <div class="bg-green-50 p-4 rounded space-y-2">
+                <p class="text-sm font-medium text-quube-black">🎁 Avantages membres</p>
+                <ul class="text-xs text-quube-gray-dark space-y-1">
+                  <li>• Newsletter mensuelle exclusive</li>
+                  <li>• Webinaires avec experts terrain</li>
+                  <li>• REX entre pairs</li>
+                  <li>• Accès prioritaire formations</li>
+                  <li>• Réseau privé décideurs santé</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Service 5.2 - Mesure ROI */}
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="text-4xl">📊</div>
+                <div>
+                  <h3 class="text-2xl font-semibold text-quube-black mb-2">Mesure de ROI & Amélioration Continue</h3>
+                  <p class="text-sm text-quube-gray-dark mb-4">DG, Contrôle de gestion, DSI</p>
+                </div>
+              </div>
+              <p class="text-quube-gray-dark mb-4">
+                Définition des KPIs d'adoption et de performance. Mesure des gains de temps et de qualité. 
+                Calcul du ROI des projets IA déployés. Plan d'amélioration continue.
+              </p>
+              <div class="bg-green-50 p-4 rounded space-y-2">
+                <p class="text-sm font-medium text-quube-black">📦 Livrables</p>
+                <ul class="text-xs text-quube-gray-dark space-y-1">
+                  <li>• Tableau de bord ROI</li>
+                  <li>• Rapport d'impact mesurable</li>
+                  <li>• Benchmark interne</li>
+                  <li>• Recommandations d'optimisation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Singularité */}
       <section class="py-32 bg-gray-50">
         <div class="max-w-4xl mx-auto px-8 text-center">
