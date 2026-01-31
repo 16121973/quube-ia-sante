@@ -156,6 +156,32 @@ app.get('/', (c) => {
                     </li>
                   </ul>
                 </div>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Compliance & Conformité</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Sensibilisation RGPD et AI Act européen</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Audit de conformité NIS 2 et cybersécurité</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Souveraineté des données et hébergement HDS</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Charte éthique et charte d'usages de l'IA</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Normes secteur santé (ISO 27001, certifications)</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </details>
 
@@ -290,30 +316,6 @@ app.get('/', (c) => {
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">05</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Compliance & Conformité</h3>
-                  </div>
-                  <p class="text-lg font-light text-quube-gray-dark ml-16">RGPD, AI Act, NIS 2</p>
-                </div>
-                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
-              </summary>
-              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
-                <p class="leading-relaxed">
-                  Maîtrisez les enjeux réglementaires : RGPD, AI Act, NIS 2, souveraineté des données et normes secteur santé.
-                </p>
-                <ul class="space-y-2">
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Sensibilisation RGPD et AI Act</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Audit de conformité NIS 2</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Souveraineté et hébergement des données</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Normes HDS et ISO 27001</span></li>
-                </ul>
-              </div>
-            </details>
-
-            <details class="group border-b border-gray-200 pb-4">
-              <summary class="cursor-pointer list-none flex justify-between items-start">
-                <div class="flex-1">
-                  <div class="flex items-baseline space-x-4 mb-2">
-                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">06</span>
                     <h3 class="text-2xl font-medium text-quube-black">Data Analyse via IA</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">Analytics et insights automatisés</p>
