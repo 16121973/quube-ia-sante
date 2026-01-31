@@ -114,6 +114,11 @@ app.get('/', (c) => {
                 Notre double expertise <span class="text-quube-black font-medium">terrain sanitaire + intelligence artificielle</span> fait de nous 
                 l'interlocuteur de confiance pour naviguer dans l'écosystème pléthorique des solutions IA.
               </p>
+              <p class="text-lg font-light text-quube-gray-dark leading-relaxed">
+                <span class="text-quube-black font-medium">Notre vraie plus-value</span> : nous connaissons les cas d'usage du secteur, 
+                les besoins précis de chaque métier (soignants, directions, fonctions support), et les contraintes réglementaires et budgétaires 
+                qui façonnent vos décisions.
+              </p>
             </div>
 
             <div class="space-y-6">
