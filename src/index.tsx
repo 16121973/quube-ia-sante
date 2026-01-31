@@ -275,58 +275,147 @@ app.get('/', (c) => {
               </div>
             </details>
 
+            {/* Service 4 - Diagnostic IA & Feuille de Route */}
             <details class="group border-b border-gray-200 pb-4">
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">04</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Automatisation de Workflow</h3>
+                    <h3 class="text-2xl font-medium text-quube-black">Diagnostic IA & Feuille de Route</h3>
                   </div>
-                  <p class="text-lg font-light text-quube-gray-dark ml-16">Optimisation et gains de productivité</p>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Évaluez votre maturité IA et recevez un plan d'action sur 3 ans
+                  </p>
                 </div>
                 <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
               </summary>
               <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
                 <p class="leading-relaxed">
-                  Transformez vos processus métiers grâce à l'automatisation intelligente par l'IA. Réduisez les tâches répétitives, accélérez vos workflows et libérez du temps pour vos équipes.
+                  <strong>Obtenez un diagnostic Flash express en 2 heures chrono.</strong> Nos consultants évaluent rapidement votre maturité IA, identifient les quick wins et vous fournissent une feuille de route pragmatique : stratégie IA, gouvernance, priorisation des use cases à fort ROI.
                 </p>
-                <ul class="space-y-2">
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>Automatisation documentaire :</strong> Traitement intelligent de documents, extraction et classement automatisés</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>Workflows administratifs :</strong> Automatisation des processus RH, facturation, suivi qualité</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>Assistants IA métiers :</strong> Chatbots intelligents, agents conversationnels spécialisés</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>Intégrations & connecteurs :</strong> Connexion avec vos outils existants (ERP, CRM, logiciels métiers)</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span><strong>ROI mesurable :</strong> Gains de temps quantifiés, réduction des erreurs, amélioration de la qualité</span></li>
-                </ul>
-                <div class="mt-4 p-4 bg-gray-50 border-l-4 border-quube-yellow">
-                  <p class="text-sm font-medium text-quube-black">💡 Valeur ajoutée</p>
-                  <p class="text-sm mt-2">
-                    Nos solutions d'automatisation génèrent en moyenne <strong>30% de gain de temps</strong> sur les tâches administratives, permettant à vos équipes de se concentrer sur les missions à forte valeur ajoutée : accompagnement des patients, qualité des soins et innovation.
-                  </p>
+                <p class="leading-relaxed">
+                  <strong>Bénéfice :</strong> une vision claire de vos opportunités IA et un plan d'action immédiatement opérationnel.
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">🎯 Livrables</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Audit complet de maturité IA</li>
+                    <li>• Stratégie IA et roadmap de transformation sur 3 ans</li>
+                    <li>• Gouvernance IA et comité de pilotage</li>
+                    <li>• Priorisation des use cases à fort ROI</li>
+                    <li>• Identification des opportunités stratégiques</li>
+                    <li>• Recommandations personnalisées et actionnables</li>
+                  </ul>
                 </div>
               </div>
             </details>
 
+            {/* Service 5 - Aide au Choix des Solutions IA */}
             <details class="group border-b border-gray-200 pb-4">
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">05</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Data Analyse via IA</h3>
+                    <h3 class="text-2xl font-medium text-quube-black">Aide au Choix des Solutions IA</h3>
                   </div>
-                  <p class="text-lg font-light text-quube-gray-dark ml-16">Analytics et insights automatisés</p>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Benchmark neutre et recommandation de la meilleure solution
+                  </p>
                 </div>
                 <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
               </summary>
               <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
                 <p class="leading-relaxed">
-                  Exploitez vos données avec l'IA : analyse automatisée, visualisation intelligente et extraction d'insights actionnables.
+                  <strong>Faites le bon choix parmi des centaines de solutions IA disponibles.</strong> Notre benchmark neutre et indépendant vous aide à sélectionner l'outil qui répond vraiment à vos besoins : analyse comparative, grilles d'évaluation, démonstrations, négociation avec les éditeurs.
                 </p>
-                <ul class="space-y-2">
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Analyse automatisée de données métiers</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Visualisation intelligente & dashboards IA</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Analyse prédictive & tendances</span></li>
-                  <li class="flex items-start"><span class="text-quube-yellow mr-2">•</span><span>Reporting automatisé personnalisé</span></li>
-                </ul>
+                <p class="leading-relaxed">
+                  <strong>Notre promesse :</strong> aucun partenariat exclusif, préconisations 100% objectives basées sur vos critères (budget, souveraineté, intégration, conformité RGPD).
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">📋 Notre méthode</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Analyse de vos besoins métiers et techniques</li>
+                    <li>• Benchmark complet des solutions du marché</li>
+                    <li>• Grilles d'évaluation multicritères objectives</li>
+                    <li>• Organisation de démonstrations éditeurs</li>
+                    <li>• Accompagnement négociation et contractualisation</li>
+                    <li>• Support au déploiement et à l'intégration</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            {/* Service 6 - Pilotage de Projet IA & Change */}
+            <details class="group border-b border-gray-200 pb-4">
+              <summary class="cursor-pointer list-none flex justify-between items-start">
+                <div class="flex-1">
+                  <div class="flex items-baseline space-x-4 mb-2">
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">06</span>
+                    <h3 class="text-2xl font-medium text-quube-black">Pilotage de Projet IA & Change</h3>
+                  </div>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Mise en œuvre, formation des utilisateurs et adoption durable
+                  </p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  <strong>Assurez le succès de vos projets IA de bout en bout.</strong> Nous pilotez l'implémentation technique, formons vos équipes aux nouveaux outils et orchestrons la conduite du changement pour garantir une adoption massive et pérenne.
+                </p>
+                <p class="leading-relaxed">
+                  <strong>Résultat :</strong> des projets IA qui dépassent le stade POC pour devenir des outils métiers adoptés par tous au quotidien.
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">🚀 Accompagnement complet</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Pilotage MOA/MOE des projets IA</li>
+                    <li>• Gestion de projet agile et méthodologie adaptée</li>
+                    <li>• Formation des utilisateurs finaux et référents métiers</li>
+                    <li>• Conduite du changement et communication interne</li>
+                    <li>• Mesure d'impact et suivi des KPIs d'adoption</li>
+                    <li>• Support post-déploiement et amélioration continue</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            {/* Service 7 - Club IA Santé */}
+            <details class="group border-b border-gray-200 pb-4">
+              <summary class="cursor-pointer list-none flex justify-between items-start">
+                <div class="flex-1">
+                  <div class="flex items-baseline space-x-4 mb-2">
+                    <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">07</span>
+                    <h3 class="text-2xl font-medium text-quube-black">Club IA Santé – Veille & Réseau</h3>
+                  </div>
+                  <p class="text-lg font-light text-quube-gray-dark ml-16">
+                    Veille mensuelle et retours d'expérience
+                  </p>
+                </div>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
+              </summary>
+              <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
+                <p class="leading-relaxed">
+                  <strong>Restez à la pointe de l'innovation IA en santé.</strong> Rejoignez notre communauté exclusive de décideurs et cadres du secteur : veille mensuelle sur les nouveautés IA, retours d'expérience entre pairs, webinaires thématiques et accès privilégié à nos analyses sectorielles.
+                </p>
+                <p class="leading-relaxed">
+                  <strong>Objectif :</strong> anticiper les disruptions, découvrir les innovations avant tout le monde et bénéficier d'un réseau d'entraide entre professionnels de santé engagés dans la transformation IA.
+                </p>
+                
+                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
+                  <p class="text-sm font-medium text-quube-black mb-2">🌐 Avantages membres</p>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Newsletter mensuelle exclusive : innovations, réglementation, cas d'usage</li>
+                    <li>• Webinaires thématiques avec experts et témoins terrain</li>
+                    <li>• Retours d'expérience entre pairs (REX anonymisés)</li>
+                    <li>• Accès prioritaire aux formations et événements QUUBE</li>
+                    <li>• Réseau privé de décideurs et cadres de santé</li>
+                    <li>• Benchmark et analyses sectorielles IA Santé</li>
+                  </ul>
+                </div>
               </div>
             </details>
           </div>
