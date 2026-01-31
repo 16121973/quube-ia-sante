@@ -571,9 +571,16 @@ app.get('/', (c) => {
             </p>
           </div>
 
-          {/* Onglets minimalistes */}
+          {/* Onglets combinés : ROI++ + Terrain + Métiers */}
           <div class="flex flex-wrap gap-2 mb-12 border-b border-gray-200 pb-4">
-            <button onclick="showTab('reunions')" id="tab-reunions" class="tab-btn px-6 py-3 text-sm font-bold rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors bg-quube-yellow/30 text-quube-black shadow-sm active">🧠 Réunions</button>
+            {/* ROI++ - Premier et actif */}
+            <button onclick="showTab('roi')" id="tab-roi" class="tab-btn px-6 py-3 text-sm font-bold rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors bg-quube-yellow/30 text-quube-black shadow-sm active">⚡ ROI++</button>
+            
+            {/* Séparateur visuel */}
+            <div class="h-10 w-px bg-gray-300 self-center mx-2"></div>
+            
+            {/* Cas d'usage Terrain détaillés */}
+            <button onclick="showTab('reunions')" id="tab-reunions" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🧠 Réunions</button>
             <button onclick="showTab('rapports')" id="tab-rapports" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">📊 Rapports</button>
             <button onclick="showTab('tutelle')" id="tab-tutelle" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🏛 Tutelle</button>
             <button onclick="showTab('rh')" id="tab-rh" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">👥 RH</button>
@@ -581,10 +588,131 @@ app.get('/', (c) => {
             <button onclick="showTab('medical')" id="tab-medical" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">🩺 Médical</button>
             <button onclick="showTab('usager')" id="tab-usager" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">👪 Parcours</button>
             <button onclick="showTab('qualite')" id="tab-qualite" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">✍️ Qualité</button>
+            
+            {/* Séparateur visuel */}
+            <div class="h-10 w-px bg-gray-300 self-center mx-2"></div>
+            
+            {/* Par Métiers/Fonctions */}
+            <button onclick="showTab('drh')" id="tab-drh" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">DRH</button>
+            <button onclick="showTab('daf')" id="tab-daf" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">DAF</button>
+            <button onclick="showTab('dg')" id="tab-dg" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">DG</button>
+            <button onclick="showTab('directeurs')" id="tab-directeurs" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Directeurs</button>
+            <button onclick="showTab('soins')" id="tab-soins" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Soins</button>
+            <button onclick="showTab('educatif')" id="tab-educatif" class="tab-btn px-6 py-3 text-sm font-medium rounded-t-lg border-b-2 border-transparent hover:border-quube-yellow transition-colors">Éducatif</button>
           </div>
 
           {/* Contenu onglets */}
-          <div id="content-reunions" class="tab-content">
+          
+          {/* ROI++ - Cas d'usage stratégiques génériques */}
+          <div id="content-roi" class="tab-content">
+            <h3 class="text-3xl font-medium text-quube-black mb-4">⚡ ROI++ - Cas d'Usage à Forte Valeur Ajoutée</h3>
+            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
+              L'IA générative transforme vos processus stratégiques les plus complexes et chronophages. 
+              Découvrez les cas d'usage qui génèrent un <strong>ROI immédiat et mesurable</strong>.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+              {/* Colonne 1 : Stratégie & Pilotage */}
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
+                    <span class="text-2xl mr-2">📊</span> Stratégie & Pilotage
+                  </h4>
+                  <ul class="space-y-3 text-quube-gray-dark">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Rapports d'activité</strong> : Génération automatique de rapports structurés, synthèses annuelles</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Projets d'établissement/services</strong> : Rédaction collaborative, alignement stratégique</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Notes stratégiques</strong> : Synthèses décisionnelles, recommandations argumentées</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Analyse concurrentielle</strong> : Veille stratégique, positionnement marché</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
+                    <span class="text-2xl mr-2">📈</span> Finance & Développement
+                  </h4>
+                  <ul class="space-y-3 text-quube-gray-dark">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Business plan</strong> : Modèles financiers, projections économiques, scénarios</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Simulations financières</strong> : Modélisation tarifaire, optimisation budgétaire</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Appels à projets</strong> : Rédaction de dossiers de financement, réponses AAP/AAC</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Colonne 2 : Veille & Production */}
+              <div class="space-y-6">
+                <div>
+                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
+                    <span class="text-2xl mr-2">🔍</span> Veille & Intelligence
+                  </h4>
+                  <ul class="space-y-3 text-quube-gray-dark">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Veille réglementaire</strong> : Monitoring automatisé des évolutions législatives, analyse d'impact</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Revue de littérature</strong> : Synthèse documentaire, état de l'art scientifique</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="text-xl font-medium text-quube-black mb-3 flex items-center">
+                    <span class="text-2xl mr-2">🎨</span> Production & Communication
+                  </h4>
+                  <ul class="space-y-3 text-quube-gray-dark">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Présentations PowerPoint</strong> : Génération de slides structurés, storytelling visuel</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-3 mt-1">•</span>
+                      <span><strong>Design de processus</strong> : Cartographie métiers, optimisation workflows</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Encadré ROI */}
+            <div class="mt-8 p-6 bg-gradient-to-r from-quube-yellow/10 to-quube-blue/10 border-l-4 border-quube-yellow rounded-r-lg">
+              <div class="flex items-start space-x-4">
+                <span class="text-3xl">💰</span>
+                <div>
+                  <p class="text-lg font-medium text-quube-black mb-2">ROI Mesurable</p>
+                  <p class="text-quube-gray-dark leading-relaxed">
+                    Ces cas d'usage génèrent en moyenne <strong class="text-quube-black">50-70% de gain de temps</strong> sur les tâches stratégiques complexes. 
+                    Un rapport d'activité qui prenait 3 jours est désormais produit en <strong class="text-quube-black">6 heures</strong>, 
+                    un business plan de 2 semaines en <strong class="text-quube-black">3 jours</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Cas d'usage Terrain détaillés - 8 onglets */}
+          <div id="content-reunions" class="tab-content hidden">
             <h3 class="text-3xl font-medium text-quube-black mb-6">🧠 Réunions Stratégiques : Préparez, Structurez, Diffusez</h3>
             
             <div class="grid md:grid-cols-2 gap-8 mb-6">
@@ -773,6 +901,81 @@ app.get('/', (c) => {
                 <li class="flex items-start"><span class="text-quube-yellow mr-3 text-xl">•</span><span><strong>Synthèse des réclamations usagers</strong> ou événements indésirables</span></li>
               </ul>
             </div>
+          </div>
+          
+          {/* Par Métiers/Fonctions - 6 onglets */}
+          <div id="content-drh" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-4">DRH - Recrutement & Ressources Humaines</h3>
+            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
+              Optimisez vos processus RH avec l'IA : rédaction d'offres d'emploi, screening de CV, onboarding personnalisé.
+            </p>
+            <ul class="space-y-3 text-quube-gray-dark">
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Rédaction automatisée d'offres d'emploi ciblées</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Screening de CV et matching candidats</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Génération de plans d'onboarding personnalisés</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Création de fiches de poste et référentiels</span></li>
+            </ul>
+          </div>
+
+          <div id="content-daf" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-4">DAF - Finance & Gestion</h3>
+            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
+              Accélérez vos analyses financières, simulations budgétaires et reporting avec l'IA.
+            </p>
+            <ul class="space-y-3 text-quube-gray-dark">
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Analyse automatisée des données financières</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Simulations tarifaires et modèles économiques</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Reporting financier automatisé</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Prévisions budgétaires assistées par IA</span></li>
+            </ul>
+          </div>
+
+          <div id="content-dg" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-4">DG - Vision Stratégique</h3>
+            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
+              Pilotez votre stratégie avec l'IA : analyse concurrentielle, synthèses stratégiques, aide à la décision.
+            </p>
+            <ul class="space-y-3 text-quube-gray-dark">
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Analyse de marché et positionnement stratégique</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Synthèses stratégiques et notes de cadrage</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Aide à la décision et scénarios prospectifs</span></li>
+            </ul>
+          </div>
+
+          <div id="content-directeurs" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-4">Directeurs d'Établissements</h3>
+            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
+              Optimisez le pilotage de votre établissement : indicateurs qualité, rapports d'activité, communication.
+            </p>
+            <ul class="space-y-3 text-quube-gray-dark">
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Tableaux de bord et indicateurs de pilotage</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Rapports d'activité et bilans annuels</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Communication interne et externe</span></li>
+            </ul>
+          </div>
+
+          <div id="content-soins" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-4">Équipes de Soins</h3>
+            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
+              Gagnez du temps sur la documentation : dossiers patients, transmissions, protocoles de soins.
+            </p>
+            <ul class="space-y-3 text-quube-gray-dark">
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Aide à la rédaction de dossiers patients</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Transmissions et comptes rendus de soins</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Protocoles et procédures de soins</span></li>
+            </ul>
+          </div>
+
+          <div id="content-educatif" class="tab-content hidden">
+            <h3 class="text-3xl font-medium text-quube-black mb-4">Équipes Éducatives</h3>
+            <p class="text-lg font-light text-quube-gray-dark leading-relaxed mb-6">
+              Améliorez vos programmes éducatifs : projets personnalisés, suivi individuel, supports pédagogiques.
+            </p>
+            <ul class="space-y-3 text-quube-gray-dark">
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Projets personnalisés d'accompagnement (PPA)</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Supports pédagogiques et fiches d'activité</span></li>
+              <li class="flex items-start"><span class="text-quube-yellow mr-3">•</span><span>Suivi individuel et bilans éducatifs</span></li>
+            </ul>
           </div>
         </div>
       </section>
