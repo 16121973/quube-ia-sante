@@ -1529,7 +1529,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(1);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">ROI & Productivité · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1553,7 +1553,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(3);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Architecture & Tech · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1565,7 +1565,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(4);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Conformité & Sécurité · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1577,7 +1577,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(5);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">ROI & Pilotage · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1589,7 +1589,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(6);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1601,7 +1601,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(7);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Bonnes Pratiques · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1613,7 +1613,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(8);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1625,7 +1625,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(9);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Formation · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1637,7 +1637,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(10);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Éthique & Inclusion · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1649,7 +1649,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(11);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Éthique & RH · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1661,7 +1661,7 @@ app.get('/', (c) => {
               </div>
             </a>
 
-            <a href="#" onclick="event.preventDefault(); openArticle(12);" class="group cursor-pointer block">
+            <a href="#" onclick="event.preventDefault(); openArticle(2);" class="group cursor-pointer block">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Prospective · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
