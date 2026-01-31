@@ -15,11 +15,44 @@ app.get('/', (c) => {
             <span class="text-quube-gray mx-2">×</span>
             <span class="text-quube-blue font-light">IA Santé</span>
           </a>
-          <div class="hidden md:flex items-center space-x-8 text-sm">
-            <a href="#promesse" class="text-quube-gray-dark hover:text-quube-black transition-colors">Notre Promesse</a>
-            <a href="#services" class="text-quube-gray-dark hover:text-quube-black transition-colors">Services</a>
-            <a href="#thematiques" class="text-quube-gray-dark hover:text-quube-black transition-colors">Thématiques</a>
-            <a href="#cas-usage" class="text-quube-gray-dark hover:text-quube-black transition-colors">Cas d'Usage</a>
+          <div class="hidden md:flex items-center space-x-6 text-sm">
+            <a href="#promesse" class="text-quube-gray-dark hover:text-quube-black transition-colors">Notre Approche</a>
+            
+            {/* Menu déroulant Services */}
+            <div class="relative group">
+              <button class="text-quube-gray-dark hover:text-quube-black transition-colors flex items-center gap-1">
+                Services <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+              <div class="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div class="py-2">
+                  <a href="#phase-sensibiliser" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">① Sensibiliser</a>
+                  <a href="#phase-competences" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">② Monter en Compétences</a>
+                  <a href="#phase-structurer" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">③ Structurer</a>
+                  <a href="#phase-deployer" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">④ Déployer</a>
+                  <a href="#phase-perenniser" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">⑤ Pérenniser & Mesurer</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Menu déroulant Par Métier */}
+            <div class="relative group">
+              <button class="text-quube-gray-dark hover:text-quube-black transition-colors flex items-center gap-1">
+                Par Métier <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+              <div class="absolute top-full left-0 mt-2 w-72 bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div class="py-2">
+                  <a href="#metier-dg" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Direction Générale & Stratégie</a>
+                  <a href="#metier-daf" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Finance & Gestion (DAF)</a>
+                  <a href="#metier-drh" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Ressources Humaines (DRH)</a>
+                  <a href="#metier-qualite" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Qualité & Conformité</a>
+                  <a href="#metier-soins" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Soins & Médical</a>
+                  <a href="#metier-educatif" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Éducatif & Médico-social</a>
+                  <a href="#metier-transverse" class="block px-4 py-2 text-quube-gray-dark hover:bg-quube-yellow/10 hover:text-quube-black">Fonctions Transverses</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#acceleration-projets" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Accélération Projets</a>
             <a href="#blog" class="text-quube-gray-dark hover:text-quube-black transition-colors">Blog</a>
             <a href="#contact" class="font-medium text-quube-black hover:text-quube-blue transition-colors border-b-2 border-transparent hover:border-quube-blue pb-1">Contact</a>
           </div>
@@ -30,10 +63,26 @@ app.get('/', (c) => {
         {/* Mobile menu */}
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 py-4 px-8">
           <div class="flex flex-col space-y-4">
-            <a href="#promesse" class="text-quube-gray-dark hover:text-quube-black transition-colors">Notre Promesse</a>
-            <a href="#services" class="text-quube-gray-dark hover:text-quube-black transition-colors">Services</a>
-            <a href="#thematiques" class="text-quube-gray-dark hover:text-quube-black transition-colors">Thématiques</a>
-            <a href="#cas-usage" class="text-quube-gray-dark hover:text-quube-black transition-colors">Cas d'Usage</a>
+            <a href="#promesse" class="text-quube-gray-dark hover:text-quube-black transition-colors">Notre Approche</a>
+            <div class="pl-4 space-y-2 border-l-2 border-quube-yellow">
+              <div class="text-xs text-quube-gray font-semibold mb-2">SERVICES PAR PHASE</div>
+              <a href="#phase-sensibiliser" class="block text-sm text-quube-gray-dark">① Sensibiliser</a>
+              <a href="#phase-competences" class="block text-sm text-quube-gray-dark">② Monter en Compétences</a>
+              <a href="#phase-structurer" class="block text-sm text-quube-gray-dark">③ Structurer</a>
+              <a href="#phase-deployer" class="block text-sm text-quube-gray-dark">④ Déployer</a>
+              <a href="#phase-perenniser" class="block text-sm text-quube-gray-dark">⑤ Pérenniser & Mesurer</a>
+            </div>
+            <div class="pl-4 space-y-2 border-l-2 border-quube-blue">
+              <div class="text-xs text-quube-gray font-semibold mb-2">PAR MÉTIER</div>
+              <a href="#metier-dg" class="block text-sm text-quube-gray-dark">Direction Générale</a>
+              <a href="#metier-daf" class="block text-sm text-quube-gray-dark">Finance (DAF)</a>
+              <a href="#metier-drh" class="block text-sm text-quube-gray-dark">RH (DRH)</a>
+              <a href="#metier-qualite" class="block text-sm text-quube-gray-dark">Qualité</a>
+              <a href="#metier-soins" class="block text-sm text-quube-gray-dark">Soins</a>
+              <a href="#metier-educatif" class="block text-sm text-quube-gray-dark">Éducatif</a>
+              <a href="#metier-transverse" class="block text-sm text-quube-gray-dark">Transverse</a>
+            </div>
+            <a href="#acceleration-projets" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Accélération Projets</a>
             <a href="#blog" class="text-quube-gray-dark hover:text-quube-black transition-colors">Blog</a>
             <a href="#contact" class="font-medium text-quube-black">Contact</a>
           </div>
@@ -182,9 +231,23 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Services avec accordéon */}
-      <section id="services" class="py-32 bg-white">
+      {/* Services avec accordéon - ANCIENNE VERSION */}
+      <section id="services" class="py-32 bg-white border-t-4 border-yellow-400">
         <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-8 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-exclamation-triangle text-yellow-600 text-xl mt-1"></i>
+              <div>
+                <h3 class="text-lg font-semibold text-yellow-900 mb-2">⚠️ En cours de restructuration</h3>
+                <p class="text-sm text-yellow-800">
+                  Cette section présente notre ancienne organisation de services. 
+                  Découvrez notre <a href="#phase-sensibiliser" class="underline font-medium">nouveau parcours en 5 phases</a> 
+                  et notre offre signature <a href="#acceleration-projets" class="underline font-medium">Accélération de Projet</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+          
           <div class="mb-24">
             <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
               Nos <span class="font-bold">Services</span>
