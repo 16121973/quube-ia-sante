@@ -76,7 +76,6 @@ app.get('/', (c) => {
             </div>
 
             <a href="#acceleration-projets" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Accélération Projets</a>
-            <a href="#blog" class="text-quube-gray-dark hover:text-quube-black transition-colors">Blog</a>
             <a href="#contact" class="font-medium text-quube-black hover:text-quube-blue transition-colors border-b-2 border-transparent hover:border-quube-blue pb-1">Contact</a>
           </div>
           <button id="mobile-menu-btn" class="md:hidden text-quube-black">
@@ -117,7 +116,6 @@ app.get('/', (c) => {
               <a href="#cas-usage-transverse" class="block text-sm text-quube-gray-dark">⚙️ Transverses</a>
             </div>
             <a href="#acceleration-projets" class="text-quube-gray-dark hover:text-quube-black transition-colors font-medium">Accélération Projets</a>
-            <a href="#blog" class="text-quube-gray-dark hover:text-quube-black transition-colors">Blog</a>
             <a href="#contact" class="font-medium text-quube-black">Contact</a>
           </div>
         </div>
@@ -1503,7 +1501,7 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      <section id="blog" class="py-32 bg-white">
+      <section id="blog" class="hidden py-32 bg-white">
         <div class="max-w-6xl mx-auto px-8">
           <div class="mb-24">
             <h2 class="text-5xl md:text-6xl font-light text-quube-black mb-6">
@@ -1748,7 +1746,6 @@ app.get('/', (c) => {
               <ul class="space-y-2 text-sm text-quube-gray-dark">
                 <li><a href="#acceleration-projets" class="hover:text-quube-blue transition-colors font-medium">⚡ Accélération de Projet</a></li>
                 <li><a href="#cas-usage" class="hover:text-quube-blue transition-colors">Cas d'Usage ROI++</a></li>
-                <li><a href="#blog" class="hover:text-quube-blue transition-colors">Blog IA Santé</a></li>
               </ul>
             </div>
             
