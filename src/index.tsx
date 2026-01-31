@@ -1517,7 +1517,7 @@ app.get('/', (c) => {
 
           <div class="grid md:grid-cols-3 gap-8">
             {/* 13 articles de référence QUUBE - tous 3 min */}
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Transformation · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1529,7 +1529,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">ROI & Productivité · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1541,7 +1541,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Pilotage & Gouvernance · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1553,7 +1553,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Architecture & Tech · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1565,7 +1565,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Conformité & Sécurité · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1577,7 +1577,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">ROI & Pilotage · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1589,7 +1589,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1601,7 +1601,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Bonnes Pratiques · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1613,7 +1613,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Gouvernance · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1625,7 +1625,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Formation · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1637,7 +1637,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Éthique & Inclusion · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1649,7 +1649,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Éthique & RH · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
@@ -1661,7 +1661,7 @@ app.get('/', (c) => {
               </div>
             </article>
 
-            <article class="group cursor-pointer">
+            <article class="group cursor-pointer" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); setTimeout(() => alert('Pour accéder aux articles complets, contactez-nous !'), 500);">
               <div class="border-b-2 border-gray-200 group-hover:border-quube-yellow transition-colors pb-6">
                 <div class="text-sm text-quube-gray mb-3">Prospective · 3 min</div>
                 <h3 class="text-xl font-medium text-quube-black mb-3 group-hover:text-quube-blue transition-colors">
