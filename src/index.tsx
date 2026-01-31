@@ -87,7 +87,7 @@ app.get('/', (c) => {
 
           <div class="grid md:grid-cols-2 gap-12 mb-16">
             <div class="space-y-6">
-              <h3 class="text-2xl font-medium text-quube-black">Ni startup technologique, ni cabinet généraliste</h3>
+              <h3 class="text-2xl font-medium text-quube-black">Une double expertise unique : Santé + IA</h3>
               <p class="text-lg font-light text-quube-gray-dark leading-relaxed">
                 QUUBE IA Santé est votre <span class="text-quube-black font-medium">partenaire 360° de la transformation IA</span>. 
                 Nous ne vendons pas de logiciel IA, nous vous conseillons en toute neutralité.
@@ -99,7 +99,7 @@ app.get('/', (c) => {
             </div>
 
             <div class="space-y-6">
-              <h3 class="text-2xl font-medium text-quube-black">Là où le bât blesse vraiment</h3>
+              <h3 class="text-2xl font-medium text-quube-black">Au-delà de la technologie : l'accompagnement humain</h3>
               <p class="text-lg font-light text-quube-gray-dark leading-relaxed">
                 Les principaux obstacles à l'adoption de l'IA ne sont pas technologiques, mais <span class="text-quube-black font-medium">humains et organisationnels</span>.
               </p>
