@@ -16,7 +16,6 @@ app.get('/', (c) => {
             <span class="text-quube-blue font-light">IA Santé</span>
           </a>
           <div class="hidden md:flex items-center space-x-8 text-sm">
-            <a href="#promesse" class="text-quube-gray-dark hover:text-quube-black transition-colors">Notre Promesse</a>
             <a href="#services" class="text-quube-gray-dark hover:text-quube-black transition-colors">Services</a>
             <a href="#thematiques" class="text-quube-gray-dark hover:text-quube-black transition-colors">Thématiques</a>
             <a href="#cas-usage" class="text-quube-gray-dark hover:text-quube-black transition-colors">Cas d'Usage</a>
@@ -30,7 +29,6 @@ app.get('/', (c) => {
         {/* Mobile menu */}
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 py-4 px-8">
           <div class="flex flex-col space-y-4">
-            <a href="#promesse" class="text-quube-gray-dark hover:text-quube-black transition-colors">Notre Promesse</a>
             <a href="#services" class="text-quube-gray-dark hover:text-quube-black transition-colors">Services</a>
             <a href="#thematiques" class="text-quube-gray-dark hover:text-quube-black transition-colors">Thématiques</a>
             <a href="#cas-usage" class="text-quube-gray-dark hover:text-quube-black transition-colors">Cas d'Usage</a>
@@ -46,19 +44,15 @@ app.get('/', (c) => {
           <div class="space-y-12">
             <div class="space-y-6">
               <h1 class="text-6xl md:text-8xl font-light leading-tight text-quube-black">
-                L'IA en Santé
+                L'IA Générative
                 <br />
-                <span class="font-bold">En Toute Confiance</span>
+                <span class="font-bold">Simplement</span>
               </h1>
               <div class="w-20 h-1 bg-quube-yellow"></div>
             </div>
             
             <p class="text-2xl md:text-3xl font-light text-quube-gray-dark leading-relaxed max-w-2xl">
-              <span class="text-quube-black font-semibold">Une expertise indépendante qui connecte le potentiel de l'IA aux besoins de votre organisation de santé</span>
-            </p>
-            
-            <p class="text-xl font-light text-quube-gray-dark leading-relaxed max-w-2xl">
-              De la stratégie aux usages concrets, nous vous guidons pour libérer le potentiel de l'IA <span class="text-quube-black font-medium">sans jargon</span>, au service des soignants et des patients.
+              Accompagnement des professionnels de <span class="text-quube-black font-medium">Santé & Solidarité</span> dans leur transformation IA
             </p>
 
             <div class="flex flex-wrap gap-4 text-sm text-quube-gray pt-8">
@@ -68,72 +62,6 @@ app.get('/', (c) => {
               <span class="px-4 py-2 border border-gray-200 rounded-full">Gemini</span>
               <span class="px-4 py-2 border border-gray-200 rounded-full">Copilot</span>
               <span class="px-4 py-2 border border-gray-200 rounded-full">IA on-premise</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Notre Promesse - Positionnement Unique */}
-      <section id="promesse" class="py-32 bg-white border-t border-gray-100">
-        <div class="max-w-6xl mx-auto px-8">
-          <div class="mb-16 text-center">
-            <div class="inline-block px-6 py-2 bg-quube-yellow/20 rounded-full mb-6">
-              <span class="text-sm font-medium text-quube-black">Notre Promesse</span>
-            </div>
-            <h2 class="text-4xl md:text-5xl font-light text-quube-black leading-tight max-w-3xl mx-auto">
-              Une expertise <span class="font-bold">indépendante</span> qui connecte le potentiel de l'IA aux besoins de votre organisation de santé
-            </h2>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-12 mb-16">
-            <div class="space-y-6">
-              <h3 class="text-2xl font-medium text-quube-black">Ni startup technologique, ni cabinet généraliste</h3>
-              <p class="text-lg font-light text-quube-gray-dark leading-relaxed">
-                QUUBE IA Santé est votre <span class="text-quube-black font-medium">partenaire 360° de la transformation IA</span>. 
-                Nous ne vendons pas de logiciel IA, nous vous conseillons en toute neutralité.
-              </p>
-              <p class="text-lg font-light text-quube-gray-dark leading-relaxed">
-                Notre double expertise <span class="text-quube-black font-medium">terrain sanitaire + intelligence artificielle</span> fait de nous 
-                l'interlocuteur de confiance pour naviguer dans l'écosystème pléthorique des solutions IA.
-              </p>
-            </div>
-
-            <div class="space-y-6">
-              <h3 class="text-2xl font-medium text-quube-black">Là où le bât blesse vraiment</h3>
-              <p class="text-lg font-light text-quube-gray-dark leading-relaxed">
-                Les principaux obstacles à l'adoption de l'IA ne sont pas technologiques, mais <span class="text-quube-black font-medium">humains et organisationnels</span>.
-              </p>
-              <p class="text-lg font-light text-quube-gray-dark leading-relaxed">
-                C'est précisément là que QUUBE intervient : <span class="text-quube-black font-medium">formation des équipes, alignement stratégique, 
-                conduite du changement</span>, et aide au choix parmi des centaines de solutions innovantes.
-              </p>
-            </div>
-          </div>
-
-          {/* 4 Engagements / Claims Marketing */}
-          <div class="grid md:grid-cols-4 gap-8">
-            <div class="text-center space-y-4 p-6 border border-gray-200 rounded-lg hover:border-quube-yellow transition-colors">
-              <div class="text-4xl">🏥</div>
-              <h4 class="font-semibold text-quube-black">100% Santé, 100% IA</h4>
-              <p class="text-sm text-quube-gray-dark">Nos consultants allient expérience du terrain sanitaire et expertise en intelligence artificielle</p>
-            </div>
-
-            <div class="text-center space-y-4 p-6 border border-gray-200 rounded-lg hover:border-quube-yellow transition-colors">
-              <div class="text-4xl">🤝</div>
-              <h4 class="font-semibold text-quube-black">Neutres et Indépendants</h4>
-              <p class="text-sm text-quube-gray-dark">Aucun partenariat exclusif avec un éditeur : nous préconisons les solutions qui vous conviennent, point final</p>
-            </div>
-
-            <div class="text-center space-y-4 p-6 border border-gray-200 rounded-lg hover:border-quube-yellow transition-colors">
-              <div class="text-4xl">🛠️</div>
-              <h4 class="font-semibold text-quube-black">Concrets et Humains</h4>
-              <p class="text-sm text-quube-gray-dark">Pas de slides inutiles : nous co-construisons avec vos équipes des solutions pragmatiques jusqu'à adoption complète</p>
-            </div>
-
-            <div class="text-center space-y-4 p-6 border border-gray-200 rounded-lg hover:border-quube-yellow transition-colors">
-              <div class="text-4xl">✋</div>
-              <h4 class="font-semibold text-quube-black">Gardez la Main sur l'IA</h4>
-              <p class="text-sm text-quube-gray-dark">L'IA doit augmenter vos équipes, pas les remplacer. Nous intégrons l'IA de manière éthique, sûre et utile</p>
             </div>
           </div>
         </div>
@@ -170,106 +98,198 @@ app.get('/', (c) => {
           </div>
 
           <div class="space-y-4">
-            {/* Service 1 - Conférences IA Inspirantes */}
+            {/* Service 1 - Formations */}
             <details class="group border-b border-gray-200 pb-4">
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">01</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Conférences IA Inspirantes</h3>
+                    <h3 class="text-2xl font-medium text-quube-black">Acculturation IA</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">
-                    Des interventions pour démystifier l'IA auprès de vos équipes et dirigeants
+                    Formations, conférences et sensibilisation
                   </p>
                 </div>
                 <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
               </summary>
               <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
-                <p class="leading-relaxed">
-                  <strong>Inspirez vos équipes grâce à nos conférences ludiques et pédagogiques.</strong> En 1 à 2 heures, nos experts démystifient l'IA (ChatGPT, vision médicale, etc.) en partageant exemples concrets et retours d'expérience.
-                </p>
-                <p class="leading-relaxed">
-                  <strong>Objectif :</strong> lever les idées reçues et susciter des vocations, du COMEX aux soignants.
+                <p class="leading-relaxed font-medium">
+                  Formations, conférences et sensibilisation pour une adoption rapide et efficace de l'IA générative dans vos processus métiers.
                 </p>
                 
-                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
-                  <p class="text-sm font-medium text-quube-black mb-2">💡 Formats disponibles</p>
-                  <ul class="space-y-1 text-sm">
-                    <li>• Conférences plénières (50-200 personnes)</li>
-                    <li>• Webinaires interactifs</li>
-                    <li>• Séminaires de sensibilisation</li>
-                    <li>• Ateliers découverte et démonstrations live</li>
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Formations IA Générative</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Formation complète sur ChatGPT, Claude, Mistral, Gemini et Copilot</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Prise en main des outils IA avec prompting avancé</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Cas d'usage secteur santé & médico-social</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Formations certifiantes et sur-mesure</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Conférences & Sensibilisation</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Conférences et webinaires sur les enjeux de l'IA</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Séminaires de sensibilisation pour vos équipes</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Ateliers découverte et démonstrations</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Compliance & Conformité</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Sensibilisation RGPD et AI Act européen</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Audit de conformité NIS 2 et cybersécurité</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Souveraineté des données et hébergement HDS</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Charte éthique et charte d'usages de l'IA</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Normes secteur santé (ISO 27001, certifications)</span>
+                    </li>
                   </ul>
                 </div>
               </div>
             </details>
 
-            {/* Service 2 - Coaching IA Dirigeants */}
+            {/* Service 2 - Coaching */}
             <details class="group border-b border-gray-200 pb-4">
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">02</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Coaching IA Individuel pour Dirigeants</h3>
+                    <h3 class="text-2xl font-medium text-quube-black">Coaching Stratégique</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">
-                    Un mentor dédié pour intégrer l'IA à votre vision stratégique
+                    Accompagnement personnalisé des dirigeants
                   </p>
                 </div>
                 <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
               </summary>
               <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
                 <p class="leading-relaxed">
-                  <strong>Bénéficiez d'un sparring-partner de haut niveau pour vous approprier l'IA.</strong> Sur quelques séances confidentielles, un coach QUUBE vous aide à comprendre les outils (de ChatGPT aux IA d'imagerie), à identifier les opportunités pour votre organisation et à anticiper les impacts managériaux.
+                  Accompagnement individuel des dirigeants, cadres et managers pour intégrer l'IA dans leur leadership et leurs décisions stratégiques.
                 </p>
-                <p class="leading-relaxed">
-                  <strong>Résultat :</strong> une vision 360° de l'IA appliquée à votre feuille de route de dirigeant.
-                </p>
-                
-                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
-                  <p class="text-sm font-medium text-quube-black mb-2">🎯 Bénéfices</p>
-                  <ul class="space-y-1 text-sm">
-                    <li>• Coaching 1-to-1 exclusif et confidentiel</li>
-                    <li>• Appropriation des outils IA stratégiques</li>
-                    <li>• Identification des opportunités business</li>
-                    <li>• Anticipation des impacts managériaux et RH</li>
-                    <li>• Plan d'action personnalisé</li>
-                  </ul>
-                </div>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <span class="text-quube-yellow mr-2">•</span>
+                    <span>Coaching individuel et collectif</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-quube-yellow mr-2">•</span>
+                    <span>Adoption IA dans le leadership</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-quube-yellow mr-2">•</span>
+                    <span>Change management et conduite du changement</span>
+                  </li>
+                </ul>
               </div>
             </details>
 
-            {/* Service 3 - Formations IA sur Mesure */}
+            {/* Service 3 - Conseil */}
             <details class="group border-b border-gray-200 pb-4">
               <summary class="cursor-pointer list-none flex justify-between items-start">
                 <div class="flex-1">
                   <div class="flex items-baseline space-x-4 mb-2">
                     <span class="text-4xl font-light text-quube-gray group-open:text-quube-blue transition-colors">03</span>
-                    <h3 class="text-2xl font-medium text-quube-black">Formations IA sur Mesure</h3>
+                    <h3 class="text-2xl font-medium text-quube-black">Conseil Stratégique & Gouvernance</h3>
                   </div>
                   <p class="text-lg font-light text-quube-gray-dark ml-16">
-                    Ateliers pratiques pour rendre vos équipes autonomes avec l'IA
+                    Roadmap IA et gouvernance sur-mesure
                   </p>
                 </div>
-                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-colors mt-2"></i>
+                <i class="fas fa-chevron-down text-quube-gray group-open:rotate-180 transition-transform mt-2"></i>
               </summary>
               <div class="mt-6 ml-16 space-y-4 text-quube-gray-dark">
-                <p class="leading-relaxed">
-                  <strong>Formez vos collaborateurs aux usages concrets de l'IA.</strong> Nos ateliers, en petits groupes, sont 100% pratiques : exercices avec des données et cas réels de votre organisation.
-                </p>
-                <p class="leading-relaxed">
-                  <strong>Objectif :</strong> rendre chaque participant opérationnel et responsable dans l'usage de ces nouveaux outils (y compris sur les aspects éthiques et RGPD).
+                <p class="leading-relaxed font-medium">
+                  Définition de votre stratégie IA, audits de maturité, roadmap de déploiement et mise en place d'une gouvernance adaptée à votre structure.
                 </p>
                 
-                <div class="mt-6 p-4 bg-quube-yellow/10 border-l-4 border-quube-yellow rounded-r">
-                  <p class="text-sm font-medium text-quube-black mb-2">📚 Thématiques disponibles</p>
-                  <ul class="space-y-1 text-sm">
-                    <li>• Initiation à l'IA pour cadres de santé</li>
-                    <li>• Optimiser son temps avec ChatGPT</li>
-                    <li>• IA & data pour médecins</li>
-                    <li>• Formations certifiantes</li>
-                    <li>• Cas d'usage secteur santé & médico-social</li>
-                    <li>• Prompting avancé et RGPD/éthique</li>
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Stratégie & Gouvernance</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Stratégie IA & roadmap de transformation</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Gouvernance IA et comité de pilotage</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Priorisation des use cases à fort ROI</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Audits IA</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Audit complet de maturité IA</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Identification des opportunités stratégiques</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Recommandations personnalisées</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="mt-4">
+                  <h4 class="font-medium text-quube-black mb-2">Diagnostic Flash QUUBE®</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Évaluation express en 2 heures chrono</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Potentiel IA et quick wins identifiés</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-quube-yellow mr-2">•</span>
+                      <span>Recommandations immédiates actionnables</span>
+                    </li>
                   </ul>
                 </div>
               </div>
