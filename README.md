@@ -100,13 +100,19 @@ L'offre QUUBE a été entièrement restructurée autour d'un **parcours client p
 
 ## 🌐 URLs du Projet
 
+### Production ✅ EN LIGNE
+- **Cloudflare Pages**: https://quube-ia-sante.pages.dev
+- **Déploiement actuel**: https://53296032.quube-ia-sante.pages.dev
+- **Domaine personnalisé**: À configurer (quube.fr ou sous-domaine)
+- **GitHub**: https://github.com/16121973/quube-ia-sante
+- **Version**: v2.0.0
+
 ### Développement
 - **URL Locale**: http://localhost:3000
 - **URL Sandbox Publique**: https://3000-i4qus5wkajuu09mklzfv1-a402f90a.sandbox.novita.ai
 
-### Production (À venir)
-- **Cloudflare Pages**: Sera déployé après configuration
-- **Domaine personnalisé**: quube.fr ou sous-domaine à définir
+### Backup
+- **Archive v2.0.0**: https://www.genspark.ai/api/files/s/5SBRbJBq (1.30 MB)
 
 ## ✨ Fonctionnalités Actuellement Implémentées
 
